@@ -16,6 +16,9 @@
     font-size: 2rem;
     display: inline-block;
 }
+.arrow{
+    margin-left: 1rem;
+}
 b{
     font-size: 2rem;
 }

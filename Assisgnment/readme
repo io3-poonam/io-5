@@ -1,0 +1,27 @@
+       1. label
+            Used to describe input type
+                for: it connects with input ID to target input box
+
+       2. input
+            used to create forms
+            display : inline
+            self closing
+                attributes:
+                    id: it is unique in entire DOM(HTML) and helps to target input
+                    class
+                    type: Type defines what kinda of input box it is
+                        -> text
+                        -> number
+                        -> password
+                        -> email
+                        -> tel
+                        -> date
+                        -> time
+                        -> month
+                        -> radio
+                        -> checkbox
+                        -> button
+                    maxlength: Provides validation to input box's character
+                    minlength
+                    placeholder: Put indication inside the input box ex: Enter your name
+

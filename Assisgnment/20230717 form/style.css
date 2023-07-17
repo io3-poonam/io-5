@@ -135,3 +135,113 @@ img{
     border-radius: 50%;
     margin: 1%;
 }
+/* @here please find the media queries breakpoints
+/* 320px — 480px: small devices and Mobile devices
+481px — 769px: iPads, Tablets
+768px — 1023px: Small screens, laptops
+1024px — 1199px:  Medium screens
+1200px — 1919px: Desktops, large screens
+1920px and more —  Extra large screens, TV  */
+@media screen and (min-width: 279px) and (max-width: 479px) {
+    .main-Container{
+        width: 100%;
+        height: 100vh;;
+    display: flex;
+    flex-direction: column;
+    }
+    .side_section, section{
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-image: url(https://c4.wallpaperflare.com/wallpaper/808/214/369/box-cube-black-hd-wallpaper-preview.jpg);
+        /* background-color: black; */
+        width: 90%;
+        height: 50vh;
+        margin: auto;
+        display: block;
+    }
+    .heading{
+        position: absolute;
+        /* bottom: 64%; */
+        left: 15%;
+        color: white;
+        top: 32%;
+    }
+    .para{
+        position: absolute;
+        top: 38%;
+        left: 15%;
+        color: #e6faf5;
+        width: 72%;
+        text-align: center;
+    }
+    .form-section{
+        background-color: aliceblue;
+        width: 90%;
+        height: 50vh;
+        margin: auto;
+    }
+    .heading-form {
+        padding: 1% 10% 1% 10%;
+    }
+    form {
+        margin: 2% auto;
+        width: 90%;}
+
+    .input-field{
+        padding: 2%;
+    /* background-color: #f5f1f1; */
+    background-color: rgb(231, 232, 234);
+    outline: none;
+    border: none;
+    width: 55%;
+        }
+        .input-Fname{
+            margin: 1% 0 1% 12.7%;
+        }
+        .input-Email{
+            margin: 1% 0 1% 3.5%;}
+            .input-number{
+                margin: 1% 0 1% 1.5%;
+            }
+            .input-password{
+                margin: 1% 0 1% 15%;
+            }
+            .input-Website{
+                margin: 1% 0 1% 19%;
+            }
+            .input-checkbox{
+                margin: 10% 0;
+            }
+            .input-checkbox {
+                margin: 4% 0;
+                font-size: -26px;
+            }.save-btn {
+                padding: 2%;
+                font-size: 0.5rem;
+                color: #fff;
+                background-color: black;
+                border-radius: 50px;
+                border: none;
+                outline: none;
+                margin-bottom: 5%;
+                font-size: 76%;
+            }
+   
+}
+
+@media screen and (min-width: 480px) and (max-width: 769px) {
+}
+
+@media screen and (min-width: 770px) and (max-width: 1025px) {
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1219px) {
+}
+
+@media screen and (min-width: 1220px) and (max-width: 1919px) {
+}
+
+@media screen and (min-width: 1920px) {
+
+}

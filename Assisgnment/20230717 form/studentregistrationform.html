@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="./formStyle.css">
+</head>
+
+<body>
+    <h1 class="h1">STUDENT REGISTRATION FORM</h1>
+    <div class="mainPart">
+
+        <from action="./action.php" method="get" target="blank" autocomplete="on" class="formStudent">
+            <label for="fName">FIRST NAME</label>
+            <input type="text" id="fName" name="fName" />
+            (max 30 characters a-z and A-Z)
+            <br>
+            <br>
+            <label for="lName">LAST NAME</label>
+            <input type="text" id="lName" name="lName" />
+            (max 30 characters a-z and A-Z)
+            <br>
+            <br>
+            <label for="DOB">DATE OF BIRTH</label>
+            <input type="DATE" id="DOB" name="DOB" />
+            <br>
+            <br>
+            <label for="email">EMAIL ID</label>
+            <input type="email" id="email" name="email" />
+            <br>
+            <br>
+            <label for="number">MOBILE NUMBER</label>
+            <input type="number" id="number" name="number" />
+            (10 digit number)
+            <br>
+            <br>
+            <label for="gender">GENDER</label>
+            <label for="gender">Male</label>
+            <input type="radio" id="gender" name="GENDER" />
+            <label for="gender">Female</label>
+            <input type="radio" id="gender" name="GENDER" />
+            <br>
+            <br>
+            <label for="address">ADDRESS</label>
+            <textarea type="text" id="address" name="address" rows="4" cols="50"></textarea>
+            <br>
+            <br>
+            <label for="city">CITY</label>
+            <input type="text" id="city" name="city" />
+            (max 30 characters a-z and A-Z)
+            <br>
+            <br>
+            <label for="pincode">PIN CODE</label>
+            <input type="number" id="pincode" name="pincode" />
+            (6 digit number)
+            <br>
+            <br>
+            <label for="state">STATE</label>
+            <input type="text" id="state" name="state" />
+            (max 30 characters a-z and A-Z)
+            <br>
+            <br>
+            <label for="country">COUNTRY</label>
+            <input type="text" id="country" name="country" value="india" />
+            <br>
+            <br>
+            <label for="hobbies">HOBBIES</label>
+            <label for="Singing">Singing</label>
+            <input type="checkbox" id="Singing" name="hobbies" />
+            <label for="Dancing">Dancing</label>
+             <input type="checkbox" id="Dancing" name="hobbies" />
+            <label for="Drawing">Drawing</label>
+             <input type="checkbox" id="Drawing" name="hobbies" />
+            <label for="Sketching">Sketching</label>
+             <input type="checkbox" id="Sketching" name="hobbies" />
+            <label for="Others">Others</label>
+            <input type="checkbox" id="Others" name="hobbies" />
+            <br> <br>
+
+            <label>QUALIFICATION</label>
+            <table>
+                <tr>
+                    <th>St.No Examination</th>
+                    <th>Board</th>
+                    <th>Percentage</th>
+                    <th>Year of Passing</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Class X</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Class XII</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Graduation</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Masters</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <label for="COURSES">COURSES APPLIED FOR</label>
+            <label for="COURSES">BCA</label>
+             <input id="COURSES" type="radio" name="COURSES APPLIED FOR">
+            <label for="COURSES">B.Com </label>
+            <input id="COURSES" type="radio" name="COURSES APPLIED FOR">
+            <label for="COURSES"> B.Sc</label>
+            <input id="COURSES" type="radio" name="COURSES APPLIED FOR">
+            <label for="COURSES"> B.A </label>
+           <input id="COURSES" type="radio" name="COURSES APPLIED FOR">
+            <br>
+            <br>
+            <input type="Submit"></input>
+            <input type="button" accesskey="s">Check</input>
+            <input type="Reset" accesskey="r"></input>
+        </from>
+    </div>
+</body>
+
+</html>

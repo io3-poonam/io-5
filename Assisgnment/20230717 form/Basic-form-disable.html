@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./disableStyle.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="main-form">
+        <h1>Basic HTML From</h1>
+        <fieldset>
+            <legend>Name</legend>
+            <label class="fName">First Name</label> <br />
+            <input type="text" id="fNmae" class="fNmae" disabled name="First Name" />
+            <br />
+            <br />
+            <label class="lName">Last Name</label> <br />
+            <input type="text" id="lNmae" class="lNmae" />
+            <br />
+            <br />
+        </fieldset>
+        <fieldset>
+            <legend>Other Questions</legend>
+            <label for="drink">Choose a drink</label> <br />
+            <input type="radio" id="coffee" name="drink" />
+            <label for="coffee">coffee</label> <br />
+            <input type="radio" id="tea" name="drink" disabled />
+            <label for="tea">tea</label> <br />
+            <input type="radio" id="hot-chocolate" name="drink" />
+            <label for="hot-chocolate">hot chocolate</label>
+            <br />
+            <br />
+            <label for="cream">What ice cream do you like ?</label> <br />
+            <input type="checkbox" id="Chocolate" name="Chocolate" />
+            <label for="Chocolate">Chocolate</label> <br />
+            <input type="checkbox" id="Chocolate-Pudding" name="Chocolate Pudding" />
+            <label for="Chocolate-Pudding">Chocolate Pudding</label> <br />
+            <input type="checkbox" id="Chocolate-Peanut-Butter" name="Chocolate Peanut Butter" />
+            <label for="Chocolate-Peanut-Butter">Chocolate Peanut Butter</label><br />
+            <input type="checkbox" id="Vanilla" name="Vanilla" disabled />
+            <label for="Vanilla">Vanilla</label> <br />
+            <input type="checkbox" id="Strawberry" name="Strawberry" />
+            <label for="Strawberry">Strawberry</label>
+            <br />
+            <br />
+            <label for="School"> Select a School</label></br>
+            <input type="text" id="School" name="School" disabled value="Harvard" />
+            <br />
+            <br />
+            <label for="comments">Please provide comments</label><br />
+            <textarea rows="5" cols="25"></textarea>
+        </fieldset>
+        <button type="button" accesskey="s" disabled>Sumbit</button>
+    </div>
+</body>
+
+</html>

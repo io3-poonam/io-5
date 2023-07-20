@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.main-form {
+  border: 1px solid black;
+  margin: 1% auto;
+  width: 50%;
+  padding: 1%;
+  /* margin: 15px; */
+}
+fieldset{
+padding: 2%;
+}
+button{
+    padding: 3px 7px;
+    margin:7px;
+}

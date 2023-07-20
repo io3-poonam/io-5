@@ -24,4 +24,6 @@
                     maxlength: Provides validation to input box's character
                     minlength
                     placeholder: Put indication inside the input box ex: Enter your name
+                    required:
+                    disabled:
 

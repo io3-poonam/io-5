@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main{
+  width: 75%;
+  margin: auto;
+
+}
+/* Header Section start */
+.passport_Header{
+  display: flex;
+  flex-direction: row;
+  border: 2px solid pink;
+}
+.image_Passport{
+  padding: 2.5% 1% 0 1%;
+}
+.Header_mid_Section .heading-third, .heading-forth{
+text-align: center;
+font-weight: bold;
+}
+.heading-third{
+  padding-top: 0.1rem;
+}
+.heading-forth{
+  font-size: 1.1rem;
+  word-spacing: 2px;
+  padding-top: 0.1rem 0;
+}
+.Passport_details_header{
+  word-spacing: 3px;
+  /* font-weight: 800; */
+  /* font-size: 1.2rem; */
+  padding-bottom: 1%;
+}
+/* Header Section end */
+/* - section second start -- */
+.Ser_Reqd{
+  background-color: rgb(170, 167, 167);
+  padding: 4px;
+}
+.nameSectionForm{
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.nameSectionApp{
+  width: 50%;
+  /* padding: 0rem 0 0.5rem 0; */
+}
+.RadioSectionForm{
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.label{
+  padding: 1%;
+font-weight: 800;
+}
+.inputField{
+  padding: 1%;
+  margin: 1%; 
+  width: 60%;
+}
+option{
+font-weight: 700
+} 
+/* - section second end -- */
+
+/* section third start */
+.RadioSectionYN{
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.Applicant_Width{
+  width: 100%;
+}
+label,
+input,
+select,
+h4 {
+  margin: 5px;
+  padding: 3px;
+}
+.margin-right-1 {
+  margin-right: 75px;
+}
+.first-label {
+  margin-right: 15%;
+}
+.select-1{
+  width: 35%;
+}
+input,
+select {
+  background-color: rgb(235, 240, 254);
+}
+.image {
+  padding: 10px;
+}
+.heading-third,
+.heading-forth {
+  text-align: center;
+  font-weight: bolder;
+  font-size: larger;
+  color: rgb(12, 12, 12);
+}
+.margin-between {
+  margin-right: 150px;
+}
+.para {
+  font-weight: 600;
+}
+.heading-3 {
+  background-color: rgb(170, 167, 167);
+  padding: 4px;
+}
+
+.option {
+  white-space: wrap;
+  overflow: scroll;
+  border: 1px solid blue;
+  width: 40%;
+  padding: 0 50%;
+}
+.width {
+  width: 99%;
+}
+.condition {
+  /* width: 65%; margin: auto;  */
+}
+.para1 {
+  float: left;
+}
+.con-Para {
+  width: 80%;
+}
+.con-Para-1 {
+  padding-right: 180px;
+}
+.con-Para-2 {
+  padding-right: 290px;
+}
+
+.radio {
+  float: right;
+  margin-top: -38px;
+}
+.radio-1 {
+  float: right;
+  margin-top: -20px;
+}
+.radio-2 {
+  float: right;
+  margin-top: -5px;
+}
+.radio-3 {
+  float: right;
+  margin-top: -5px;
+  /* margin-right: -240px; */
+}
+.border-part {
+  border: 1px solid black;
+}
+/* .condition{width: 95%;} */
+.last-div {
+  border: 1px solid black;
+}
+.btn {
+  padding: 6px;
+  border-radius: 1px;
+  margin: 4px;
+}

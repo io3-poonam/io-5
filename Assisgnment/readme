@@ -123,3 +123,48 @@
           
 #                 stretch --> increase or stretch the height of children till parents height,  It will not work if children have their own height 
        
+<!--
+        1. background-repeat : To repeat any background
+            /* background-repeat: no-repeat; */ . If you don't want to repeat background images
+            /* background-repeat-x: no-repeat; */ if you don't want repeat BG image on x-axis
+            /* background-repeat-y: no-repeat; */ if you don't want repeat BG image on y-axis
+            /* background-size: cover; */ if you want to fill entire width of image to parent
+            /* background-repeat: round; */ is used to adjust images to entire parent
+            background-repeat: space; is used to fill parent with actual size of image whether it is leaving some space
+    
+    
+        2. background-position: use it without background repeat property
+                background-position: center; */   to position your image at center of parent  
+                /* background-position: bottom; */ to position your image at bottom-center of parent
+                /* background-position: left; */  to position your image at left of parent
+                /* background-position: right; */  to position your image at right of parent
+                background-position: top;  to position your image at top-center of parent
+
+        3. background-position-x: to position any image at top  x axis, 
+                background-position-x: center;; // center at top
+                background-position-x: left;; // left at top
+                background-position-x: right;; // right at top
+
+        4. background-position-y: to position images according to vertical adjustment
+                background-position-y: top; // images will start form top edge
+                background-position-y: center; // images will start form center, images could be trimmed from top/bottom
+                background-position-y: bottom; // images will start form bottom, images could be trimmed from top
+                background-position-y: 20%;  // main image line will go down, if we provide %age
+
+        5. background-size - to provide size of given image
+                background-size: cover;  : cover will add single image according to width and height of parent
+                /* background-size: contain;  images will be added according to size of parent. 
+                background-size: 6%;  by using this we can adjust the size of background image
+                /* background-size: 200px 100px; This is used to provide height and width of background image
+
+        6. Filters
+            1. blur
+                filter: blur(10px); it will blur the image
+            2. 
+        -->
+        .brightness 
+        /* filter: brightness(2); to increase brightness */
+        /* filter: brightness(0.2); to increase brightness
+ */
+ /*            X   Y   Spread  color   */
+ filter: drop-shadow(20px 10px 20px rgb(235, 10, 10));

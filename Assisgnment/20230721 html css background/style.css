@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+    /* background-color: aqua; */
+}
+.main-Container{
+    /* background-color: black; */
+    background-image: url(https://w0.peakpx.com/wallpaper/897/12/HD-wallpaper-black-mr-f-my-profile-thumbnail.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: 100%;
+}
+.navBar{
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    justify-content: space-between;
+}
+.h2, h1{
+    margin: 1%;
+    color: white;
+}
+h1{
+    font-size: 2.5rem;
+
+}
+.h2{
+    font-size: 5rem;
+
+}
+.ul{
+    display: flex;
+    flex-direction: row;
+    color: aliceblue; 
+    list-style-type: none;
+    margin: 1%;
+}
+.ul li{
+    padding: 1rem;
+    font-size: 1.5rem;
+
+    
+}
+ .navBar .btn{
+    border-radius: 2rem;
+    background-color: rgb(243, 43, 73);
+    padding: 1rem 2rem;
+    margin: 1%;
+    color: white;
+    font-size: 1rem;
+ }
+ /* ---------navbar end ---------*/
+ .heading-third{
+    color: gray;
+ }
+ main{
+    /* align-items: center; */
+    padding: 11% 0%;
+    margin: 0 1%;
+ }
+ .heading-second{
+    color: white;
+ }
+ footer{
+    display: flex;
+    color: white;
+    align-items: end;
+    position: fixed;
+    padding: 1%;
+    bottom: 2%;
+    /* right:5%; */
+ }
+ a img{
+    padding: 1%;
+    filter: invert(1);
+    /* background-color: rgb(121, 158, 191);
+    color: white; */
+ }

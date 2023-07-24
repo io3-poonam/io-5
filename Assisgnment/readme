@@ -168,3 +168,13 @@
  */
  /*            X   Y   Spread  color   */
  filter: drop-shadow(20px 10px 20px rgb(235, 10, 10));
+ <!-- border properties -->
+  border-top: 2px solid rgb(42, 5, 115);
+  border-bottom: 2px solid rgb(42, 5, 115);
+  border-right: 2px solid rgb(42, 5, 115);
+  border-left: 2px solid rgb(42, 5, 115);
+
+  border-inline: 2px double red;
+  border-inline-end: 2px solid red;
+  border-inline-start: 2px dashed red;
+

@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    background-color:rgb(251, 248, 248);
+}
+.first-india{
+    font-size: 7rem;
+    text-align: center;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    line-height: 100px;
+}
+.flex-h3{
+    display: flex;
+    justify-content: space-evenly;
+}
+.heading-3-newsPaper{
+    word-spacing: 2px;
+    text-transform: uppercase;
+}
+.main-header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(228, 228, 250);
+}
+.header{
+    padding: 5px;
+    width: 220px;
+    height: 115px;
+    margin: 10px 6px;
+    background-color: aliceblue;
+word-wrap: break-word;
+text-align: justify;
+}
+.header-100th{
+    font-size: 2rem;
+    word-wrap: break-word;
+    width: 20%;
+    font-weight: 900;
+    padding: 8px;
+    text-align: end;
+}
+.sec-heading{
+    padding: 5px 25px;
+    text-transform: uppercase;
+    line-height: 66px;
+    font-size: 4.5rem;
+    text-align: center;
+    word-break: break-word;
+}
+
+/* ul tag start */
+.ul,.center-part{
+    display: flex;
+padding: 5px;
+}
+.ul{
+    width: 100%;
+    font-size: 1.5rem;
+    word-wrap: break-word;
+}
+.li{
+    padding:1px 32px 0 0;
+    text-transform: uppercase;
+    /* list-style-image: ; */
+}
+.line-left{
+    /* border-left: 1px solid; */
+}
+.first-para{
+    text-indent: 5%;
+    /* word-wrap: break-word; */
+    width: 25%;
+    text-align: justify;
+    padding: 1%;
+}
+/* .first-para strong{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+} */
+.img-second{
+    width: 100%;
+}
+.t{
+    font-size: 5rem;
+}

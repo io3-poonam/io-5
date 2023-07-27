@@ -162,19 +162,73 @@
                 filter: blur(10px); it will blur the image
             2. 
         -->
-        .brightness 
+        <!-- .brightness 
         /* filter: brightness(2); to increase brightness */
         /* filter: brightness(0.2); to increase brightness
  */
  /*            X   Y   Spread  color   */
- filter: drop-shadow(20px 10px 20px rgb(235, 10, 10));
+ filter: drop-shadow(20px 10px 20px rgb(235, 10, 10)); -->
  <!-- border properties -->
-  border-top: 2px solid rgb(42, 5, 115);
+  <!-- border-top: 2px solid rgb(42, 5, 115);
   border-bottom: 2px solid rgb(42, 5, 115);
   border-right: 2px solid rgb(42, 5, 115);
   border-left: 2px solid rgb(42, 5, 115);
 
   border-inline: 2px double red;
   border-inline-end: 2px solid red;
-  border-inline-start: 2px dashed red;
+  border-inline-start: 2px dashed red; -->
 
+  
+<!-- 
+ blockquote + cite
+    q -> quote
+    pre
+    abbr + title
+    cite
+    code
+    kbd
+    bdo + dir
+            dir= ltr
+            dir=rtl
+    direction
+            direction= ltr
+            direction=rtl    
+    unicode-bidi
+            direction:rtl
+            unicode-bidi: embed;
+            unicode-bidi: bidi-override;
+    white-space
+            white-space: normal;
+            white-space: pre;
+            white-space: pre-line;
+            white-space: nowrap;
+            white-space: break-space;
+    text-align
+            text-align:center
+            text-align:left;
+            text-align:right;
+            text-align:justify;
+    text-decoration
+            text-decoration: none;
+    text-decoration-line
+            text-decoration-line: overline;
+            text-decoration-line: underline;
+            text-decoration-line: line-through;
+            text-decoration-line: overline underline;
+    text-decoration-style
+            text-decoration-style: solid;
+            text-decoration-style: dashed;
+            text-decoration-style: dotted;
+            text-decoration-style: wavy;
+            text-decoration-style: double;
+    text-decoration-color
+            text-decoration-color: red;
+            text-decoration-color: #45ab78;
+    text-decoration-thickness
+            text-decoration-thickness: auto;
+            text-decoration-thickness: 5px;
+            text-decoration-thickness: 10%;
+    text-decoration---shorthand
+            text-decoration: line-type style color thickness
+            text-decoration: line-though wavy white 2px
+   -->

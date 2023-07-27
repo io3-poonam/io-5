@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+}
+.main-div {
+  background-image: url(https://img1.picmix.com/output/stamp/normal/4/1/7/9/1699714_787dc.gif);
+}
+
+#first-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50vh;
+  padding-bottom: 5px;
+}
+.google-font-1 {
+  font-family: "Roboto", sans-serif;
+  background-image: url(https://www.clickandlearnphotography.com/wp-content/uploads/2019/01/using-natural-light-photography.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin: 5px;
+  margin-left: 25px;
+  padding: 5px;
+  width: 30%;
+  height: 45vh;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  box-shadow: 0px 1px 20px 2px rgb(199, 216, 241);
+}
+.main-div > #first-div > .google-font-1 > a > img {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  float: right;
+  box-shadow: 0px 0px 10px 1px rgb(110, 108, 108);
+}
+.main-div > #first-div > .google-font-1 > .header {
+  margin: 40px 5px 10px 30px;
+  font-size: 30px;
+}
+
+.main-div > #first-div > .google-font-1 > .para {
+  color: white;
+  margin: 5px 5px 10px 5px;
+  padding: 3px;
+  font-size: 21px;
+}
+.google-font-2 {
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  width: 30%;
+  height: 45vh;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  box-shadow: 4px;
+  box-shadow: 0px 1px 20px 2px rgb(177, 136, 182);
+}
+.main-div > #first-div > .google-font-2 > img {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  float: right;
+  box-shadow: 0px 0px 20px 1px rgb(250, 248, 248);
+  filter: brightness(1.5);
+}
+.main-div > #first-div > .google-font-2 > .header {
+  margin: 20px 5px 10px 30px;
+  font-size: 30px;
+}
+
+.main-div > #first-div > .google-font-2 > .para {
+  color: white;
+  margin: 5px 5px 10px 5px;
+  padding: 3px;
+  font-size: 20px;
+}
+.google-font-3 {
+  font-family: "Rubik Moonrocks", cursive;
+  background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  width: 30%;
+  height: 45vh;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  box-shadow: 4px;
+  box-shadow: 0px 1px 20px 2px rgb(207, 198, 99);
+  filter: contrast(0.9);
+}
+.main-div > #first-div > .google-font-3 > img {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  float: right;
+  box-shadow: 0px 0px 20px 1px rgb(19, 18, 18);
+}
+.main-div > #first-div > .google-font-3 > .header {
+  margin: 20px 5px 10px 30px;
+  font-size: 30px;
+  color: black;
+}
+.main-div > #first-div > .google-font-3 > .para {
+  color: rgb(8, 246, 83);
+  margin: 5px 5px 10px 5px;
+  padding: 3px;
+  font-size: 18px;
+}
+#Second-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50vh;
+  padding-bottom: 5px;
+}
+.google-font-4 {
+  font-family: "Edu TAS Beginner", cursive;
+  background-image: url(https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5px;
+  margin-left: 25px;
+  padding: 5px;
+  width: 30%;
+  height: 45vh;
+  color: aliceblue;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  box-shadow: 4px;
+  box-shadow: 0px 1px 20px 2px rgb(212, 177, 140);
+}
+.main-div > #Second-div > .google-font-4 > img {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  float: right;
+  box-shadow: 0px 0px 20px 1px rgb(220, 244, 249);
+  filter: contrast(2.5);
+}
+.main-div > #Second-div > .google-font-4 > .header {
+  margin: 20px 5px 10px 30px;
+  font-size: 30px;
+}
+.main-div > #Second-div > .google-font-4 > .para {
+  color: white;
+  padding: 3px;
+  margin: 5px 5px 10px 5px;
+  font-size: 21px;
+}
+.google-font-5 {
+  font-family: "Blaka Hollow", cursive;
+  background-image: url(https://wallpapercave.com/wp/wp2260607.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  width: 30%;
+  height: 45vh;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  box-shadow: 4px;
+  box-shadow: 0px 1px 20px 2px rgb(249, 248, 248);
+  filter: blur(1px);
+}
+.main-div > #Second-div > .google-font-5 > img {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  float: right;
+  box-shadow: 0px 0px 20px 1px rgb(220, 244, 249);
+}
+.main-div > #Second-div > .google-font-5 > .header {
+  margin: 20px 5px 10px 30px;
+  font-size: 30px;
+}
+.main-div > #Second-div > .google-font-5 > .para {
+  color: white;
+  margin: 5px 5px 10px 5px;
+  padding: 3px;
+  font-size: 22px;
+}
+.google-font-6 {
+  font-family: "Playfair Display", serif;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpLzMewm9M3ac5D7CwpyDkmTiVzt-m282t1A&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  width: 30%;
+  height: 45vh;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  box-shadow: 4px;
+  box-shadow: 0px 1px 20px 2px rgb(135, 221, 140);
+}
+.main-div > #Second-div > .google-font-6 > img {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  float: right;
+  box-shadow: 0px 0px 20px 1px rgb(220, 244, 249);
+}
+.main-div > #Second-div > .google-font-6 > .header {
+  margin: 20px 5px 10px 30px;
+  font-size: 30px;
+}
+.main-div > #Second-div > .google-font-6 > .para {
+  color: white;
+  margin: 5px 5px 10px 5px;
+  padding: 3px;
+  font-size: 22px;
+}
+#Third-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50vh;
+  padding-bottom: 5px;
+}
+.google-font-7 {
+  font-family: "Fredericka the Great", cursive;
+  background-image: url(https://images.assettype.com/fortuneindia%2F2020-06%2Fef53f9be-f257-4aa3-9af5-6ca1a9f33a86%2Fclose_up_photography_of_leaves_with_droplets_807598.jpg?rect=0,607,4128,2322&w=1250&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5px;
+  margin-left: 25px;
+  padding: 5px;
+  width: 30%;
+  height: 45vh;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  box-shadow: 4px;
+  box-shadow: 0px 1px 20px 2px rgb(135, 221, 140);
+}
+.main-div > #Third-div > .google-font-7 > img {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  float: right;
+  box-shadow: 0px 0px 20px 1px rgb(215, 83, 83);
+}
+.main-div > #Third-div > .google-font-7 > .header {
+  margin: 20px 5px 10px 30px;
+  color: white;
+  font-size: 30px;
+}
+.main-div > #Third-div > .google-font-7 > .para {
+  color: white;
+  margin: 5px 5px 10px 5px;
+  padding: 3px;
+  font-size: 17px;
+}
+.google-font-8 {
+  font-family: "Dancing Script", cursive;
+  background-image: url(https://121clicks.com/wp-content/uploads/2012/03/natural_lighting_photography_26.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  width: 30%;
+  height: 45vh;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  box-shadow: 4px;
+  box-shadow: 0px 1px 20px 2px rgb(135, 221, 140);
+}
+.main-div > #Third-div > .google-font-8 > img {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  float: right;
+  box-shadow: 0px 0px 20px 1px rgb(12, 208, 19);
+}
+.main-div > #Third-div > .google-font-8 > .header {
+  margin: 20px 5px 10px 30px;
+  font-size: 30px;
+}
+.main-div > #Third-div > .google-font-8 > .para {
+  color: rgb(60, 180, 56);
+  margin: 5px 5px 10px 5px;
+  padding: 3px;
+  font-size: 20px;
+}
+
+.google-font-9 {
+  background-image: url(https://img.freepik.com/free-photo/beautiful-scenery-road-forest-with-lot-colorful-autumn-trees_181624-30942.jpg?w=2000);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  width: 30%;
+  height: 45vh;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  box-shadow: 4px;
+  box-shadow: 0px 1px 20px 2px rgb(135, 221, 140);
+}
+.main-div > #Third-div > .google-font-9 > a > img {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  float: right;
+  box-shadow: 0px 0px 20px 1px rgb(87, 12, 237);
+}
+.main-div > #Third-div > .google-font-9 > a > .header {
+  margin: 20px 5px 10px 30px;
+  font-size: 30px;
+  color: aliceblue;
+}
+.main-div > #Third-div > .google-font-9 > a > .para {
+  color: white;
+  margin: 5px 5px 10px 5px;
+  padding: 3px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#Forth-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50vh;
+  padding-bottom: 5px;
+}
+.google-font-10 {
+  font-family: "Fredericka the Great", cursive;
+  background-image: url(https://images.unsplash.com/photo-1620766165457-a8025baa82e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmF0dXJlJTIwb2YlMjBpbmRpYXxlbnwwfHwwfHw%3D&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin: 5px;
+  margin-left: 25px;
+  padding: 5px;
+  width: 30%;
+  height: 45vh;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  box-shadow: 4px;
+  box-shadow: 0px 1px 20px 2px rgb(40, 172, 237);
+}
+.main-div > #Forth-div > .google-font-10 > img {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  float: left;
+  box-shadow: 0px 0px 20px 1px rgb(118, 116, 237);
+}
+.main-div > #Forth-div > .google-font-10 > .header {
+  margin: 20px 5px 10px 35px;
+  font-size: 30px;
+}
+.main-div > #Forth-div > .google-font-10 > .para {
+  color: white;
+  margin: 5px 5px 10px 5px;
+  padding: 3px;
+  font-size: 18px;
+}
+.google-font-11 {
+  font-family: "Dancing Script", cursive;
+  background-image: url(https://i.pinimg.com/originals/a6/a9/88/a6a988814936af1d537d5b1bcf2ae6f3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  width: 30%;
+  height: 45vh;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  box-shadow: 4px;
+  box-shadow: 0px 1px 20px 2px rgb(16, 241, 27);
+}
+.main-div > #Forth-div > .google-font-11 > img {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  float: right;
+  box-shadow: 0px 0px 20px 1px rgb(5, 207, 248);
+}
+.main-div > #Forth-div > .google-font-11 > .header {
+  margin: 20px 5px 10px 30px;
+  font-size: 30px;
+}
+.main-div > #Forth-div > .google-font-11 > .para {
+  color: white;
+  margin: 5px 5px 10px 5px;
+  padding: 3px;
+  font-size: 20px;
+}
+
+.google-font-12 {
+  background-image: url(https://images.pexels.com/photos/414102/pexels-photo-414102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  width: 30%;
+  height: 45vh;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  box-shadow: 4px;
+  box-shadow: 0px 1px 20px 2px rgb(119, 121, 237);
+}
+.main-div > #Forth-div > .google-font-12 > img {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  float: left;
+  box-shadow: 0px 0px 20px 1px rgb(25, 225, 25);
+}
+.main-div > #Forth-div > .google-font-12 > .header {
+  margin: 20px 5px 10px 30px;
+  font-size: 30px;
+}
+.main-div > #Forth-div > .google-font-12 > .para {
+  color: white;
+  margin: 5px 5px 10px 5px;
+  padding: 3px;
+  font-size: 20px;
+}

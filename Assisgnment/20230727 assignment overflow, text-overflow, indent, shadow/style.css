@@ -122,6 +122,7 @@ background-color: rgb(251, 248, 248);
     padding: 1%;
     border: 1px double black;
     overflow: auto;
+    margin: 1%;
 }
 hr{
     margin: 1% 0;

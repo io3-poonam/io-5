@@ -182,7 +182,7 @@
   justify-content: start;
   list-style: none;
   padding: 0.8rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .nav-item a {
   text-decoration: none;
@@ -312,7 +312,7 @@ span {
 /* iframe ending */
 .first-inputandicon {
   border-bottom: 1px solid gray;
-  width: 80%;
+  width: 100%;
   padding: 1%;
 }
 
@@ -326,10 +326,13 @@ span {
 .input-second {
   border: none;
   padding: 2% 1%;
+  font-size: 1rem;
+  color: #808080;
 }
 .border_bottom {
   border-bottom: 1px solid rgb(199, 196, 196);
-  width: 80%;
+  width: 100%;
+  color: #808080;
 }
 
 .radio-button {
@@ -339,15 +342,25 @@ span {
   padding: 5%;
 }
 .div-h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1%;
   width: 80%;
+  color: #808080;
 }
-.h3 {
+.history {
+  padding: 6%;
+  color: #808080;
+  font-weight: 100;
+}
+.h3,
+.div-h3-icon {
   padding: 1rem 0rem 0.5rem 0rem;
+  color: #808080;
 }
-.heading-H3 {
-  margin-left: 0 !important;
-}
+
 .watch-heading {
   color: gray;
-  padding: 4% 8%;
+  padding: 4% 0% 4% 30%;
 }

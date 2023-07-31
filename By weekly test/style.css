@@ -6,7 +6,9 @@
 }
 /* ------------Header start ------------*/
 .main-header{
-  position: fixed;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
 }
 .navBar {
   display: flex;
@@ -15,9 +17,9 @@
   background-color: #ffffff;
   /* border-bottom: 1px solid #e5e5e5; */
   align-items: center;
-  margin: auto;
+  margin:  auto;
   width: 98%;
-  padding: 1%;
+  padding: 1% 1% 0 1%;
   /* height: 60px; */
 }
 #start {
@@ -219,15 +221,22 @@
   .ytd-postn-rel-abu{
     height: 100vh;
       width: 82%;
-      padding: 0.9rem 0rem;
+      /* padding: 0.9rem 0rem; */
       background-color: #ffffff;
       border: 1px solid #ffffff;
-      margin: 5% 10px;
       overflow: auto;
     }
-
+.button{
+  background-color: #F9F9F9;
+    width: 100%;
+    height: 10vh;    position: sticky;
+    top: 0%;
+}
     .ytub-btn {
-        padding: 0.5rem 0.8rem;
+      position: sticky;
+      /* top: 5%; */
+      z-index: 4;
+          padding: 0.5rem 0.8rem;
         font-size: 1rem;
         border-radius: 15px;
         border: 1px solid #e5e5e5;

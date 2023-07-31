@@ -225,3 +225,8 @@ hr{
     /* height: 40vh; */
     display: inline-block;
 }
+footer{
+    position: fixed;
+    bottom: 0%;
+    right: 2%;
+}

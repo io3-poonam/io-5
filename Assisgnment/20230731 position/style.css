@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.position{
+    position: fixed;
+    top: 50%;
+    left: 1%;
+}
+.position img{
+    display: block;
+    margin: 58% 0;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    background-color:rgb(251, 248, 248);
+    border: 1px solid black;
+}
+.first-india{
+    position: sticky;
+    top: 0%;
+    background-color: rgb(251, 248, 248);
+    font-size: 7rem;
+    text-align: center;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    line-height: 100px;
+}
+.flex-h3{
+    position: sticky;
+    top: 14%;
+    background-color: rgb(251, 248, 248);
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.heading-3-newsPaper{
+    word-spacing: 2px;
+    text-transform: uppercase;
+}
+.main-header{
+    position: sticky;
+    top: 18%;
+    background-color: rgb(251, 248, 248);
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color:rgb(246 246 250);
+}
+.rocket-launch{
+    margin-top: -7%;
+    width: 10%;
+    height: 18vh;
+}
+.header{
+    padding: 5px;
+    width: 210px;
+    height: 115px;
+    margin: 10px 6px;
+    background-color: aliceblue;
+word-wrap:  break-word;
+text-align: justify;
+}
+.header-100th{
+    font-size: 2rem;
+    word-wrap: break-word;
+    width: 20%;
+    font-weight: 900;
+    padding: 8px;
+    text-align: end;
+}
+ .title{
+    
+    padding: 5px 25px;
+    text-transform: uppercase;
+    line-height: 66px;
+    font-size: 4.5rem;
+    text-align: center;
+    word-break: break-word;
+}
+
+/* ul tag start */
+.ul,.center-part{
+    display: flex;
+padding: 5px;
+}
+.center-part{
+    width: 100%;
+}
+.ul{
+    width: 100%;
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    padding: 5px 20px;
+}
+.li{
+    padding:1px 32px 0 10px;
+    text-transform: uppercase;
+    list-style-image:url("./circle-solid.svg") ;
+}
+.Vikram-img{
+background-color: rgb(251, 248, 248);
+ padding-left:1%;
+
+}
+.first-para,.second-para,.third-para,.forth-para,.fifth-para{
+    text-indent: 5%;
+    /* word-wrap: break-word; */
+    text-align: justify;
+    padding: 1%;
+}
+.display-inline-block{
+    display: inline-block;
+    width: 25%;
+    height: 44rem;
+    border-top: 1px solid;
+}
+ .thirth-para , .second-para{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+} 
+.img-second{
+    width: 75%;
+    height: 40rem;
+}
+.first-para:first-letter{
+    font-size: 300%;
+    color: red;
+    float: left;
+  }
+.last-para{
+    display: flex;
+    
+}
+.position-sticky{
+    position: sticky;
+    top: 13%;
+    background-color: rgb(251, 248, 248);
+}
+ .title1{
+    padding: 5px 10px;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-size: 1.5rem;
+    text-align: center;
+    word-break: break-word;
+}
+.position-rel-abu{
+    /* position: relative; */
+    display: flex;
+    margin-left: 26%;
+    margin-top:-11% ;
+}
+.event-image{
+    /* position: absolute;
+    top: -13rem; */
+    margin-left: 1%;
+    width: 25%; 
+}
+.cite{
+    margin-top: 9%;
+    margin-left: 1%;
+    /* 
+    position: absolute; */
+    /* top: -3rem; */
+    /* right: 1%; */
+}
+.PARA-CITE{
+    margin: 9% 1% 0 0;
+}
+.bottom-border{
+    border-bottom: 1px solid rgb(116, 111, 111);
+    margin: 1% ;
+}
+.lAST-TITLE{
+    width: 100%;display: flex;
+}
+.device-width-display{
+    display: flex;
+    flex-direction: row;
+}
+.last-para .newspaper_1{
+    width: 40%;
+    height: 50vh;
+    padding: 1%;
+    overflow: auto;
+    margin: 1%;
+}
+.last-para .newspaper_2{
+    width: 50%;
+    height: 50vh;
+    padding: 1%;
+    overflow: auto;
+    margin: 1%;
+}
+.newspaper_1 img, .newspaper_2 img{
+    width: 100%;
+    height: 35vh;
+}
+hr{
+    margin: 1% 0;
+}
+.fire-image{
+    /* width: 25%; */
+    /* height: 50vh; */
+}
+.img-para{
+    width: 30%;
+}
+.last-image-1{
+    width: 40%;
+    padding: 1%;
+    margin: 1%;
+    /* height: 40vh; */
+}
+.last-para-1{
+    padding: 1%;
+    margin: 1%;
+    /* width: 50%; */
+    /* height: 40vh; */
+    display: inline-block;
+}

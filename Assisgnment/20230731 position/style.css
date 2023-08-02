@@ -5,7 +5,7 @@
 }
 .position{
     position: fixed;
-    top: 50%;
+    top: 10%;
     left: 1%;
 }
 .position img{
@@ -229,4 +229,11 @@ footer{
     position: fixed;
     bottom: 0%;
     right: 2%;
+}
+i{
+    background-color: aqua;
+    width: 2rem;
+    height: 2rem;
+    padding: 9px;
+    margin: 30%;
 }

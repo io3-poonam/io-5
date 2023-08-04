@@ -56,10 +56,10 @@ body{
     border-radius: 50%;
 }
 .eyes-left{
-    left: 33%;
+    left: 29%;
 }
 .eyes-right{
-    right:13%;
+    right:16%;
 }
 .eyes-left-center-part, .eyes-right-center-part{
     position: absolute;
@@ -126,7 +126,7 @@ body{
     width: 3.5rem;
     height: 4rem;
     left: 65%;
-    transform: rotate(23deg);
+    transform: rotate(133deg);
     top: 16%;
 
 }
@@ -140,11 +140,11 @@ body{
     left: 8.5rem;
 }
 .upper-hair-2{
-    width: 4.3rem;
-    height: 4rem;
-    left: 11.1rem;
-    transform: rotate(23deg);
-    top: 45%;
+    width: 3.9rem;
+    height: 3.9rem;
+    left: 11.2rem;
+    transform: rotate(-7deg);
+    top: 53%;
 }
 .stomach{
     position: relative;

@@ -232,3 +232,20 @@
             text-decoration: line-type style color thickness
             text-decoration: line-though wavy white 2px
    -->
+   <!--
+    Transition
+        use to transit(changing one state to another state) 
+        transition-property
+            target any css property on which you want to apply transition(animation)
+                transition-property: width;
+        transition-duration
+            timing of animation(transition)
+        transition-timing-function
+                speed of transition
+            linear: transit in same speed
+            ease-in: fast start- slow end
+            ease-out: slow start-fast end
+            ease-in-out: slow fast slow
+        transition-delay: 2s
+            to put any delay to start transition
+  -->

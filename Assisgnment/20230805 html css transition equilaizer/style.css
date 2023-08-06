@@ -1,0 +1,736 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: aliceblue;
+}
+h1{
+    text-align: center;
+}
+/* .layer{
+      width: 2%;
+      height: 5rem;
+      background-color: aquamarine;
+      border: 1px solid black;
+  } */
+.music_Layer {
+  width: 2%;
+  background-color: antiquewhite;
+  height: 10rem;
+  margin: 0px 4px;
+  border: 1px solid black;
+}
+/* transition: transition-property transition-duration transition-timing-function transition-delay; */
+.layer-1 {
+  height: 13rem;
+
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: 1s;
+  background-color: rgb(109, 3, 100);
+}
+.layer-1:hover {
+  height: 25rem;
+  background-image: linear-gradient(
+    to top right,
+    rgb(49, 2, 2),
+    rgb(205, 120, 10),
+    rgb(207, 11, 135)
+  );
+}
+.layer-2 {
+  height: 26rem;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+  background-color: rgb(109, 3, 100);
+ 
+}
+.layer-2:hover {
+  height: 18rem;
+  background-image: linear-gradient(
+    to top right,
+    rgb(49, 2, 2),
+    rgb(205, 120, 10),
+    rgb(207, 11, 135)
+  );
+}
+.layer-3 {
+  height: 21rem;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+  background-color: rgb(109, 3, 100);
+}
+.layer-3:hover {
+  height: 32rem;
+  background-image: linear-gradient(
+    to top right,
+    rgb(49, 2, 2),
+    rgb(205, 120, 10),
+    rgb(207, 11, 135)
+  );
+}
+
+.layer-4 {
+  height: 38rem;
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  background-color: rgb(109, 3, 100);
+}
+.layer-4:hover {
+  height: 22rem;
+  background-image: linear-gradient(
+    to top right,
+    rgb(49, 2, 2),
+    rgb(205, 120, 10),
+    rgb(207, 11, 135)
+  );
+}
+.layer-5 {
+  height: 18rem;
+  transition-property: all;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  background-color: rgb(109, 3, 100);
+}
+.layer-5:hover {
+  height: 38rem;
+  background-image: linear-gradient(
+    to top right,
+    rgb(49, 2, 2),
+    rgb(205, 120, 10),
+    rgb(207, 11, 135)
+  );
+}
+.layer-6 {
+  height: 12rem;
+  transition-property: all;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  background-color: rgb(109, 3, 100);
+}
+.layer-6:hover {
+  height: 25rem;
+  background-image: linear-gradient(
+    to top right,
+    rgb(49, 2, 2),
+    rgb(205, 120, 10),
+    rgb(207, 11, 135)
+  );
+}
+.layer-7 {
+  height: 6rem;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  background-color: rgb(109, 3, 100);
+}
+.layer-7:hover {
+  height: 20rem;
+  background-image: linear-gradient(
+    to top right,
+    rgb(49, 2, 2),
+    rgb(205, 120, 10),
+    rgb(207, 11, 135)
+  );
+}
+.layer-8 {
+    height: 18rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-8:hover {
+    height: 8rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-9 {
+    height: 15rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-9:hover {
+    height: 25rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-10 {
+    height: 8rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-10:hover {
+    height: 18rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-11 {
+    height: 11rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-11:hover {
+    height: 28rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-12 {
+    height: 18rem;
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-12:hover {
+    height: 8rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+
+  .layer-13 {
+    height: 22rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-13:hover {
+    height: 15rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-14 {
+    height: 12rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-14:hover {
+    height: 30rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-15 {
+    height: 30rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-15:hover {
+    height: 18rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-16 {
+    height: 8rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-16:hover {
+    height: 28rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-17 {
+    height: 22rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-17:hover {
+    height: 15rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-18 {
+    height: 18rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-18:hover {
+    height: 28rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-19 {
+    height: 11rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-19:hover {
+    height: 28rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-20 {
+    height: 28rem;
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-20:hover {
+    height: 8rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+
+  .layer-21 {
+    height: 22rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-21:hover {
+    height: 15rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-22 {
+    height: 12rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-22:hover {
+    height: 30rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-23 {
+    height: 30rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-23:hover {
+    height: 18rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-24 {
+    height: 38rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-24:hover {
+    height: 8rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-24 {
+    height: 17rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-24:hover {
+    height: 25rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-25 {
+    height: 13rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-25:hover {
+    height: 40rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-26 {
+    height: 11rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-26:hover {
+    height: 38rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-27 {
+    height: 18rem;
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-27:hover {
+    height: 28rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+
+  .layer-28 {
+    height: 40rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-28:hover {
+    height: 15rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-29 {
+    height: 12rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-29:hover {
+    height: 30rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-30 {
+    height: 30rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-30:hover {
+    height: 18rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-31 {
+    height: 28rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-31:hover {
+    height: 40rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-32 {
+    height: 8rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-32:hover {
+    height: 38rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-33 {
+    height: 35rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-33:hover {
+    height: 40rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-34 {
+    height: 18rem;
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-34:hover {
+    height: 25rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+
+  .layer-35 {
+    height: 33rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-35:hover {
+    height: 15rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-36 {
+    height: 25rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-36:hover {
+    height: 35rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-37 {
+    height: 12rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-37:hover {
+    height: 45rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-38 {
+    height: 8rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-38:hover {
+    height: 38rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-39 {
+    height: 18rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-39:hover {
+    height: 48rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+  .layer-40 {
+    height: 8rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    background-color: rgb(109, 3, 100);
+  }
+  .layer-40:hover {
+    height: 38rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }
+
+
+
+

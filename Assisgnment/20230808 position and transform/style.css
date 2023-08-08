@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.Header {
+  background-color: gray;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5% 0 1% 1%;
+}
+.input-section {
+  display: flex;
+}
+input {
+  padding: 10% 100% 10% 22%;
+  margin: 1%;
+  border-radius: 2rem;
+  font-size: 16px;
+}
+.icons-glass {
+  position: absolute;
+  top: 1.3rem;
+  left: 2%;
+  font-size: 20px;
+}
+.icons {
+  /* position: relative;
+    top: 0;
+    left: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 15%;
+  color: white;
+  padding: 0 2%;
+}
+.fa-user-group,
+.fa-facebook-messenger,
+.fa-earth-europe {
+  font-size: 24px;
+}
+.user-group-icon,
+.facebook-messenger-icon,
+.earth-europe-icon {
+  position: absolute;
+  color: #faf5f5;
+  background-color: red;
+  border-radius: 2px;
+  padding: 3px;
+  font-size: 10px;
+  top: 1%;
+}
+.user-group-icon {
+  right: 9%;
+}
+.facebook-messenger-icon {
+  right: 6%;
+}
+.earth-europe-icon {
+  right: 3%;
+}
+/* hover icons visible and hidden */
+.visible,
+.Social-Icons-visible {
+  position: fixed;
+  top: 20%;
+  background-color: #88a0cf;
+  color: #ffffff;
+  padding: 5px 8px;
+  font-size: 1.5rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+.Social-Icons-visible {
+  opacity: 0;
+  transform: translateY(0%);
+  transform: translateX(-50%);
+  transition: 1s ease-in-out;
+}
+.Social-Icons-visible:hover {
+  opacity: 1;
+  transform: translateX(0%);
+  background-color: #415f9a;
+  color: #ffffff;
+}
+.visible:hover {
+  display: none;
+}
+.visible-telegram,
+.Social-Icons-visible-telegram {
+  position: fixed;
+  top: 25.1%;
+  background-color: #88a0cf;
+
+  color: #ffffff;
+  padding: 5px;
+  font-size: 1.5rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+.Social-Icons-visible-telegram {
+  opacity: 0;
+  transform: translateY(0%);
+  transform: translateX(-50%);
+  transition: 1s ease-in-out;
+}
+.Social-Icons-visible-telegram:hover {
+  background-color: #333435;
+  opacity: 1;
+  transform: translateX(0%);
+}
+.visible-telegram:hover {
+  display: none;
+}
+.visible-instagram,
+.Social-Icons-visible-instagram {
+  position: fixed;
+  top: 30.2%;
+  background-color: #851f87;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 1.5rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+.Social-Icons-visible-instagram {
+  opacity: 0;
+  transform: translateY(0%);
+  transform: translateX(-50%);
+  transition: 1s ease-in-out;
+}
+.Social-Icons-visible-instagram:hover {
+  opacity: 1;
+  transform: translateX(0%);
+  background-color: #c80808;
+}
+.visible-instagram:hover {
+  display: none;
+}
+.visible-linkedin,
+.Social-Icons-visible-linkedin {
+  position: fixed;
+  top: 35.4%;
+  background-color: #415f9a;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 1.5rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+.Social-Icons-visible-linkedin {
+  opacity: 0;
+  transform: translateY(0%);
+  transform: translateX(-50%);
+  transition: 1s ease-in-out;
+}
+.Social-Icons-visible-linkedin:hover {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.visible-linkedin:hover {
+  display: none;
+}
+.visible-pinterest,
+.Social-Icons-visible-pinterest {
+  position: fixed;
+  top: 40.6%;
+  transform: translateX(0%);
+  background-color: #d14a4a;
+
+  color: #ffffff;
+  padding: 6px;
+  font-size: 1.5rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+.visible {
+  /* top: 10%; */
+}
+
+.Social-Icons-visible-pinterest {
+  opacity: 0;
+  transform: translateY(0%);
+  transform: translateX(-50%);
+  transition: 1s ease-in-out;
+}
+.Social-Icons-visible-pinterest:hover {
+  opacity: 1;
+  transform: translateX(0%);
+  background-color: #c80808;
+  transform: translateX(0%);
+}
+.visible-pinterest:hover {
+  display: none;
+}
+
+.visible-twitter,
+.Social-Icons-visible-twitter {
+  position: fixed;
+  top: 46%;
+  background-color: #415f9a;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 1.5rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+.visible {
+  /* top: 10%; */
+}
+
+.Social-Icons-visible-twitter {
+  opacity: 0;
+  transform: translateY(0%);
+  transform: translateX(-50%);
+  transition: 1s ease-in-out;
+}
+.Social-Icons-visible-twitter:hover {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.visible-twitter:hover {
+  display: none;
+}
+
+/* second icons social media */
+.icon-social-med {
+  text-align: center;
+  padding: 1% 0;
+  position: fixed;
+  top: 50%;
+  width: 7%;
+  transition: left 2s ease-in-out;
+  left: -4.5%;
+}
+.icon-social-med i {
+  padding: 0% 5% 0 10%;
+}
+.social-link {
+  display: flex;
+  width: 90%;
+  padding: 5%;
+  text-decoration: none;
+  background-color: #415f9a;
+  color: #ffffff;
+  border-radius: 0 7px 7px 0;
+}
+.icon-social-med:hover {
+  left: 0%;
+}

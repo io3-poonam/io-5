@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle bar</title>
+    <style>
+        .main{
+            width:25rem;
+            height: 25rem;
+            border-radius: 50%;
+            background-color: #484648;
+            margin: 5% auto;
+position: relative;
+top: 0;
+left: 0;
+animation: circle-rotate 5s ease-in-out 0s infinite normal ;
+        }
+        @keyframes circle-rotate {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .child-div{
+            width:15rem;
+            height: 15rem;
+            border-radius: 50%;
+            background-color: #fbf7f7;
+position: absolute;
+top: 20%;
+left: 20%;
+        }
+        .rotate-child{
+            width:5rem;
+            height: 5rem;
+            border-radius: 50%;
+            background-color: #a72b2b;
+position: absolute;
+top: 1px;
+left: 36%;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Circle bar</h1>
+  <div class="main">
+    <div class="child-div">
+    </div>
+    <div class="rotate-child"></div>
+
+  </div>  
+</body>
+</html>

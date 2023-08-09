@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clock</title>
+    <style>
+      body {
+        background-color: #afa0a0;
+      }
+      .main {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+      background-image:   linear-gradient(45deg,gray,white);        margin: 5% auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        box-shadow: 1px 1px 10px 5px rgb(28, 28, 28);
+      }
+      .child-div {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: #181818;
+        position: absolute;
+        top: 40%;
+        left: 42%;
+        animation: circle-rotate 1ms ease-in-out 0s infinite normal;
+        /* z-index: 1; */
+      }
+      .circle {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: #181818;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+      }
+      @keyframes circle-rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .minute {
+        width: 15%;
+        height: 8.5rem;
+        border-radius: 0 0 50% 50%;
+        background-color: #312f2f;
+        position: absolute;
+        top: 50%;
+        left: 43%;
+      }
+      .second {
+        width: 10%;
+        height: 8.8rem;
+        border-radius: 0 0 50% 50%;
+        background-color: #393030;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: rotate(15deg);
+      }
+      h1 {
+        text-align: center;
+      }
+      .clock-wise {
+        position: absolute;
+        font-size: 1.5rem;
+        font-weight: 900;
+      }
+      .clock-count-1 {
+        top: 12%;
+        right: 26%;
+      }
+      .clock-count-2 {
+        right: 11%;
+        top: 30%;
+      }
+      .clock-count-3 {
+        right: 4%;
+        top: 50%;
+      }
+      .clock-count-4 {
+        right: 12%;
+        top: 70%;
+      }
+      .clock-count-5 {
+        right: 26%;
+        bottom: 10%;
+      }
+      .clock-count-6 {
+        bottom: 2%;
+        left: 50%;
+      }
+      .clock-count-7 {
+        left: 26%;
+        bottom: 10%;
+      }
+      .clock-count-8 {
+        left: 12%;
+        top: 70%;
+      }
+      .clock-count-9 {
+        top: 50%;
+        left: 4%;
+      }
+      .clock-count-10 {
+        left: 11%;
+        top: 30%;
+      }
+      .clock-count-11 {
+        top: 12%;
+        left: 26%;
+      }
+      .clock-count-12 {
+        top: 2%;
+        left: 48%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Clock</h1>
+    <div class="main">
+      <div class="clock-wise clock-count-1">1</div>
+      <div class="clock-wise clock-count-2">2</div>
+      <div class="clock-wise clock-count-3">3</div>
+      <div class="clock-wise clock-count-4">4</div>
+      <div class="clock-wise clock-count-5">5</div>
+      <div class="clock-wise clock-count-6">6</div>
+      <div class="clock-wise clock-count-7">7</div>
+      <div class="clock-wise clock-count-8">8</div>
+      <div class="clock-wise clock-count-9">9</div>
+      <div class="clock-wise clock-count-10">10</div>
+      <div class="clock-wise clock-count-11">11</div>
+      <div class="clock-wise clock-count-12">12</div>
+
+      <div class="child-div">
+        <div class="minute"></div>
+        <div class="second"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+  </body>
+</html>

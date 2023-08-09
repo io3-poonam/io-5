@@ -24,10 +24,12 @@ h1{
   height: 10rem;
   margin: 0px 4px;
   border: 1px solid black;
+
 }
 /* transition: transition-property transition-duration transition-timing-function transition-delay; */
 .layer-1 {
   height: 13rem;
+  animation: music 2s linear 0s infinite reverse ;
 
   transition-property: all;
   transition-duration: 2s;
@@ -35,14 +37,22 @@ h1{
   transition-delay: 1s;
   background-color: rgb(109, 3, 100);
 }
+@keyframes music {
+  from{
+    width: 2%;
+    height: 13rem;
+  }
+  to{
+    height: 25rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
+  }}
 .layer-1:hover {
-  height: 25rem;
-  background-image: linear-gradient(
-    to top right,
-    rgb(49, 2, 2),
-    rgb(205, 120, 10),
-    rgb(207, 11, 135)
-  );
+  
 }
 .layer-2 {
   height: 26rem;

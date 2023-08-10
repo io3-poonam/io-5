@@ -1,0 +1,675 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0;
+}
+
+.main-solar-system {
+  background-image: url(./image/background.gif);
+  width: 100%;
+  height: 100vh;
+}
+.main_part_solar_system {
+  background-image: url(./image/background.gif);
+     top: 3%;
+  width: 70%;
+  height: 100vh;
+  margin: auto;
+  position: relative;
+}
+.sun {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+.sun-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.mercury {
+  width: 11rem;
+  height: 11rem;
+  position: absolute;
+  top: 35%;
+  left: 41.5%;
+  border-radius: 50%;
+    border: 2px dotted #ffffff;
+  animation: mercury-rotate 15s linear 0s infinite;
+}
+.mercury-loader {
+    width: 13%;
+    height: 13%;
+    position: absolute;
+    top: 21%;
+    border-radius: 50%;
+}
+@keyframes mercury-rotate {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  10% {
+    transform: rotate(-30deg);
+  }
+
+  20% {
+    transform: rotate(-70deg);
+  }
+
+  30% {
+    transform: rotate(-95deg);
+  }
+
+  40% {
+    transform: rotate(-130deg);
+  }
+
+  50% {
+    transform: rotate(-150deg);
+  }
+
+  60% {
+    transform: rotate(-185deg);
+  }
+
+  70% {
+    transform: rotate(-230deg);
+  }
+
+  80% {
+    transform: rotate(-270deg);
+  }
+
+  90% {
+    transform: rotate(-325deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.venus {
+  width: 16rem;
+  height: 16rem;
+  position: absolute;
+  top: 29.5%;
+  left: 38%;
+  border-radius: 50%;
+  border: 2px dotted #ffffff;
+  animation: venus-rotate 18s linear 0s infinite;
+}
+
+.venus-loader {
+    width: 16%;
+    height: 12%;
+    position: absolute;
+    top: 23%;
+    left: 87%;
+  border-radius: 50%;
+}
+@keyframes venus-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(25deg);
+  }
+
+  30% {
+    transform: rotate(89deg);
+  }
+
+  40% {
+    transform: rotate(149deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  70% {
+    transform: rotate(235deg);
+  }
+
+  80% {
+    transform: rotate(280deg);
+  }
+
+  90% {
+    transform: rotate(325deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.earth {
+  width: 21rem;
+  height: 21rem;
+  position: absolute;
+  top: 23.5%;
+  left: 34.5%;
+  border-radius: 50%;
+  border: 2px dotted #ffffff;
+  animation: earth-rotate 23s linear 0s infinite;
+}
+.earth-loader {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    top: 1%;
+    right: 13%;
+    border-radius: 50%;
+}
+@keyframes earth-rotate {
+  0% {
+    transform: rotate(-7deg);
+  }
+
+  10% {
+    transform: rotate(-40deg);
+  }
+
+  20% {
+    transform: rotate(-70deg);
+  }
+
+  30% {
+    transform: rotate(-95deg);
+  }
+
+  40% {
+    transform: rotate(-130deg);
+  }
+
+  50% {
+    transform: rotate(-150deg);
+  }
+
+  60% {
+    transform: rotate(-185deg);
+  }
+
+  70% {
+    transform: rotate(-230deg);
+  }
+
+  80% {
+    transform: rotate(-270deg);
+  }
+
+  90% {
+    transform: rotate(-325deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.moon {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin: auto;
+  top: -1%;
+  left: 70%;
+  border-radius: 50%;
+  border: 1px dotted white;
+  animation: moon-rotate 5s linear 0s infinite;
+}
+.moon-loader  {
+    width: 25%;
+  border-radius: 50%;
+  height: 25%;
+}
+@keyframes moon-rotate {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  10% {
+    transform: rotate(-30deg);
+  }
+
+  20% {
+    transform: rotate(-70deg);
+  }
+
+  30% {
+    transform: rotate(-95deg);
+  }
+
+  40% {
+    transform: rotate(-130deg);
+  }
+
+  50% {
+    transform: rotate(-150deg);
+  }
+
+  60% {
+    transform: rotate(-185deg);
+  }
+
+  70% {
+    transform: rotate(-230deg);
+  }
+
+  80% {
+    transform: rotate(-270deg);
+  }
+
+  90% {
+    transform: rotate(-325deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.mars {
+  width: 26rem;
+  height: 26rem;
+  position: absolute;
+  top: 18%;
+  left: 31%;
+  border: 2px dotted #ffffff;
+  border-radius: 50%;
+  animation: mars-rotate 27s linear 0s infinite;
+}
+
+.mars-loader {
+  width: 17%;
+  height: 15%;
+  position: absolute;
+  border-radius: 50%;
+  left: -7%;
+  top: 50%;
+}
+@keyframes mars-rotate {
+  0% {
+    transform: rotate(-5deg);
+  }
+  5% {
+    transform: rotate(-15deg);
+  }
+  10% {
+    transform: rotate(-30deg);
+  }
+  15% {
+    transform: rotate(-45deg);
+  }
+  20% {
+    transform: rotate(-70deg);
+  }
+  25% {
+    transform: rotate(-80deg);
+  }
+  30% {
+    transform: rotate(-95deg);
+  }
+  35% {
+    transform: rotate(-110deg);
+  }
+  40% {
+    transform: rotate(-130deg);
+  }
+  45% {
+    transform: rotate(-145deg);
+  }
+  50% {
+    transform: rotate(-150deg);
+  }
+  55% {
+    transform: rotate(-165deg);
+  }
+  60% {
+    transform: rotate(-185deg);
+  }
+  65% {
+    transform: rotate(-210deg);
+  }
+  70% {
+    transform: rotate(-230deg);
+  }
+  75% {
+    transform: rotate(-255deg);
+  }
+  80% {
+    transform: rotate(-270deg);
+  }
+  85% {
+    transform: rotate(-300deg);
+  }
+  90% {
+    transform: rotate(-325deg);
+  }
+  95% {
+    transform: rotate(-350deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.jupiter {
+  width: 31rem;
+  height: 31rem;
+  position: absolute;
+  top: 12.5%;
+  left: 27.5%;
+  border: 2px dotted white;
+  border-radius: 50%;
+  animation: jupiter-rotate 30s linear 0s infinite;
+}
+.juipter-loader {
+  position: absolute;
+  width: 13%;
+  height: 13%;
+  bottom: 3%;
+  right: 12%;
+  filter: brightness(1.1);
+  border-radius: 50%;
+}
+
+@keyframes jupiter-rotate {
+  0% {
+    transform: rotate(-0deg);
+  }
+
+  10% {
+    transform: rotate(-40deg);
+  }
+
+  20% {
+    transform: rotate(-70deg);
+  }
+
+  30% {
+    transform: rotate(-95deg);
+  }
+
+  40% {
+    transform: rotate(-130deg);
+  }
+
+  50% {
+    transform: rotate(-150deg);
+  }
+
+  60% {
+    transform: rotate(-185deg);
+  }
+
+  70% {
+    transform: rotate(-230deg);
+  }
+
+  80% {
+    transform: rotate(-270deg);
+  }
+
+  90% {
+    transform: rotate(-325deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.satrun {
+  width: 36rem;
+  height: 36rem;
+  position: absolute;
+  border: 2px dotted white;
+  border-radius: 50%;
+  top: 7%;
+  left: 24%;
+  animation: satrun-rotate 50s linear 0s infinite;
+}
+.satrun-loader {
+  position: absolute;
+  width: 13%;
+  height: 13%;
+  right: 6%;
+  top: 7%;
+  transform: rotate(0deg);
+}
+@keyframes satrun-rotate {
+  0% {
+    transform: rotate(-5deg);
+  }
+  5% {
+    transform: rotate(-15deg);
+  }
+  10% {
+    transform: rotate(-30deg);
+  }
+  15% {
+    transform: rotate(-45deg);
+  }
+  20% {
+    transform: rotate(-70deg);
+  }
+  25% {
+    transform: rotate(-80deg);
+  }
+  30% {
+    transform: rotate(-95deg);
+  }
+  35% {
+    transform: rotate(-110deg);
+  }
+  40% {
+    transform: rotate(-130deg);
+  }
+  45% {
+    transform: rotate(-145deg);
+  }
+  50% {
+    transform: rotate(-150deg);
+  }
+  55% {
+    transform: rotate(-165deg);
+  }
+  60% {
+    transform: rotate(-185deg);
+  }
+  65% {
+    transform: rotate(-210deg);
+  }
+  70% {
+    transform: rotate(-230deg);
+  }
+  75% {
+    transform: rotate(-255deg);
+  }
+  80% {
+    transform: rotate(-270deg);
+  }
+  85% {
+    transform: rotate(-300deg);
+  }
+  90% {
+    transform: rotate(-325deg);
+  }
+  95% {
+    transform: rotate(-350deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.uranus {
+  width: 41rem;
+  height: 41rem;
+  position: absolute;
+  top: 2%;
+  left: 20.5%;
+  border: 2px dotted #ffffff;
+  border-radius: 50%;
+  animation: uranus-rotate 33s linear 0s infinite;
+}
+.uranus-loader {
+    top: 70%;
+    left: 1%;
+    position: absolute;
+    width: 10%;
+    border-radius: 50%;
+    height: 9%;
+}
+@keyframes uranus-rotate {
+  0% {
+    transform: rotate(-5deg);
+  }
+  5% {
+    transform: rotate(-15deg);
+  }
+  10% {
+    transform: rotate(-30deg);
+  }
+  15% {
+    transform: rotate(-45deg);
+  }
+  20% {
+    transform: rotate(-70deg);
+  }
+  25% {
+    transform: rotate(-80deg);
+  }
+  30% {
+    transform: rotate(-95deg);
+  }
+  35% {
+    transform: rotate(-110deg);
+  }
+  40% {
+    transform: rotate(-130deg);
+  }
+  45% {
+    transform: rotate(-145deg);
+  }
+  50% {
+    transform: rotate(-150deg);
+  }
+  55% {
+    transform: rotate(-165deg);
+  }
+  60% {
+    transform: rotate(-185deg);
+  }
+  65% {
+    transform: rotate(-210deg);
+  }
+  70% {
+    transform: rotate(-230deg);
+  }
+  75% {
+    transform: rotate(-255deg);
+  }
+  80% {
+    transform: rotate(-270deg);
+  }
+  85% {
+    transform: rotate(-300deg);
+  }
+  90% {
+    transform: rotate(-325deg);
+  }
+  95% {
+    transform: rotate(-350deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.neptune {
+  width: 46rem;
+  height: 46rem;
+  position: absolute;
+  top: -3%;
+  left: 17%;
+  border: 2px dotted #ffffff;
+  border-radius: 50%;
+  animation: neptune-rotate 36s linear 0s infinite;
+}
+.neptune-loader {
+    position: absolute;
+    width: 7%;
+    border-radius: 50%;
+    height: 7%;
+    left: 8%;
+    top: 14%;
+}
+@keyframes neptune-rotate {
+  0% {
+    transform: rotate(-5deg);
+  }
+  5% {
+    transform: rotate(-15deg);
+  }
+  10% {
+    transform: rotate(-30deg);
+  }
+  15% {
+    transform: rotate(-45deg);
+  }
+  20% {
+    transform: rotate(-70deg);
+  }
+  25% {
+    transform: rotate(-80deg);
+  }
+  30% {
+    transform: rotate(-95deg);
+  }
+  35% {
+    transform: rotate(-110deg);
+  }
+  40% {
+    transform: rotate(-130deg);
+  }
+  45% {
+    transform: rotate(-145deg);
+  }
+  50% {
+    transform: rotate(-150deg);
+  }
+  55% {
+    transform: rotate(-165deg);
+  }
+  60% {
+    transform: rotate(-185deg);
+  }
+  65% {
+    transform: rotate(-210deg);
+  }
+  70% {
+    transform: rotate(-230deg);
+  }
+  75% {
+    transform: rotate(-255deg);
+  }
+  80% {
+    transform: rotate(-270deg);
+  }
+  85% {
+    transform: rotate(-300deg);
+  }
+  90% {
+    transform: rotate(-325deg);
+  }
+  95% {
+    transform: rotate(-350deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

@@ -18,6 +18,38 @@
         left: 0;
         box-shadow: 1px 1px 10px 5px rgb(28, 28, 28);
       }
+      .circle-hours {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color:  #0a0a0a;
+        position: absolute;
+        top: 40%;
+        left: 42%;
+        animation: circle-sec 80s ease-in-out 0s infinite normal;
+        
+      }
+     
+      @keyframes circle-sec {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .hours {
+        width: 14%;
+        height: 7rem;
+        border-radius: 30% 30% 0% 0%;
+        background-color:  #0a0a0a;
+        position: absolute;
+        z-index: -1;
+        top: 0%;
+        left: 100%;
+        transform: rotate(148deg);
+      }
+
       .child-div {
         width: 3rem;
         height: 3rem;
@@ -26,17 +58,8 @@
         position: absolute;
         top: 40%;
         left: 42%;
-        animation: circle-rotate 1ms ease-in-out 0s infinite normal;
+        animation: circle-rotate 30s ease-in-out 0s infinite normal;
         /* z-index: 1; */
-      }
-      .circle {
-        width: 3rem;
-        height: 3rem;
-        border-radius: 50%;
-        background-color: #181818;
-        position: absolute;
-        top: 0%;
-        left: 0%;
       }
       @keyframes circle-rotate {
         from {
@@ -46,22 +69,43 @@
           transform: rotate(360deg);
         }
       }
-
       .minute {
-        width: 15%;
-        height: 8.5rem;
-        border-radius: 0 0 50% 50%;
-        background-color: #312f2f;
+        width: 10%;
+        height: 7rem;
+        border-radius: 0 0 40% 40%;
+        background-color: #0a0a0a;
         position: absolute;
         top: 50%;
         left: 43%;
       }
-      .second {
-        width: 10%;
-        height: 8.8rem;
-        border-radius: 0 0 50% 50%;
-        background-color: #393030;
+     
+      .circle {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color:  #0a0a0a;
         position: absolute;
+        top: 40%;
+        left: 42%;
+        animation: circle-sec 10s linear  infinite normal;
+        
+      }
+     
+      @keyframes circle-sec {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .second {
+        width: 7%;
+        height: 8rem;
+        border-radius: 0 0 50% 50%;
+        background-color:  #0a0a0a;
+        position: absolute;
+        z-index: -1;
         top: 50%;
         left: 0%;
         transform: rotate(15deg);
@@ -139,11 +183,17 @@
       <div class="clock-wise clock-count-10">10</div>
       <div class="clock-wise clock-count-11">11</div>
       <div class="clock-wise clock-count-12">12</div>
-
+      <div class="circle-hours">
+        <div class="hours"></div>
+       
+        </div>
       <div class="child-div">
         <div class="minute"></div>
-        <div class="second"></div>
-        <div class="circle"></div>
+       
+        </div>
+        <div class="circle">
+          <div class="second"></div>
+  
       </div>
     </div>
   </body>

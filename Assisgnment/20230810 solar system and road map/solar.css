@@ -48,7 +48,7 @@
     border-radius: 50%;
 }
 @keyframes mercury-rotate {
-  0% {
+  /* 0% {
     transform: rotate(-5deg);
   }
 
@@ -90,6 +90,12 @@
 
   100% {
     transform: rotate(-360deg);
+  } */
+  from{
+    transform: rotate(-0deg);
+  }
+  to{
+    transform: rotate(-360deg);
   }
 }
 .venus {
@@ -112,7 +118,7 @@
   border-radius: 50%;
 }
 @keyframes venus-rotate {
-  0% {
+  /* 0% {
     transform: rotate(0deg);
   }
 
@@ -146,6 +152,12 @@
 
   100% {
     transform: rotate(360deg);
+  } */
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
   }
 }
 .earth {
@@ -167,7 +179,7 @@
     border-radius: 50%;
 }
 @keyframes earth-rotate {
-  0% {
+  /* 0% {
     transform: rotate(-7deg);
   }
 
@@ -209,6 +221,12 @@
 
   100% {
     transform: rotate(-360deg);
+  } */
+  from{
+    transform: rotate(-0deg);
+  }
+  to{
+    transform: rotate(-360deg);
   }
 }
 .moon {
@@ -228,7 +246,7 @@
   height: 25%;
 }
 @keyframes moon-rotate {
-  0% {
+  /* 0% {
     transform: rotate(-5deg);
   }
 
@@ -269,6 +287,12 @@
   }
 
   100% {
+    transform: rotate(-360deg);
+  } */
+  from{
+    transform: rotate(-0deg);
+  }
+  to{
     transform: rotate(-360deg);
   }
 }

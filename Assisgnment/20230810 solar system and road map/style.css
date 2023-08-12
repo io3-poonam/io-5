@@ -133,33 +133,33 @@
 .car-2 {
   position: absolute;
   z-index: 2;
-  top: 59%;
+  top: 60%;
   right: 0%;
-  width: 45px;
-  height: 25px;
+  width: 43px;
+  height: 22px;
   filter: brightness(1.9);
-  animation: car-race 100s ease-in-out 1s infinite normal;
+  animation: car-race 20s ease-in-out 1s infinite normal;
 }
 @keyframes car-race {
   0% {
-    top: 59%;
+    top: 60%;
     right: 0%;
   }
 
   10% {
-    top: 59%;
+    top: 60%;
     right: 38%;
   }
   20% {
     top: 54%;
-    right: 38%;
+    right: 39%;
   }
   25% {
-    transform: rotate(75deg);
+    transform: rotate(90deg);
   }
   35% {
     top: 10%;
-    right: 37%;
+    right: 39%;
   }
   40% {
     transform: rotate(205deg);
@@ -192,77 +192,80 @@
   position: absolute;
   z-index: 2;
   bottom: 0%;
-  left: 25%;
-  width: 25px;
-  height: 50px;
+  left: 25.5%;
+  width: 23px;
+  height: 45px;
   filter: brightness(1.5);
-  animation: car-race-1 80s ease-in-out 3s infinite normal;
+  animation: car-race-1 100s ease-in-out 3s infinite normal;
 }
 @keyframes car-race-1 {
+ 
+  
   0% {
     bottom: 0%;
-    left: 25%;
+    left: 25.5%;
   }
   6% {
-    transform: rotate(0deg);
+    /* transform: rotate(0deg); */
     bottom: 34%;
-    left: 25%;
+    left: 25.5%;
   }
   10% {
     transform: rotate(90deg);
   }
   16% {
-    bottom: 34%;
-    left: 40%;
+    bottom: 35%;
+    left: 41%;
   }
   20% {
     transform: rotate(5deg);
   }
   26% { transform: rotate(0deg);
-    bottom: 69%;
-    left: 41%;
+  
+      bottom: 69%;
+      left: 41%;
+  
   }
   30% {
     transform: rotate(90deg);
   }
   36% {
-    bottom: 69%;
-    left: 59%;
-  }
+    bottom: 70.5%;
+    left: 59%;  }
   40% {
     transform: rotate(90deg);
   }
   46% {
-    bottom: 69%;
+    bottom: 70.5%;
     left: 59%;
   }
   50% {
     transform: rotate(175deg);
   }
   56% {
-    bottom: 33%;
+    bottom: 36%;
     left: 59%;
   }
   60% {
     transform: rotate(90deg);
   }
   66% {
-    bottom: 33%;
-    left: 91%;
+    bottom: 35%;
+    left: 92%;
   }
   70% {
     transform: rotate(175deg);
   }
   80% {
-    bottom: -10%;
-    left: 91%;
+    bottom: -7%;
+    left: 92%;
   }
   90% {
-    bottom: -20%;
-    left: -85%;
+    bottom: -7%;
+    left: 25.5%
   }
   100% {
     bottom: 0%;
-    left: 25%;
+    left: 25.5%;
   }
 }

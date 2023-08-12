@@ -543,11 +543,11 @@
 }
 .uranus-loader {
     top: 70%;
-    left: 1%;
+    left: 2%;
     position: absolute;
-    width: 10%;
+    width: 7%;
     border-radius: 50%;
-    height: 9%;
+    height: 7%;
 }
 @keyframes uranus-rotate {
   0% {

@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin: 0;font-family: 'Roboto', sans-serif;
 }
 .main-container {
   width: 100%;
@@ -27,13 +27,13 @@ header {
 }
 .header-img img {
   width: 50%;
-  height: 3.5rem;
+  height: 3rem;
 }
 .btn {
   text-transform: capitalize;
   padding: 2% 4%;
   border-radius: 6rem;
-  margin: 3% 1%;
+  margin: 3% 3.5%;
   font-size: 100%;
   font-weight: 900;
   border: none;
@@ -175,4 +175,76 @@ line-height: 1.7rem;
 }
 .Co-Founder{
     color: #7b7272;
+}
+/* box-center-elements */
+.box-center-elements{
+  width: 100%;
+  padding-top: 7%;
+}
+.third-para{
+  border-radius: 0% 25% 0% 25%;
+  background-color: #F4EFE5;
+  width: 50%;
+  height: 75vh;
+  margin: auto;
+  padding: 3%;
+}
+.third-para h1{
+  color: #2b434a;
+  line-height: 3rem;
+}
+.third-para ul li{
+color: #7b7272;
+    line-height: 2rem;
+    list-style-type: none;
+}
+ul li::before {
+  content: ".";
+  color: #ff8672;
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5rem;
+  font-size: 2.5rem;
+}
+.btn-section{
+  width: 15%;
+  margin: auto;padding-top: 3%;
+}
+.button{
+  
+    text-transform: capitalize;
+    padding: 6% 20%;
+    border-radius: 6rem;
+    background-color: #ff8672;
+    color: #ffffff;
+    font-size: 100%;
+    font-weight: 900;
+    border: none;
+    outline: none;
+  }
+.div-forth h1{
+  text-align: center;
+  color: #2b434a;
+  padding: 3% 0;
+  font-weight: 900;
+}
+footer{
+  background-color: #f8f7f6;
+
+}
+.footer{
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+.wave1{  
+  position: absolute;
+    /* z-index: -1; */
+    bottom: 0%;
+ 
+}
+.wave{
+  position: absolute;
+  bottom: 7%;
+
 }

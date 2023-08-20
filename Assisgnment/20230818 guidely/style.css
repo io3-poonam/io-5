@@ -97,46 +97,78 @@ line-height: 1.7rem;
   background-color: #ff8672;
   width: 50%;
   height: 60vh;
+  position: relative;
 }
 .main-img-1 {
-  transform: rotate(65deg);
+  transform: rotate(3deg);
   position: absolute;
-  top: 56%;
+  top: 4%;
+  width: 100%;
+  left: -6%;
+  height: 52%;
 }
+
 .main-img-2 {
-  transform: rotate(65deg);
+  transform: rotate(-5deg);
   position: absolute;
-  top: 56%;
+  top: 8%;
+  left: 1%;
+  width: 38%;
 }
 .main-img-3 {
-  transform: rotate(65deg);
+  transform: rotate(2deg);
   position: absolute;
-  top: 56%;
+  top: 37%;
+  left: -9%;
+  width: 51%;
 }
 .main-img-4 {
-  transform: rotate(65deg);
   position: absolute;
-  top: 56%;
+  top: -4%;
+  left: 45%;
+  width: 22%;
+  transform: rotate(21deg);
 }
 .main-img-5 {
-  transform: rotate(65deg);
   position: absolute;
-  top: 56%;
+  top: 8%;
+  width: 70%;
+  right: -12%;
 }
 .main-img-6 {
-  transform: rotate(65deg);
-  position: absolute;
-  top: 56%;
+  transform: rotate(36deg);
+    position: absolute;
+    top: 7%;
+    right: 17%;
+    width: 32%;
 }
 .main-img-7 {
-  transform: rotate(65deg);
   position: absolute;
-  top: 56%;
+  top: 28%;
+  left: 16%;
+  width: 65%;
+  filter: opacity(0.3);
 }
 .main-img-8 {
-  transform: rotate(65deg);
+  transform: rotate(35deg);
   position: absolute;
-  top: 56%;
+  top: 30%;
+  right: -11%;
+  width: 50%;
+  height: 59%;
+}
+.main-img-9{
+  position: absolute;
+    top: 49%;
+    right: 8%;
+    width: 40%;
+    height: 48%;    
+}
+.main-img-10{
+   position: absolute;
+    width: 39%;
+    left: 23%;
+    top: 28%;
 }
 .center-div {
   width: 80%;

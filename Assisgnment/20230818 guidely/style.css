@@ -43,17 +43,26 @@ header {
 }
 .btn-0 {
   background-color: #cae2e4;
-  border: 1px solid #2b434a;
+  border: 2px solid #2b434a;
   color: #2b434a;
 }
+
 .btn-1 {
-  border: 1px solid #cae2e4;
+  border: 2px solid #cae2e4;
   background-color: #f6f8f8;
   color: #2b434a;
+}
+.header-section .anchor-coaches .btn-1:hover{
+  border: 2px solid #2b434a;
+  background-color: #cae2e4;
 }
 .btn-2 {
   background-color: #ff8672;
   color: #ffffff;
+}
+.header-last-btn .anchor-get-Start .btn-2:hover ,.header-last-btn .anchor-Login .btn-2:hover, .main-first-section a button:hover, .btn-section a button:hover   {
+  background-color: #2b434a;
+
 }
 .header-section {
   width: 35%;
@@ -327,15 +336,15 @@ color: #ffffff;
   width: 80%;
   justify-content: space-between;
 }
-.para{
+.para-footer{
   font-size: 0.7rem;
   width: 40%;
 }
-.para span{
+.para-footer span{
   padding: 0 2%;
   text-align: center;
 }
-.para p{
+.para-footer p{
   padding-top: 3%;
   text-align: center;
 }
@@ -343,10 +352,13 @@ color: #ffffff;
   width: 20%;
   font-size: 1.3rem;
 }
-.icon i{
+.icon a i{
   padding: 1%;
-  width: 22%;
+  width: 20%;
+  color: #ffffff;
 }
+.icon a i:hover{
+color: #2b434a;}
 .wave {
  width: 100%;
 } 

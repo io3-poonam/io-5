@@ -572,6 +572,7 @@ footer {
   .footer-section {
     display: flex;
     color: #ffffff;
+    align-items: center;
     width: 100%;
     flex-direction: column;
   }

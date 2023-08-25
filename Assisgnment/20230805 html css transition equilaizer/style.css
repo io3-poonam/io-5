@@ -52,7 +52,13 @@ h1{
     );
   }}
 .layer-1:hover {
-  
+  height: 25rem;
+    background-image: linear-gradient(
+      to top right,
+      rgb(49, 2, 2),
+      rgb(205, 120, 10),
+      rgb(207, 11, 135)
+    );
 }
 .layer-2 {
   height: 26rem;

@@ -249,3 +249,32 @@
         transition-delay: 2s
             to put any delay to start transition
   -->
+   <!--
+    animation:
+      animation-name-> name-of-your-animation
+        animation-name: progress-bar
+      animation-duration-> how many seconds you want to run your animation
+        animation-duration: 5s;
+      animation-delay: after how many seconds you want to start animation
+        animation-delay:1s;
+      animation-timing-function-> How do you want transition flow
+        animation-timing-function:linear;
+        animation-timing-function:ease;
+        animation-timing-function:ease-in;
+        animation-timing-function:ease-out;
+        animation-timing-function:ease-in-out;
+      animation-direction -> how do you want your animation
+        animation-direction: normal;
+        animation-direction: reverse;
+        animation-direction: alternate;
+        animation-direction: alternate-reverse;
+
+
+
+
+      @keyframes animation-name
+          2 methods are used 
+              1. from/to
+              2. percentage
+  -->
+ 

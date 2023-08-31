@@ -1,61 +1,99 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-.conatiner{
-    background-color: aquamarine;
-    max-width: 100%;
-    max-height:100vh ;
-    display: grid;row-gap: 5px;
-    column-gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 5fr repeat(10, 1fr);
-grid-template-areas: "nav nav nav nav"
-"video video video video"
-"details details details details"
-"photo photo p-details p-details"
-" p-details-1 p-details-1 photo-1 photo-1";;
+.conatiner {
+  background-color: aquamarine;
+  max-width: 100%;
+  max-height: 100vh;
+  display: grid;
+  row-gap: 5px;
+  column-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 5fr repeat(10, 1fr);
+  grid-template-areas:
+    "nav nav nav nav"
+    "video video video video"
+    "details details details details"
+    "photo photo p-details p-details"
+    " p-details-1 p-details-1 photo-1 photo-1";
 }
-.items{
-    border: 1px solid black;
-    width: 100%;
-    height: 100%;
+.items {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
 }
-.nav{
-    grid-area: nav;
+.nav {
+  grid-area: nav;
+  background-color: #fff;
 }
-.nav-section{
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    width: 100%;
+.nav-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0.1% auto;
 }
-ul{
-    display: flex;
-    list-style-type: none;
+ul {
+  display: flex;
+  list-style-type: none;
 }
-li{
-    padding: 1% 2%;
-    color: rgb(12, 85, 187);
+ul img {
+  height: 2rem;
+  margin-right: 25%;
 }
-.video{
-    grid-area: video;
-    width: 100%;
-    height: 100vh;
+li {
+  padding: 1% 6%;
+  color: rgb(23, 153, 246);
 }
-.details{
-    grid-area: details;
+.btnlR{
+    width: 20%;
 }
-.photo{
-    grid-area: photo;
+.btnlR button{
+    padding: 2% 1%;
+    margin: 1%;
+    width: 6.5rem;
+    border-radius: 5px;
 }
-.p-details{
-    grid-area: p-details;
+.btnlR .login{
+    background-color: #fff;
+    border: 1px solid rgb(23,153,246);
+    color:  rgb(23,153,246);
 }
-.photo-1{
-    grid-area: photo-1;
+.btnlR .reg{
+    background-color: rgb(23,153,246);
+    border: 1px solid rgb(23,153,246);
+    color: #fff;
 }
-.p-details-1{
-    grid-area: p-details-1;
+.video {
+  grid-area: video;
+  width: 100%;
+  height: 100vh;
+}
+.video img{
+    width: 4%;
+}
+.video button{
+    background-color: rgb(23,153,246);
+    border: 1px solid rgb(23,153,246);
+    color: #fff;
+    padding: 0.5% 1%;
+    width: 6.5rem;
+    border-radius: 5px;
+}
+.details {
+  grid-area: details;
+}
+.photo {
+  grid-area: photo;
+}
+.p-details {
+  grid-area: p-details;
+}
+.photo-1 {
+  grid-area: photo-1;
+}
+.p-details-1 {
+  grid-area: p-details-1;
 }

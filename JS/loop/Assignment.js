@@ -1,4 +1,9 @@
 // 1. write a program to print table from 20 to 30 using nested for loop
+for(let i=20; i<=30; i++){
+    for(let j=1; j<=10;j++){
+        console.log(`table  ${i} * ${j} = ${i*j}`)
+    }
+}
 
 // 2. Write a program to find the average of three number , a=50,b=60,c=70
 let a=50;
@@ -8,11 +13,11 @@ let d=a+b+c/3;
 d=50+60+70/3;
 console.log("average of three number",d )
 // 3. Write a program to find even number and odd number between 1 to 50
-for(let i=2; i<=50;i++){
-    for(let j=2;j<=50; j++){
-        console.log(`even number ${i} + ${j}`)
-    }
-}
+// for(let i=0; i<=50;i++){
+    // for(let j=2;j<=50; j++){
+        // console.log(`even number ${i} + ${j} `)
+    // }
+// }
 
 // 4. Write a program to find the largest number between two numbers number1 = 80, number2 = 90
 let number1=80;

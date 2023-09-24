@@ -11,13 +11,20 @@ let b=60;
 let c=70;
 let d=a+b+c/3;
 d=50+60+70/3;
-console.log("average of three number",d )
+console.log("average of three number",d );
 // 3. Write a program to find even number and odd number between 1 to 50
-// for(let i=0; i<=50;i++){
-    // for(let j=2;j<=50; j++){
-        // console.log(`even number ${i} + ${j} `)
-    // }
-// }
+for(let i=0; i<=50;i++){
+        if(i%2)
+        console.log(`old number ${i} `);
+    }
+    
+for(let j=0;j<=50;j++){
+    if(j%2)
+    console.log("old number", j);
+else{
+    console.log("even number", j)
+}
+}
 
 // 4. Write a program to find the largest number between two numbers number1 = 80, number2 = 90
 let number1=80;

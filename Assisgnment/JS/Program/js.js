@@ -106,7 +106,44 @@ console.log(`area of rectangle ${areaOfRectangle} and perimeter of rectangle ${p
   
  }
 }
- rectangle()
+//  rectangle()
+//------> Write a program to check whether a triangle is valid or not, when the three angles of the triangle are entered through the keyboard. A triangle is valid if the sum of all the three angles is equal to 180 degrees.
+function triangleCheck(){
+const firstSide=prompt("Enter the first side ")
+const SecondSide=prompt("Enter the Second side ")
+const ThirdSide=prompt("Enter the Third side ")
+let sumSide=Number(firstSide)+Number(SecondSide)+Number(ThirdSide);
+console.log(` three angle is ${sumSide}`)
+
+if(sumSide==180){
+  console.log(` ${sumSide} triangle is valid because three angles is equal to 180 degrees.`)
+}
+else{
+  console.log(` ${sumSide} triangle is not valid because three angles is not equal  to 180 degrees.`)
+}}
+// triangleCheck();
+//
+// ------> In a company an employee is paid as under: If his basic salary is less than Rs. 1500, then HRA = 10% of basic salary and DA = 90% of basic salary. If his salary is either equal to or above Rs. 1500, then HRA = Rs. 500 and DA = 98% of basic salary. If the employee's salary is input through the keyboard write a program to find his gross salary.
+function Salary(){
+const BS=Number(prompt("Enter the  basic salary"));
+
+console.log('Basic salary', BS)
+if(BS<1500){
+  let HRA=BS*10/100;
+let DA=BS*90/100;
+let grossSalary=HRA+DA+BS;
+
+  console.log(` gross salary ${grossSalary}  Basic salary less than  1500   `)
+}
+else{
+  let HRA=500;
+  let DA=BS*98/100;
+  let grossSalary=HRA+DA+BS;
+  
+  console.log(`gross salary ${grossSalary} Basic Salary more than  1500  `)
+}
+}Salary();
+
 // ----------> If the ages of Ram, Shyam and Ajay are input through the keyboard, write a program to determine the youngest of the three.
 function age() {
   const R = prompt("Enter the Ram age");

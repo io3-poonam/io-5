@@ -91,7 +91,22 @@ function leapYear() {
 }
 // leapYear();
 //------> Given the length and breadth of a rectangle, write a program to find whether the area of the rectangle is greater than its perimeter. For example, the area of the rectangle with length = 5 and breadth = 4 is greater than its perimeter.
+ function rectangle(){
+const l=Number(prompt("enter the rectangle length"));
+const b=Number(prompt("enter the rectangle breadth"));
+let areaOfRectangle=l*b;
+let perimeterOfRectangle=2*(l+b)
+console.log(`area of rectangle ${areaOfRectangle} and perimeter of rectangle ${perimeterOfRectangle}`)
+ 
+ if(areaOfRectangle >=perimeterOfRectangle){
+  console.log(` area of rectangle  ${areaOfRectangle} is greater than ${perimeterOfRectangle} perimeter Of Rectangle`)
+ }
+ else{
+  console.log(` area of rectangle  ${areaOfRectangle} is less than ${perimeterOfRectangle} perimeter Of Rectangle`)
   
+ }
+}
+ rectangle()
 // ----------> If the ages of Ram, Shyam and Ajay are input through the keyboard, write a program to determine the youngest of the three.
 function age() {
   const R = prompt("Enter the Ram age");
@@ -109,7 +124,7 @@ function age() {
 else {
   console.log("something wrong")
 }}
-age();
+// age();
 
 // The marks obtained by a student in 5 different subjects are input through the keyboard. The student gets a division as per the following rules:
 

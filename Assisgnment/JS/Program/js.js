@@ -91,76 +91,88 @@ function leapYear() {
 }
 // leapYear();
 //------> Given the length and breadth of a rectangle, write a program to find whether the area of the rectangle is greater than its perimeter. For example, the area of the rectangle with length = 5 and breadth = 4 is greater than its perimeter.
- function rectangle(){
-const l=Number(prompt("enter the rectangle length"));
-const b=Number(prompt("enter the rectangle breadth"));
-let areaOfRectangle=l*b;
-let perimeterOfRectangle=2*(l+b)
-console.log(`area of rectangle ${areaOfRectangle} and perimeter of rectangle ${perimeterOfRectangle}`)
- 
- if(areaOfRectangle >=perimeterOfRectangle){
-  console.log(` area of rectangle  ${areaOfRectangle} is greater than ${perimeterOfRectangle} perimeter Of Rectangle`)
- }
- else{
-  console.log(` area of rectangle  ${areaOfRectangle} is less than ${perimeterOfRectangle} perimeter Of Rectangle`)
-  
- }
+function rectangle() {
+  const l = Number(prompt("enter the rectangle length"));
+  const b = Number(prompt("enter the rectangle breadth"));
+  let areaOfRectangle = l * b;
+  let perimeterOfRectangle = 2 * (l + b);
+  console.log(
+    `area of rectangle ${areaOfRectangle} and perimeter of rectangle ${perimeterOfRectangle}`
+  );
+
+  if (areaOfRectangle >= perimeterOfRectangle) {
+    console.log(
+      ` area of rectangle  ${areaOfRectangle} is greater than and equal to ${perimeterOfRectangle} perimeter Of Rectangle`
+    );
+  } else {
+    console.log(
+      ` area of rectangle  ${areaOfRectangle} is less than ${perimeterOfRectangle} perimeter Of Rectangle`
+    );
+  }
 }
 //  rectangle()
 //------> Write a program to check whether a triangle is valid or not, when the three angles of the triangle are entered through the keyboard. A triangle is valid if the sum of all the three angles is equal to 180 degrees.
-function triangleCheck(){
-const firstSide=prompt("Enter the first side ")
-const SecondSide=prompt("Enter the Second side ")
-const ThirdSide=prompt("Enter the Third side ")
-let sumSide=Number(firstSide)+Number(SecondSide)+Number(ThirdSide);
-console.log(` three angle is ${sumSide}`)
+function triangleCheck() {
+  const firstSide = prompt("Enter the first side ");
+  const SecondSide = prompt("Enter the Second side ");
+  const ThirdSide = prompt("Enter the Third side ");
+  let sumSide = Number(firstSide) + Number(SecondSide) + Number(ThirdSide);
+  console.log(` three angle is ${sumSide}`);
 
-if(sumSide==180){
-  console.log(` ${sumSide} triangle is valid because three angles is equal to 180 degrees.`)
+  if (sumSide == 180) {
+    console.log(
+      ` ${sumSide} triangle is valid because three angles is equal to 180 degrees.`
+    );
+  } else {
+    console.log(
+      ` ${sumSide} triangle is not valid because three angles is not equal  to 180 degrees.`
+    );
+  }
 }
-else{
-  console.log(` ${sumSide} triangle is not valid because three angles is not equal  to 180 degrees.`)
-}}
 // triangleCheck();
 //
 // ------> In a company an employee is paid as under: If his basic salary is less than Rs. 1500, then HRA = 10% of basic salary and DA = 90% of basic salary. If his salary is either equal to or above Rs. 1500, then HRA = Rs. 500 and DA = 98% of basic salary. If the employee's salary is input through the keyboard write a program to find his gross salary.
-function Salary(){
-const BS=Number(prompt("Enter the  basic salary"));
+function Salary() {
+  const BS = Number(prompt("Enter the  basic salary"));
 
-console.log('Basic salary', BS)
-if(BS<1500){
-  let HRA=BS*10/100;
-let DA=BS*90/100;
-let grossSalary=HRA+DA+BS;
+  console.log("Basic salary", BS);
+  if (BS < 1500) {
+    let HRA = (BS * 10) / 100;
+    let DA = (BS * 90) / 100;
+    let grossSalary = HRA + DA + BS;
 
-  console.log(` gross salary ${grossSalary}  Basic salary less than  1500   `)
+    console.log(
+      ` gross salary ${grossSalary}  Basic salary less than  1500   `
+    );
+  }else if(BS>=1500) {
+    let HRA = 500;
+    let DA = (BS * 98) / 100;
+    let grossSalary = HRA + DA + BS;
+
+    console.log(`gross salary ${grossSalary} Basic Salary more than and equal  1500  `);
+  }
+  else{
+    console.log(`something went wrong`)
+  }
 }
-else{
-  let HRA=500;
-  let DA=BS*98/100;
-  let grossSalary=HRA+DA+BS;
-  
-  console.log(`gross salary ${grossSalary} Basic Salary more than  1500  `)
-}
-}Salary();
+// Salary();
 
 // ----------> If the ages of Ram, Shyam and Ajay are input through the keyboard, write a program to determine the youngest of the three.
 function age() {
-  const R = prompt("Enter the Ram age");
-  const S = prompt("Enter the Shyam age");
-  const A = prompt("Enter the Ajay age");
+  const R = Number(prompt("Enter the Ram age"));
+  const S = Number(prompt("Enter the Shyam age"));
+  const A = Number(prompt("Enter the Ajay age"));
   // error 10,9,8 value enter time
-    if (R < A && R<S) {
-    return  console.log(`Ram is youngest  Ram: ${R} ,Shyam: ${S}, Ajay: ${A}`);
-    }
-     else if (S<A && S<R){
-     return console.log(`Shyam is youngest  Ram: ${R} ,Shyam: ${S}, Ajay: ${A}`);}
-    else if(A<R && A<S) {
+  if (R < A && R < S) {
+    return console.log(`Ram is youngest  Ram: ${R} ,Shyam: ${S}, Ajay: ${A}`);
+  } else if (S < A && S < R) {
+    return console.log(`Shyam is youngest  Ram: ${R} ,Shyam: ${S}, Ajay: ${A}`);
+  } else if (A < R && A < S) {
     console.log(`Ajay is youngest  Ram: ${R} ,Shyam: ${S}, Ajay: ${A}`);
+  } else {
+    console.log("something wrong");
   }
-else {
-  console.log("something wrong")
-}}
+}
 // age();
 
 // The marks obtained by a student in 5 different subjects are input through the keyboard. The student gets a division as per the following rules:
@@ -256,19 +268,17 @@ function checkCandidateDetails() {
 }
 // checkCandidateDetails();
 //------>Write a program to find the absolute value of a number entered through the keyboard. (non-negative number)
-function absoluteValue(){
-let absoluteNumber=prompt("enter the any number")
-if(isNaN(absoluteNumber)){
-  console.log(`${absoluteNumber} Enter the correct number`)
+function absoluteValue() {
+  let absoluteNumber = prompt("enter the any number");
+  if (isNaN(absoluteNumber)) {
+    console.log(`${absoluteNumber} Enter the correct number`);
+  }
+  if (absoluteNumber >= 0) {
+    console.log(`${absoluteNumber} this is absolute value`);
+  } else {
+    console.log(`${absoluteNumber} this is not  absolute value`);
+  }
 }
-if(absoluteNumber>=0){
-  console.log(`${absoluteNumber} this is absolute value`)
-}
-
-else{
-  console.log(`${absoluteNumber} this is not  absolute value`)
-}
-}        
 // absoluteValue();
 //--------> Consider a currency system in which there are notes of seven denominations, namely, Rs. 1, Rs. 2, Rs. 5, Rs. 10, Rs. 50, Rs. 100. Is a sum of Rs. N is entered through the keyboard, write a program to compute the smallest number of notes that will combine to give Rs. N.
 function Amount() {
@@ -337,4 +347,4 @@ function Driver() {
     console.log(`The driver should not be insured`);
   }
 }
-// Driver();
+Driver();

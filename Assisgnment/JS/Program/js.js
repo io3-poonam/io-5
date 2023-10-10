@@ -282,14 +282,41 @@ function absoluteValue() {
 // absoluteValue();
 //--------> Consider a currency system in which there are notes of seven denominations, namely, Rs. 1, Rs. 2, Rs. 5, Rs. 10, Rs. 50, Rs. 100. Is a sum of Rs. N is entered through the keyboard, write a program to compute the smallest number of notes that will combine to give Rs. N.
 function Amount() {
-  let note = prompt("Enter the any 5 digit Amount ");
-  // let noteOne=Math.trunc(note/10000)%10;
-  // let noteTwo=Math.trunc(note/1000)%10;
-  // let noteFive=Math.trunc(note/100)%10;
-  // let noteTen=Math.trunc(note/10)%10;
-  // let note=Math.trunc(note/10000)%10;
+  let note = Number(prompt("Enter the any 5 digit Amount "));
+  // 1526 
+  let note500=Math.trunc(note/500)%500;
+  console.log("500", note500)
+  let note200=Math.trunc(note/200)%200;
+  console.log("200", note200)
+  let note100=Math.trunc(note/100)%100;
+  console.log("100", note100)
+  let note50=Math.trunc(note/50)%50;
+  console.log("50", note50)
+  let note20=Math.trunc(note/20)%20;
+  console.log("20", note20)
+  let note10=Math.trunc(note/10)%10;
+  console.log("10", note10)
+  let note5=Math.trunc(note/5)%5;
+  console.log("5", note5)
+  let note2=Math.trunc(note/2)%2;
+  console.log("2", note2)
+  let note1=Math.trunc(note/1)%1;
+  console.log("1", note1)
+  // let noteAdd500=note500*500;
+  // let noteAdd200=note200*200;
+  // let noteAdd100=note*100;
+  // let noteAdd50=note*50;
+  // let noteAdd20=note*20;
+  // let noteAdd10=note*10;
+  // let noteAdd5=note*5;
+  // let noteAdd2=note*2;
+  // let noteAdd1=note*1;
+  // let totalNote=note500+note200+note100+note50+note20+note10+note5+note2+ note1;
+  // let totalNoteAdd=noteAdd500+noteAdd200+noteAdd100+noteAdd50+noteAdd20+noteAdd10+noteAdd5+noteAdd2+noteAdd1;
+  console.log("note",totalNote)
+  
 }
-// Amount();
+Amount();
 //--------> If cost price and selling price of an item are input through the keyboard, write a program to determine whether the seller has made profit or incurred loss. Also determine how much profit he made or loss he incurred.
 function ProfitAndLoss() {
   let Sp = prompt("enter the selling price");
@@ -333,18 +360,18 @@ function Driver() {
   let maritalStatus = prompt("Enter the marital Status Married/Unmarried");
   if (gender == "Male" && age >= 30 && maritalStatus == "Married") {
     console.log(
-      `The driver should be insured because all condition are filed Gender is ${gender}, ${age}age greater than 30 year and ${maritalStatus} driver `
+      `The driver should be insured because all condition are filed Gender is ${gender.toUpperCase()}, ${age}age greater than 30 year and ${maritalStatus.toUpperCase()} driver `
     );
   } else if (gender == "Male" && age >= 30 && maritalStatus == "Unmarried") {
     console.log(
-      `The driver should be insured because all condition are filed Gender is ${gender}, ${age}age greater than 30 year and ${maritalStatus} driver `
+      `The driver should be insured because all condition are filed Gender is ${gender.toUpperCase()}, ${age}age greater than 30 year and ${maritalStatus.toUpperCase()} driver `
     );
   } else if (gender == "Female" && age >= 25 && maritalStatus == "Unmarried") {
     console.log(
-      `The driver should be insured because all condition are filed Gender is ${gender}, ${age} age greater than 25 year and ${maritalStatus} driver `
+      `The driver should be insured because all condition are filed Gender is ${gender.toUpperCase()}, ${age} age greater than 25 year and ${maritalStatus.toUpperCase()} driver `
     );
   } else {
     console.log(`The driver should not be insured`);
   }
 }
-Driver();
+// Driver();

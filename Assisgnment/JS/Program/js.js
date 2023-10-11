@@ -281,26 +281,52 @@ function absoluteValue() {
 }
 // absoluteValue();
 //--------> Consider a currency system in which there are notes of seven denominations, namely, Rs. 1, Rs. 2, Rs. 5, Rs. 10, Rs. 50, Rs. 100. Is a sum of Rs. N is entered through the keyboard, write a program to compute the smallest number of notes that will combine to give Rs. N.
+
 function Amount() {
+  let note500;
+let note200;
+let note100;
+let note50;
+let note20;
+let note10;
+let note5;
+let note2;
+let note1;
   let note = Number(prompt("Enter the any 5 digit Amount "));
-  // 1526 
-  let note500=Math.trunc(note/500)%500;
+  console.log("amount" , note)
+   note500=Math.trunc(note/500);
+  note=note%500;
   console.log("500", note500)
-  let note200=Math.trunc(note/200)%200;
+   note200=Math.trunc(note/200)
+  note=note%200;
+
   console.log("200", note200)
-  let note100=Math.trunc(note/100)%100;
+   note100=Math.trunc(note/100)
+  note=note%100;
+
   console.log("100", note100)
-  let note50=Math.trunc(note/50)%50;
+   note50=Math.trunc(note/50)
+  note=note%50;
+
   console.log("50", note50)
-  let note20=Math.trunc(note/20)%20;
+   note20=Math.trunc(note/20)
+  note=note%20;
+
   console.log("20", note20)
-  let note10=Math.trunc(note/10)%10;
+   note10=Math.trunc(note/10)
+  note=note%10;
   console.log("10", note10)
-  let note5=Math.trunc(note/5)%5;
-  console.log("5", note5)
-  let note2=Math.trunc(note/2)%2;
+   note5=Math.trunc(note/5);
+  note=note%5;
+
+  console.log("5", note5 );
+   note2=Math.trunc(note/2);
+  note=note%2;
+
   console.log("2", note2)
-  let note1=Math.trunc(note/1)%1;
+   note1=Math.trunc(note/1)
+  note=note%1;
+  
   console.log("1", note1)
   // let noteAdd500=note500*500;
   // let noteAdd200=note200*200;
@@ -311,9 +337,19 @@ function Amount() {
   // let noteAdd5=note*5;
   // let noteAdd2=note*2;
   // let noteAdd1=note*1;
-  // let totalNote=note500+note200+note100+note50+note20+note10+note5+note2+ note1;
+  let totalNote=note500+note200+note100+note50+note20+note10+note5+note2+ note1;
   // let totalNoteAdd=noteAdd500+noteAdd200+noteAdd100+noteAdd50+noteAdd20+noteAdd10+noteAdd5+noteAdd2+noteAdd1;
-  console.log("note",totalNote)
+  console.log(`
+  note details  total number : ${totalNote}
+  500 -- ${note500}
+  200 -- ${note200}
+  100 -- ${note100}
+  50  --${note50}
+  20  --  ${note20}
+  10  -- ${note10}
+  5   -- ${note5}
+  2   -- ${note2}
+  1   --  ${note1}      `)
   
 }
 Amount();

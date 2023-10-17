@@ -91,7 +91,7 @@ let RectangleArea=l*b;
 perimeterOfRectangle=2*(l+b);
 console.log("Rectangle Area", RectangleArea, "perimeter of Rectangle ", perimeterOfRectangle )
 }
-Rectangle()
+// Rectangle()
 // ----6----
 // Enter the radius of Circle and find the circumstance and area of circle
 function Circle(){
@@ -100,7 +100,7 @@ function Circle(){
     circlePerimeter=Math.PI*(2*radius);
     console.log("circle Area", circleArea, "circle of Perimeter ", circlePerimeter )
     }
-    Circle()
+    // Circle()
 
 // Formula of circle Area == pie * r * r
 // Formula of circle perimeter == 2 * pie * radius

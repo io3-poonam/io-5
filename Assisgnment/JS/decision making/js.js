@@ -5,8 +5,8 @@
 function insured() {
   let Gen = prompt("Enter the gender he/she").toLowerCase();
   let area = prompt("Enter the area c/v").toLowerCase();
-  let health = prompt("Enter the area e/p").toLowerCase();
-  let Age = Number(prompt("Enter the Age between 25 to 35"));
+  let health = prompt("Enter the Health in e/p").toLowerCase();
+  let Age = Number(prompt("Enter the Age "));
   let A = Number(prompt("Enter the amount"));
   let prH = 4 * 1000;
   // Age=Age(Age>=25 || Age<=35)

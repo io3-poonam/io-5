@@ -1,17 +1,27 @@
 // 1----Five numbers are entered from the keyboard into an array. The number to be searched is entered through the keyboard by the user. Write a program to find if the number to be searched is present in the array and if it is present, display the number of times it appears in the array. // for loop till 5 // inside loop, prompt to enter number // push the number to array // if arr.lenght ===5 // enter number to find inside the array // for loop // arr[i] == enteredNum
-//  const number =[];
-//  for(let i=1; i<=5;i++){
-//     const enterNumber=Number(prompt("enter the number",i))
-//     number.push(enterNumber)
-//     console.log("number",i, enterNumber)
-//     if(enterNumber.length==5){
-//         console.log(`enter number is equal five digit `)
-//     }else{
-//         console.log(`enter number is not equal five digit `)
-//     }
-//     }
+// const arrayPush=[];
+// for(let i=1;i<=5;i++){
+//   let enteredNum=parseFloat(prompt("Enter the number",i))
+//   console.log("number",enteredNum)
+//   arrayPush.push(enteredNum)
+//   if(arrayPush.length===5)
+//   for(let i=1;i<=5;i++){
+// arrayPush[i]==enteredNum
+// enteredNum++
+//   } 
+  
+//   if(enteredNum){
+//     console.log("enter number is present")
+//   } else{
+//     console.log("enter number is not present")
+//   }
+//   }
+// if(numberCheck.length===5){
+  
+// }
 
-//  console.log("number", number)
+// console.log(arrayPush,"h")
+
 // 3------ Write a program to copy the contents of one array into another in the reverse order. (with prototype) arr1 = [1,2,3,4] newArr = [4,3,2,1]
 
 const arr1 = [1, 2, 3, 4];
@@ -119,7 +129,7 @@ for(let i=1;i<=5;i++){
     //     alert ("enter correct number")
     //     i--;
     if(isNaN(num)){
-    return    console.log("enter correct number")
+        console.log("enter correct number")
         
     }else{
     if(num>0){

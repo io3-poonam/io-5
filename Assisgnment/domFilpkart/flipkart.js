@@ -38,13 +38,10 @@ liTag3.innerText="More";
 ulTag.append(liTag3)
 
 const liTag4=document.createElement("li")
-// const i=document.createElement("i")
-// i.setAttribute(" class","fa-solid fa-cart-shopping")
-// liTag4.innerHTML=<i class="fa-solid fa-cart-shopping"></i>
-liTag4.innerText="Cart";
+
+liTag4.innerHTML=`<i class="fa-solid fa-cart-shopping"></i>`;
+const AddToCart=document.createElement("span")
+AddToCart.innerText="Cart";
+liTag4.append(AddToCart)
 ulTag.append(liTag4)
 
-// olTag.setAttribute("id", "avengers");
-// olTag.classList.add("avengers-class");
-// 
-// main.append(olTag);

@@ -1,44 +1,36 @@
 // 1----Five numbers are entered from the keyboard into an array. The number to be searched is entered through the keyboard by the user. Write a program to find if the number to be searched is present in the array and if it is present, display the number of times it appears in the array. // for loop till 5 // inside loop, prompt to enter number // push the number to array // if arr.lenght ===5 // enter number to find inside the array // for loop // arr[i] == enteredNum
-// const arrayPush=[];
-// for(let i=1;i<=5;i++){
-//   let enteredNum=parseFloat(prompt("Enter the number",i))
-//   console.log("number",enteredNum)
-//   arrayPush.push(enteredNum)
-//   if(arrayPush.length===5)
-//   for(let i=1;i<=5;i++){
-// arrayPush[i]==enteredNum
-// enteredNum++
-//   } 
-  
-//   if(enteredNum){
-//     console.log("enter number is present")
-//   } else{
-//     console.log("enter number is not present")
-//   }
-//   }
-// if(numberCheck.length===5){
-  
-// }
 
-// console.log(arrayPush,"h")
+
+
 
 // 3------ Write a program to copy the contents of one array into another in the reverse order. (with prototype) arr1 = [1,2,3,4] newArr = [4,3,2,1]
 
 const arr1 = [1, 2, 3, 4];
-const rev = arr1.reverse();
-console.log("reverse", rev);
+const arrRevs=arr1.reverse();
+const arrRevsEmpty=[];
+console.log("arrRevs",arrRevs)
+for(let i=arr1.length-1;i>=0;i--){
+  arrRevsEmpty.push(arr1[i])
+}
+console.log("arrRevs poto",arrRevs)
+console.log("arrRevs or",arr1)
+console.log("arrRevs rev",arrRevsEmpty)
+
+
+// const rev = arr1.reverse();
+// console.log("reverse", rev);
 // 4------ Reverse array without using prototypes [4,8,9,2]
 // to [2,9,8,4]
 
-const arrRev = [4, 8, 9, 2];
-const emptyArr = [];
-for (let i = arrRev.length - 1; i >= 0; i--) {
-  emptyArr.push(arrRev[i]);
+// const arrRev = [4, 8, 9, 2];
+// const emptyArr = [];
+// for (let i = arrRev.length - 1; i >= 0; i--) {
+  // emptyArr.push(arrRev[i]);
   // console.log("reverse" , arrRev)
-}
-console.log("4---Original array", arrRev);
+// }
+// console.log("4---Original array", arrRev);
 
-console.log("4---Reverse array", emptyArr);
+// console.log("4---Reverse array", emptyArr);
 
 // 5------  Write a simple JavaScript program to join all elements of the following array into a string. Sample array : myColor = ["Red", "Green", "White", "Black"]; Expected Output : "Red,Green,White,Black" "Red,Green,White,Black" "Red+Green+White+Black"
 myColor = ["Red", "Green", "White", "Black"];

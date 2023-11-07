@@ -1,6 +1,16 @@
 const main=document.querySelector(".main");
+
 const form=document.createElement("form")
 main.append(form);
+const Heading=document.createElement("h3")
+
+Heading.innerHTML = "Sign up Form";
+Heading.setAttribute ("class","h3");
+Heading.style.textAlign="center"
+Heading.style.width="35%"
+
+form.append(Heading);
+
 const inputFN=document.createElement("input")
 inputFN.setAttribute("type","text")
 inputFN.classList.add("class","inputTag")

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.digital_clock{
+    width: 30%;
+    background: aliceblue;
+    height: 15rem;
+    padding: 1%;
+    box-shadow: 0px 1px 3px -1px gray;
+    border-radius: 18px;
+    margin: 5% auto;
+}
+    span{
+        font-size: 3rem;
+    }
+    .btn-DC{
+        text-align: center;
+    }
+    input{
+        padding: 3% 8%;
+    font-size: 1.5rem;
+    border-radius: 18px;
+    border: none;
+    margin: 10% 2%;
+    box-shadow: 0px 1px 3px -1px gray;
+    }
+    .clock-center{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="digital_clock">
+      <div class="clock-center">  <span id="hours">0</span>   <span>:</span> <span id="minits">0</span>  <span>:</span>  <span id="second">0</span></div>
+        <div class="btn-DC">
+        <input type="submit" value="Start" onclick="getStart()" >
+        <input type="submit" value="Stop" onclick="getStop()">
+        <input type="Reset" value="reset" onclick="getReset()">
+    </div>
+    </div>
+    <script src="./setTimeOut.js"></script>
+    <script src="./digitalClock.js"></script>
+</body>
+</html>

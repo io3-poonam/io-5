@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.main_header{
+    display: flex;
+    font-weight: 600;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.Start_section{
+    color: blue;
+}
+.Center_section{
+    display: flex;
+}
+.Pro_center,.Ser_center{
+    padding: 10%;
+}
+.Last_section{
+    display: flex;
+    align-items: center;
+}
+.img_sec{
+    width: 50px;
+    padding: 10px;
+}

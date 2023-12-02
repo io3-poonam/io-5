@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.desc{
+    text-align: center;
+    font-weight: 900;
+padding: 3rem;
+}
+.f-para{
+    font-size: 3rem;
+}
+.s-para{
+    font-size:1.5rem;
+}

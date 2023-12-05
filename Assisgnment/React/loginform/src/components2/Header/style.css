@@ -1,0 +1,9 @@
+.links {
+  text-decoration: none;
+  color: #8a578b;
+}
+.dateClass{
+  background-color: rgb(224, 213, 213);
+  border-radius: 30px;
+  padding: 0.5rem;
+}

@@ -1,9 +1,4 @@
 import React from "react";
-// import Header from './component/Header/Header';
-// import Description from './component/Desc/Description';
-// import LoginPage from './component/LoginPageBox/LoginPage';
-// import FooterSide from './component/FooterSide/FooterUpper';
-// import Footer from './component/Footer/Footer';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./Pages/HomePage/index.jsx";
 import About from "./Pages/About/index.jsx";
@@ -17,7 +12,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<Login />} />
-
           <Route path="/" element={<HomePage />} />
           <Route path="/home-page" element={<HomePage />} />
           <Route path="/about-us" element={<About />} />
@@ -26,11 +20,6 @@ function App() {
         </Routes>
       </BrowserRouter>
       
-      {/* <Header/>
-    <Description/>
-    <LoginPage/>
-    <FooterSide/>
-    <Footer/> */}
     </React.Fragment>
     
   );

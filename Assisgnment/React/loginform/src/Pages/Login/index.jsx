@@ -1,36 +1,21 @@
 import React from "react";
 import "./style.css";
+import HeaderSign from "../../SignUp/HeaderSign/Header";
+import Desc from "../../SignUp/Desc/Description"
+import LoginPageBox from "../../SignUp/LoginPageBox/LoginPage";
+import FooterSide from "../../SignUp/FooterSide/FooterUpper";
+import Footer from "../../SignUp/Footer/Footer";
+
 
 function Login() {
-  console.log("hello login page");
 
   return (
     <React.Fragment>
-      <form className="form">
-        <div className="form-field">
-          <input
-            type="email"
-            placeholder="Email / Username"
-            id="email"
-            required
-          />
-        </div>
-
-        <div className="form-field">
-          <input
-            type="password"
-            placeholder="Password"
-            id="password"
-            required
-          />
-        </div>
-
-        <div className="form-field">
-          <button className="btn" type="button" id="loginBtn">
-            Log in
-          </button>
-        </div>
-      </form>
+     <HeaderSign/>
+     <Desc/>
+     <LoginPageBox/>
+     <FooterSide/>
+     <Footer/>
     </React.Fragment>
   );
 }

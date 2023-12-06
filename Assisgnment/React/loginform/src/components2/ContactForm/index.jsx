@@ -16,7 +16,8 @@ function ContactForm() {
   const[state,setState]=useState("")
 
 
-  const handleSubmit=()=>{
+  const handleSubmit=(event)=>{
+    event.preventDefault();
     setShow(true);
   }
   const inputEmail=(e)=>{
@@ -158,16 +159,17 @@ function ContactForm() {
               </Form.Group>
 
               <Button variant="outline-primary"
-               onClick={handleSubmit}
-               type="submit">
+               onClick={(event)=>handleSubmit(event)}
+               type="button"
+               >
                 Submit
               </Button>
             </Form>
           </div>
-         <div className="col-md-6 col-10 ">
+          {show?( <div className="col-md-6 col-10 ">
 
-         {show?( <h2 className="heading_second">My name is {name} and  My email id is {Email} , password  {password} and my Mobile number {number} is and my state is {state} and my City is {city} and zip Code {zip} all data are correct</h2> ):null} 
-        </div>
+         <h2 className="heading_second">My name is {name} and  My email id is {Email} , password  {password} and my Mobile number {number} is and my state is {state} and my City is {city} and zip Code {zip} all data are correct</h2>  
+        </div>):null}
           
         </div>
       </div>

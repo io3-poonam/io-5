@@ -4,9 +4,11 @@ import Footer from "../../components2/Footer";
 import ImageSliders from "../../components2/ImageSliders";
 
 function HomePage() {
+  const currentPageShow="Home Page";
+
   return (
     <React.Fragment>
-      <Header />
+      <Header currentPage={currentPageShow}  />
       <ImageSliders />
       <Footer />
     </React.Fragment>

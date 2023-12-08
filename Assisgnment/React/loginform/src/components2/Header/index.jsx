@@ -6,7 +6,10 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "./style.css";
 
-function Header() {
+function Header(props) {
+  const {currentPage ="nothing"}=props || {};
+  console.log("currentPage",props);
+
   // times state
   const[seconds,setSeconds]=useState(new Date().getSeconds());
   // date
@@ -22,7 +25,7 @@ function Header() {
   const sec=new Date().getSeconds();
   // seconds 
 setInterval(()=>{
-  setSeconds(new Date().getSeconds());
+  // setSeconds(new Date().getSeconds());
 },1000)
 console.log("month",monthStr.at(month),hour,minis,sec)
   // const [currentDate, setCurrentDate] = useState(getDate());
@@ -59,6 +62,8 @@ console.log("month",monthStr.at(month),hour,minis,sec)
               
             </Nav>
             <Nav>
+            <Nav.Link>{currentPage}</Nav.Link>
+
             <Nav.Link href="/Login">Login</Nav.Link>
 
             <Nav.Link >

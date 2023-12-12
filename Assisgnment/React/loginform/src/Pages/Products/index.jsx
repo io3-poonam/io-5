@@ -8,6 +8,9 @@ import Loader from "../Loader/Loader";
 function Products() {
   const [allProduct, setAllProduct] = useState([]);
   const [loader, setLoader] = useState(false);
+  // const [count, setCount] = useState(0);
+  const [cartProductAdd, setCartProductAdd] = useState([]);
+
 
   const currentPageShow = "Product Page";
   useEffect(() => {
@@ -30,22 +33,31 @@ function Products() {
       setLoader(false)
     }
   };
+  // setCount=count + 1
+  const handleAddCartClick=(selectProduct)=>{
+    console.log("parent",selectProduct)
+          //  setCount(count + 1)
+           setCartProductAdd([...cartProductAdd,selectProduct])
+        }
+        console.log("cartProductAdd",cartProductAdd);
   return (
     <React.Fragment>
-      <Header currentPage={currentPageShow} />
+      {/* CartCounting= { cartProductAdd.length}  cart product add in without count state*/}
+      <Header currentPage={currentPageShow} CartCounting= { cartProductAdd.length} onShowCartAdd={cartProductAdd} />
       <div className="product-container">
         {loader && <Loader/>}
-        {allProduct.map((items, index) => {
-          return <ProductCard price={items?.price}
+        {!loader && 
+         allProduct.map((items, index) => {
+          return (<ProductCard price={items?.price}
           description={items?.description}
           title={items?.title}
           brand={items?.brand}
           thumbnail={items?.thumbnail}
           category={items?.category}
-{...items}
+          {...items}
+          onCartClick={handleAddCartClick}
 
-
-           />;
+           />);
         })}
       </div>
       <Footer />

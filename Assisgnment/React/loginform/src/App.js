@@ -5,7 +5,7 @@ import About from "./Pages/About/index.jsx";
 import Contact from "./Pages/Contact";
 import Products from "./Pages/Products";
 import Login from "./Pages/Login";
-
+import Cart from "./Pages/Cart/Cart.jsx";
 function App() {
   return (
     <React.Fragment>
@@ -17,6 +17,7 @@ function App() {
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/Cart" element={<Cart/>}/>
         </Routes>
       </BrowserRouter>
       

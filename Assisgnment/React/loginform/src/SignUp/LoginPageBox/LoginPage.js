@@ -2,20 +2,24 @@ import React, { useState } from "react";
 import "./style.css"
 import imageImage from"./assets/image/images.jpg"
 import icon from"./assets/icon/arrow-down-sign-to-navigate.png"
+import { Button } from "react-bootstrap";
 
 function LoginPage(){
-    // const [formData,setFormData]=useState({
-    //     Email:"",
-    //     Password:""
-    // });
-    // const handleInputE=(e)=>{
-    //     setFormData({ ...formData, Email: e.target.value });
-
-    // }
-    // const handleInputP=(e)=>{
-    //     setFormData({ ...formData, password: e.target.value });
-
-    // }
+    const [formData,setFormData]=useState({
+        email:"",
+        password:""
+    });
+    const handleInputE=(e)=>{
+        setFormData({ ...formData, email: e.target.value });
+console.log(e.target.value )
+    }
+    const handleInputP=(event)=>{
+        setFormData({ ...formData, password: event.target.value });
+        console.log(event.target.value )
+    }
+    const handleBtnClick =()=>{
+        console.log("click")
+    }
     return(
 <>
 <div className="Login">
@@ -26,14 +30,15 @@ function LoginPage(){
     </div>
     <form className="formBox">
      <input type="email" placeholder="Email"
-    //   value={formData?.Email} name={Email} 
+      value={formData?.email} name="Email"
       className="inputFormPass"
-    //    onChange={(event)=>handleInputE(event)}
+       onChange={(event)=>handleInputE(event)}
        /><br/>
-       <input type="password" placeholder="Password" className="inputFormPass "
-        // onChange={(event)=>handleInputP(event)}
+       <input type="password" placeholder="Password" className="inputFormPass " name="Password" value={formData?.password}
+        onChange={(event)=>handleInputP(event)}
         /><br/>
-       <input type="submit" placeholder="Log In" className="inputFormBtn"/>
+       <Button type="submit" onClick={(e)=>handleBtnClick(e)}
+       className="inputFormBtn" disabled={formData?.email.length<6 || formData?.password.length<6} > Log In</Button>
     </form>
     <p className="form-para">I forgot the Password</p>
 </div>

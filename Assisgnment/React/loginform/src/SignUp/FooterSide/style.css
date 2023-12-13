@@ -11,8 +11,8 @@
     margin: auto;
 }
 .FooterSide{
-    position: fixed;
-    bottom: 10%;
+    /* position: fixed; */
+    /* bottom: 10%; */
     width: 100%;
 }
 .liTagFooter{

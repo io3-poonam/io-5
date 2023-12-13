@@ -10,11 +10,12 @@ import { useNavigate } from "react-router-dom";
 
 function Header(props) {
   const { currentPage = "nothing", CartCounting=[],onShowCartAdd= []} = props || {};
-  console.log("currentPage", props);
-
-  // times state
   const [seconds, setSeconds] = useState(new Date().getSeconds());
-  // date
+  console.log("currentPage", props);
+  // const [userLogin,setUserLogin]=useState(JSON.parse(localStorage.getItem("userLogin")))
+const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
+  console.log("userData",user)
+  // times state
   const monthStr = [
     "january",
     "February",
@@ -29,6 +30,7 @@ function Header(props) {
     "November",
     "December",
   ];
+  // setLoginBtnDisable(false);
   const date = new Date().getDate();
   const month = new Date().getMonth();
   const year = new Date().getFullYear();
@@ -38,9 +40,10 @@ function Header(props) {
   const sec = new Date().getSeconds();
   // seconds
   setInterval(() => {
-    // setSeconds(new Date().getSeconds());
+    setSeconds(new Date().getSeconds());
+    setUser(JSON.parse(localStorage.getItem("user")))
   }, 1000);
-  console.log("month", monthStr.at(month), hour, minis, sec);
+  // console.log("month", monthStr.at(month), hour, minis, sec);
   // const [currentDate, setCurrentDate] = useState(getDate());
   // function getDate() {
   // const today = new Date();
@@ -84,7 +87,9 @@ function Header(props) {
                 {/* {CartCounting>0&&CartCounting} cart counting greater than 0 show only cart without any 0*/}
                 Button{CartCounting > 0 && CartCounting}
               </Button>
-              <Nav.Link href="/Login">Login</Nav.Link>
+               {!user?.email && (
+               <Nav.Link href="/Login">Login</Nav.Link>)
+               }
               <Nav.Link>
                 {/* <h6 className='dateClass'>Today's Date: {currentDate}</h6> */}
                 <h6 className="dateClass">

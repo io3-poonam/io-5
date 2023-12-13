@@ -7,9 +7,9 @@
     text-align: center;
 }
 .para-footer{
-    position: fixed;
+    /* position: fixed; */
     /* top: 124%; */
-    bottom: 4%;
+    /* bottom: 4%; */
     /* text-align: center; */
     width: 100%;
     color: gray;

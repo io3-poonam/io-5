@@ -1,0 +1,5 @@
+class trips extends component{
+render(){
+return <h1>this is trip page inside class component<h1/>}}
+export default trips;
+class component is old method it is use very rear.

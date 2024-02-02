@@ -40,8 +40,8 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
   const sec = new Date().getSeconds();
   // seconds
   setInterval(() => {
-    setSeconds(new Date().getSeconds());
-    setUser(JSON.parse(localStorage.getItem("user")))
+    // setSeconds(new Date().getSeconds());
+    // setUser(JSON.parse(localStorage.getItem("user")))
   }, 1000);
   // console.log("month", monthStr.at(month), hour, minis, sec);
   // const [currentDate, setCurrentDate] = useState(getDate());

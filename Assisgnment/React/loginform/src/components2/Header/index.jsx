@@ -9,6 +9,7 @@ import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 function Header(props) {
+
   const { currentPage = "nothing", CartCounting=[],onShowCartAdd= []} = props || {};
   const [seconds, setSeconds] = useState(new Date().getSeconds());
   console.log("currentPage", props);
@@ -61,7 +62,7 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
     <React.Fragment>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
-          <Navbar.Brand href="/">Students</Navbar.Brand>
+          <Navbar.Brand href="/">Dilpkart</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -80,6 +81,7 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
                   Headphones
                 </NavDropdown.Item>
               </NavDropdown>
+              
             </Nav>
             <Nav>
               <Nav.Link>{currentPage}</Nav.Link>

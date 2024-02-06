@@ -1,0 +1,23 @@
+1.componenet are two type
+ normal function and const home =()=>{}
+ and classComponent (use for  class or render )
+explain=> class trips expexnds Component {
+render(){}
+}.
+2.function components :Hooks Based
+Hooks : alternate option of lifecycle
+lifeCycle : Life of component
+Component lifeCycle:Mount(means- disable the current page and open new page) Update(change the everything) Unmount(run in the code but on the time disable)
+3. whatever is going to be used with prefix _use_
+useState, useEffect, uselayOutEffect. useMeno.etc
+4. class component      | function component
+  componentWillMount    |
+  componentDidMount     | useEffect
+  componentShouldUpdate |
+  componentWillUnMount  |
+5. hooks started with react 16(word only over 16 version)
+6.initially function component were only presentation component or stateless component
+after introduction of hooks it becomes stateful component
+____what is state?just like js we used to write variable using var let const same as we use state inside component to update and 
+rerender component
+we use usestate() hooks

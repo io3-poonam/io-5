@@ -7,41 +7,47 @@ import { useState } from "react";
 
 function ContactForm() {
   const [show,setShow]=useState(false);
-  const[Email,setEmail]=useState("")
-  const[name,setName]=useState("")
-  const[password,setPassword]=useState("")
-  const[number,setNumber]=useState("")
-  const[zip,setZip]=useState("")
-  const[city,setCity]=useState("")
-  const[state,setState]=useState("")
+const [userData,setUserData]=useState({
+  email:"",password:"",
+  name:"",
+  number:"",
+  state:"",
+  city:"",
+  zip:"",
 
+})
+const [isLoginClicked,setLoginClick]=useState(false);
 
-  const handleSubmit=(event)=>{
-    event.preventDefault();
-    setShow(true);
+const email=(event)=>{
+  setUserData({...userData ,email: event.target.value})
+}
+const password=(event)=>{
+  setUserData({...userData ,password: event.target.value})
+}
+const name=(event)=>{
+  setUserData({...userData ,name: event.target.value})
+}
+const number=(event)=>{
+  setUserData({...userData ,number: event.target.value})
+}
+const state=(event)=>{
+  setUserData({...userData ,state: event.target.value})
+}
+const zip=(event)=>{
+  setUserData({...userData ,zip: event.target.value})
+}
+const city=(event)=>{
+  setUserData({...userData ,city: event.target.value})
+}
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+
+    setLoginClick(true);
   }
-  const inputEmail=(e)=>{
-    console.log(e.target.value)
-    setEmail(e.target.value)
-  }
-  const inputPassword=(e)=>{
-    setPassword(e.target.value)
-  }
-  const inputState=(e)=>{
-    setState(e.target.value)
-  }
-  const inputCity=(e)=>{
-    setCity(e.target.value)
-  }
-  const inputZip=(e)=>{
-    setZip(e.target.value)
-  }
-  const inputName=(e)=>{
-    setName(e.target.value)
-  }
-  const inputNumber=(e)=>{
-    setNumber(e.target.value)
-  }
+  const contactUs=(e)=>
+{
+  setShow(true)
+}
   return (
     <>
       <div className="contact-container">
@@ -52,14 +58,18 @@ function ContactForm() {
           Get interesting housing info straight to your inbox, and build the
           building you want. Contact us
         </p>
+        <p className="para">
+          Fill up the Contact details
+        </p>
         <div className="button-container">
-          <Button className="button">Contact Us</Button>
+          <Button className="button" onClick={contactUs}>Contact Us</Button>
         </div>
       </div>
+      {show?(
+      <div className="container">
       <div className="my-5">
         <h1 className="text-center">Contact Services</h1>
       </div>
-      <div className="container">
         <div className="row">
          <div className="col-md-6 col-10 ">
             <Form >
@@ -68,8 +78,10 @@ function ContactForm() {
                 <Form.Control
                   type="email"
                   name="Email"
-                  value={Email}
-                  onChange={(event)=>inputEmail(event)}
+                  value={userData?.email}
+                  onChange={(e)=>email(e)}
+                  // value={Email}
+                  // onChange={(event)=>inputEmail(event)}
                   placeholder="Enter email"
                 />
               </Form.Group>
@@ -78,8 +90,8 @@ function ContactForm() {
                 <Form.Control
                   type="password"
                   name="password"
-                  value={password}
-                  onChange={(event)=>inputPassword(event)}
+             value={userData?.password}
+             onChange={(e)=>password(e)}
                   placeholder="Enter password"
                 />
               </Form.Group>
@@ -87,8 +99,8 @@ function ContactForm() {
                 <Form.Label>Name</Form.Label>
                 <Form.Control
                   name="Name"
-                  value={name}
-                  onChange={(event)=>inputName(event)}
+             value={userData?.name}
+             onChange={(e)=>name(e)}
                   placeholder="Enter your name"
                 />
               </Form.Group>
@@ -97,9 +109,9 @@ function ContactForm() {
                 <Form.Label>Number</Form.Label>
                 <Form.Control
                   name="Number"
-                  value={number}
-                  onChange={(event)=>inputNumber(event)}
                   placeholder="Number"
+                  value={userData?.number}
+                  onChange={(e)=>number(e)}
                 />
               </Form.Group>
 
@@ -108,15 +120,15 @@ function ContactForm() {
                   <Form.Label>City</Form.Label>
                   <Form.Control
                     name="City"
-                    value={city}
-                    onChange={(event)=>inputCity(event)}
+               value={userData?.city}
+               onChange={(e)=>city(e)}
                     />
                 </Form.Group>
 
                 <Form.Group as={Col} controlId="formGridState">
                   <Form.Label name="State"
-                    value={state}
-                    onChange={(event)=>inputState(event)}
+             value={userData?.state}
+             onChange={(e)=>state(e)}
                     >State</Form.Label>
                   <Form.Select defaultValue="Choose...">
                   <option>Select state</option>
@@ -144,9 +156,8 @@ function ContactForm() {
                 <Form.Group as={Col} controlId="formGridZip">
                   <Form.Label>Zip</Form.Label>
                   <Form.Control
-                    name="Zip"
-                    value={zip}
-                    onChange={(event)=>inputZip(event)}
+                  value={userData?.zip}
+                  onChange={(e)=>zip(e)}
                     />
                 </Form.Group>
               </Row>
@@ -159,21 +170,41 @@ function ContactForm() {
               </Form.Group>
 
               <Button variant="outline-primary"
-               onClick={(event)=>handleSubmit(event)}
+               onClick={(e)=>handleSubmit(e)}
                type="button"
                >
                 Submit
               </Button>
             </Form>
           </div>
-          {show?( <div className="col-md-6 col-10 ">
+          {isLoginClicked?(
+             <div className="col-md-6 col-10 ">
 
-         <h2 className="heading_second">My name is {name} and  My email id is {Email} , password  {password} and my Mobile number {number} is and my state is {state} and my City is {city} and zip Code {zip} all data are correct</h2>  
-        </div>):null}
+         <h2 className="heading_second">My name is 
+         <span className="color" > {isLoginClicked && userData?.name} </span> 
+         and  My email id is 
+         <span className="color" > {isLoginClicked && userData?.email} </span> ,
+           password  
+           <span className="color" > {isLoginClicked ? userData?.password :""} </span> 
+            and my Mobile number 
+            <span className="color" > {isLoginClicked ? userData?.number :""} </span> 
+
+           is and my state is
+           <span className="color" > {isLoginClicked ? userData?.state :""} </span> 
+
+              and my City is 
+              <span className="color" > {isLoginClicked ? userData?.city :""} </span> 
+
+               and zip Code
+               <span className="color" > {isLoginClicked ? userData?.zip:""} </span> 
+
+                all data are correct</h2>   
+        </div>
+         ):null} 
           
         </div>
       </div>
-
+        ):null} 
     </>
   );
 }

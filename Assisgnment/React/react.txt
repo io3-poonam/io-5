@@ -4,7 +4,7 @@
 explain=> class trips expexnds Component {
 render(){}
 }.
-2.function components :Hooks Based
+2.function components :Hooks Based 
 Hooks : alternate option of lifecycle
 lifeCycle : Life of component
 Component lifeCycle:Mount(means- disable the current page and open new page) Update(change the everything) Unmount(run in the code but on the time disable)
@@ -21,3 +21,5 @@ after introduction of hooks it becomes stateful component
 ____what is state?just like js we used to write variable using var let const same as we use state inside component to update and 
 rerender component
 we use usestate() hooks
+hooks function (pair)
+class lifeCycle (pair)

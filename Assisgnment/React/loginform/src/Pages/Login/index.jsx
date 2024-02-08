@@ -1,10 +1,5 @@
 import React from "react";
-import "./style.css";
-import HeaderSign from "../../SignUp/HeaderSign/Header";
-import Desc from "../../SignUp/Desc/Description"
-import LoginPageBox from "../../SignUp/LoginPageBox/LoginPage";
-import FooterSide from "../../SignUp/FooterSide/FooterUpper";
-import Footer from "../../SignUp/Footer/Footer";
+import LoginPage from"../../components2/LoginPageBox/LoginPage";
 import Header from "../../components2/Header";
 function Login() {
   const currentPageShow="Login Page";
@@ -13,11 +8,11 @@ function Login() {
     <React.Fragment>
       <Header currentPage={currentPageShow}  />
       {/* <Footer /> */}
-     <HeaderSign/>
-     <Desc/>
-     <LoginPageBox/>
-     <FooterSide/>
-     <Footer/>
+     {/* <HeaderSign/> */}
+     {/* <Desc/> */}
+     <LoginPage/>
+     {/* <FooterSide/> */}
+     {/* <Footer/> */}
     </React.Fragment>
   );
 }

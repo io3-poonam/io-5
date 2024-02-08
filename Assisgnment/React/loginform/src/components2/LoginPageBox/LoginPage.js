@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./style.css";
-import imageImage from "./assets/image/images.jpg";
-import icon from "./assets/icon/arrow-down-sign-to-navigate.png";
 import { Button } from "react-bootstrap";
 import Loader from "../../Pages/Loader/Loader"
 import axios from "axios";
@@ -56,11 +54,7 @@ console.error("error",error)
     <>
     {showLoader && <Loader/>}
       <div className="Login">
-        <div className="firstCenterPoint">
-          <img src={imageImage} alt="image" className="imageEmail" />
-          <p className="img_para">davidjohnson@gmail.com</p>
-          <img src={icon} alt="icon" className="iconEmail" />
-        </div>
+       
         <form className="formBox">
           <input
             type="email"
@@ -97,7 +91,7 @@ console.error("error",error)
         {/* {(formData?.email.length < 6 || formData?.password.length < 6) && ( */}
         {
             (formData?.email.length<6 || formData?.password.length<6) &&
-          <p style={{ color: "red" }}>
+          <p className="vaildSection">
             Enter correct vaild {formData?.email.length<6 ? "Email":"Password"}
           </p>
         }

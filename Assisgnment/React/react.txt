@@ -23,3 +23,18 @@ rerender component
 we use usestate() hooks
 hooks function (pair)
 class lifeCycle (pair)
+7. any thing pass parent to child called (props)
+8. any things pass child to parent called (calll back function)
+9. useEffect
+to provide some side effect
+it is equivalent to 4 lifecycle of class component
+ when to use
+when we want to mount any component , update component, unmoiunt component, to fetch API , rerender Component 
+10. useEffect(()=>{//logic },[dependencies])
+11.empty square braces runs useEffect only once
+12. empty square braces runs useEffect[props/state] return useEffect (rerender component)
+13. return statement unmount component)
+
+14. Api use in Js for fetch name
+15. React API use in axios
+

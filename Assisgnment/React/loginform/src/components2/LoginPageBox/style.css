@@ -1,0 +1,39 @@
+ * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.Login {
+  text-align: center;
+}
+.formBox{
+  position: fixed;
+  top: 30%;
+  left: 30%;
+}
+.vaildSection{
+  position: fixed;
+  top: 56%;
+  left: 40%;
+  color: red;
+}
+.inputFormPass,
+.inputFormBtn {
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 14px;
+  text-align: center;
+  margin: 6px;
+  font-weight: 700;
+}
+.inputFormPass {
+  padding: 1rem 5rem;
+  color: gray;
+  background-color: #f9f6f6;
+}
+.form-para {
+  color: rgb(0, 85, 255);
+  font-weight: 600;
+  padding-top: 2rem;
+  font-size: 1.1rem;
+} 

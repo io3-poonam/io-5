@@ -89,9 +89,10 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
                 {/* {CartCounting>0&&CartCounting} cart counting greater than 0 show only cart without any 0*/}
                 Button{CartCounting > 0 && CartCounting}
               </Button>
-               {!user?.email && (
-               <Nav.Link href="/Login">Login</Nav.Link>)
-               }
+               {/* {!user?.email && ( */}
+               <Nav.Link href="/Login">Login</Nav.Link>
+               {/* ) */}
+               {/* } */}
               <Nav.Link>
                 {/* <h6 className='dateClass'>Today's Date: {currentDate}</h6> */}
                 <h6 className="dateClass">

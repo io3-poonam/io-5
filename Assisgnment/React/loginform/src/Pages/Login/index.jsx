@@ -7,12 +7,7 @@ function Login() {
   return (
     <React.Fragment>
       <Header currentPage={currentPageShow}  />
-      {/* <Footer /> */}
-     {/* <HeaderSign/> */}
-     {/* <Desc/> */}
      <LoginPage/>
-     {/* <FooterSide/> */}
-     {/* <Footer/> */}
     </React.Fragment>
   );
 }

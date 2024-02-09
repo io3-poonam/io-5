@@ -92,7 +92,7 @@ console.error("error",error)
         {
             (formData?.email.length<6 || formData?.password.length<6) &&
           <p className="vaildSection">
-            Enter correct vaild {formData?.email.length<6 ? "Email":"Password"}
+            Enter correct valid {formData?.email.length<6 ? "Email":"Password"}
           </p>
         }
 

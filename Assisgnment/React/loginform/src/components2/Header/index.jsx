@@ -4,13 +4,12 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "./style.css";
-// import { BsCartFill } from "react-icons/bs";
+import { BsCartFill } from "react-icons/bs";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 function Header(props) {
-
-  const { currentPage = "nothing", CartCounting=[],onShowCartAdd= []} = props || {};
+  const { currentPageShow = "nothing", CartCounting=[],onShowCartAdd= []} = props || {};
   const [seconds, setSeconds] = useState(new Date().getSeconds());
   console.log("currentPage", props);
 const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
@@ -80,24 +79,26 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
               
             </Nav>
             <Nav>
-              <Nav.Link>{currentPage}</Nav.Link>
-              {/* <Button variant="dark" onClick={(e) => handleAddShowCart(e)}>
-                Button{CartCounting > 0 && CartCounting}
-              </Button> */}
+              <Nav.Link>{currentPageShow}</Nav.Link>
+              {currentPageShow=="productPage" &&(
+              <Button variant="dark" style={{height:"2.8rem", margin:"0 1rem "}}><BsCartFill/>
+              {/* //  onClick={(e) => handleAddShowCart(e)} */}
+                {/* Button{CartCounting > 0 && CartCounting} */}
+              </Button> )}
               {user?.image &&(
               <img className="loginImage" src={user?.image} alt={user?.userName}/>)}
               <p className="loginPara">{user?.firstName} {user?.lastName}</p>
                {!user?.email && (
-               <Nav.Link href="/Login">Login</Nav.Link>
+               <Button className="dangerLogin" style={{height:"2.8rem"}} variant="danger" href="/Login">Login</Button>
                 )} 
                  {user?.email && (
-               <Nav.Link href="/Login" onClick={HandleLogout}>Logout</Nav.Link>
+               <Button href="/Login" variant="success" onClick={HandleLogout}>Logout</Button>
                 )}
               <Nav.Link>
                 {/* date remove when login user */}
-                {!user&&(
+                {currentPageShow=="home-page"&&(
                 <h6 className="dateClass">
-                  Date: {date} {monthStr.at(month)},{year} Time: {hour}:{minis}:
+                  {date} {monthStr.at(month)},{year} {hour}:{minis}:
                   {seconds}
                 </h6>)}
               </Nav.Link>

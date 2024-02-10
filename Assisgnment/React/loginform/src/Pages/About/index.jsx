@@ -4,7 +4,6 @@ import Footer from "../../components2/Footer";
 import axios from "axios";
 import AboutMe from "../../components2/Aboutme";
 function About() {
-  const currentPageShow="About Page";
   useEffect(()=>{apiFetch()},[])
   const apiFetch=async()=>{
   try{
@@ -20,7 +19,7 @@ function About() {
 }
   return (
     <React.Fragment>
-      <Header currentPage={currentPageShow}  />
+      <Header currentPageShow="About Page"  />
 <AboutMe/>
       {/* <h1>About page</h1> */}
       <Footer />

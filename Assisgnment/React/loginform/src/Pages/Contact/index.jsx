@@ -4,11 +4,9 @@ import Footer from "../../components2/Footer";
 import ContactForm from "../../components2/ContactForm";
 
 function Contact() {
-  const currentPageShow="Contact Page";
-
   return (
     <React.Fragment>
-      <Header currentPage={currentPageShow}  />
+      <Header currentPageShow="Contact Page" />
 
       <ContactForm />
       <Footer />

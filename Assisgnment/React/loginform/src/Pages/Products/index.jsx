@@ -7,58 +7,61 @@ import axios from "axios";
 import Loader from "../Loader/Loader";
 function Products() {
   const [allProduct, setAllProduct] = useState([]);
-  const[showLoader,setLoader]=useState(false)
+  const [showLoader, setLoader] = useState(false);
   // const [count, setCount] = useState(0);
   const [cartProductAdd, setCartProductAdd] = useState([]);
-
-
-  const currentPageShow = "Product Page";
   useEffect(() => {
     productApiFetch();
   }, []);
   const productApiFetch = async () => {
-    try{
+    try {
       setLoader(true);
       const api = `https://dummyjson.com/products`;
-    const dataApi = await axios.get(api);
-    console.log("api", dataApi);
-    const { data: { products = [] } = {} } = dataApi || {};
-    console.log("pro", products);
-    setAllProduct(products);
-    setLoader(false)}
-    catch(error){
-setLoader(false);
+      const dataApi = await axios.get(api);
+      console.log("api", dataApi);
+      const { data: { products = [] } = {} } = dataApi || {};
+      console.log("pro", products);
+      setAllProduct(products);
+      setLoader(false);
+    } catch (error) {
+      setLoader(false);
     }
-  
   };
   // setCount=count + 1
-  const handleAddCartClick=(selectProduct)=>{
-    console.log("parent",selectProduct)
-          //  setCount(count + 1)
-           setCartProductAdd([...cartProductAdd,selectProduct])
-        }
-        console.log("cartProductAdd",cartProductAdd);
+  const handleAddCartClick = (selectProduct) => {
+    console.log("parent", selectProduct);
+    //  setCount(count + 1)
+    setCartProductAdd([...cartProductAdd, selectProduct]);
+  };
+  console.log("cartProductAdd", cartProductAdd);
   return (
     <React.Fragment>
       {/* CartCounting= { cartProductAdd.length}  cart product add in without count state*/}
-      <Header currentPage={currentPageShow} CartCounting= { cartProductAdd.length} onShowCartAdd={cartProductAdd} />
+      <Header
+        // currentPage={currentPageShow}
+        currentPageShow="productPage"
+        CartCounting={cartProductAdd.length}
+        onShowCartAdd={cartProductAdd}
+      />
       <div className="product-container">
-         {/* show Loader when api is hit */}
-         { showLoader &&<Loader/>}
-         {/* don't show Loader when api is hit */}
-         {!showLoader&&
-         allProduct.map((items, index) => {
-          return (<ProductCard price={items?.price}
-          description={items?.description}
-          title={items?.title}
-          brand={items?.brand}
-          thumbnail={items?.thumbnail}
-          category={items?.category}
-          {...items}
-          onCartClick={handleAddCartClick}
-
-           />);
-        })}
+        {/* show Loader when api is hit */}
+        {showLoader && <Loader />}
+        {/* don't show Loader when api is hit */}
+        {!showLoader &&
+          allProduct.map((items, index) => {
+            return (
+              <ProductCard
+                price={items?.price}
+                description={items?.description}
+                title={items?.title}
+                brand={items?.brand}
+                thumbnail={items?.thumbnail}
+                category={items?.category}
+                {...items}
+                onCartClick={handleAddCartClick}
+              />
+            );
+          })}
       </div>
       <Footer />
     </React.Fragment>

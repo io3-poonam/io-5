@@ -13,9 +13,9 @@ function Header(props) {
   const { currentPage = "nothing", CartCounting=[],onShowCartAdd= []} = props || {};
   const [seconds, setSeconds] = useState(new Date().getSeconds());
   console.log("currentPage", props);
-  // const [userLogin,setUserLogin]=useState(JSON.parse(localStorage.getItem("userLogin")))
 const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
-  console.log("userData",user)
+  console.log("userData",user);
+  const navigate=useNavigate();
   // times state
   const monthStr = [
     "january",
@@ -42,22 +42,18 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
   // seconds
   setInterval(() => {
     // setSeconds(new Date().getSeconds());
-    // setUser(JSON.parse(localStorage.getItem("user")))
+    setUser(JSON.parse(localStorage.getItem("user")))
   }, 1000);
-  // console.log("month", monthStr.at(month), hour, minis, sec);
-  // const [currentDate, setCurrentDate] = useState(getDate());
-  // function getDate() {
-  // const today = new Date();
-  // const month = today.getMonth() + 1;
-  // const year = today.getFullYear();
-  // const date = today.getDate();
-  // return `${month}/${date}/${year}`;
-  // }
-   const navigate=useNavigate();
-  const handleAddShowCart = () => {
-    console.log("click",onShowCartAdd);
-    navigate("/cart")
-  };
+  //  const navigate=useNavigate();
+  // const handleAddShowCart = () => {
+  //   console.log("click",onShowCartAdd);
+  //   navigate("/cart")
+  // };
+  // clear local storage
+  const HandleLogout=()=>{
+    localStorage.clear("user")
+    navigate("/login")
+  }
   return (
     <React.Fragment>
       <Navbar expand="lg" className="bg-body-tertiary">
@@ -85,20 +81,25 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
             </Nav>
             <Nav>
               <Nav.Link>{currentPage}</Nav.Link>
-              <Button variant="dark" onClick={(e) => handleAddShowCart(e)}>
-                {/* {CartCounting>0&&CartCounting} cart counting greater than 0 show only cart without any 0*/}
+              {/* <Button variant="dark" onClick={(e) => handleAddShowCart(e)}>
                 Button{CartCounting > 0 && CartCounting}
-              </Button>
-               {/* {!user?.email && ( */}
+              </Button> */}
+              {user?.image &&(
+              <img className="loginImage" src={user?.image} alt={user?.userName}/>)}
+              <p className="loginPara">{user?.firstName} {user?.lastName}</p>
+               {!user?.email && (
                <Nav.Link href="/Login">Login</Nav.Link>
-               {/* ) */}
-               {/* } */}
+                )} 
+                 {user?.email && (
+               <Nav.Link href="/Login" onClick={HandleLogout}>Logout</Nav.Link>
+                )}
               <Nav.Link>
-                {/* <h6 className='dateClass'>Today's Date: {currentDate}</h6> */}
+                {/* date remove when login user */}
+                {!user&&(
                 <h6 className="dateClass">
                   Date: {date} {monthStr.at(month)},{year} Time: {hour}:{minis}:
-                  {seconds}{" "}
-                </h6>
+                  {seconds}
+                </h6>)}
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

@@ -11,10 +11,7 @@
   top: 30%;
   left: 30%;
 }
-.vaildSection{
-  position: fixed;
-  top: 56%;
-  left: 40%;
+.validSection{
   color: red;
 }
 .inputFormPass,

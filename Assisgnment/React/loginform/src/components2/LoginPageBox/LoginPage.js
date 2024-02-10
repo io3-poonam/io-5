@@ -30,6 +30,10 @@ try{
     setShowLoader(true)
 const api="https://dummyjson.com/auth/login";
 //api calling time await
+// const Response=await axios.post(api,{
+//   username: formData?.email,
+//   password: formdata?.password,
+// });
 const Response=await axios.post(api,{
     username: 'kminchelle',
     password: '0lelplR',
@@ -86,15 +90,15 @@ console.error("error",error)
           </Button>
         <p className="form-para">I forgot the Password</p>
 
-        </form>
         {/* Login form with correct enter email id and password */}
-        {/* {(formData?.email.length < 6 || formData?.password.length < 6) && ( */}
+        
         {
             (formData?.email.length<6 || formData?.password.length<6) &&
-          <p className="vaildSection">
+          <p className="validSection">
             Enter correct valid {formData?.email.length<6 ? "Email":"Password"}
           </p>
         }
+        </form>
 
       </div>
     </>

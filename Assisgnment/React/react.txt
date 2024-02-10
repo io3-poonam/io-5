@@ -22,6 +22,7 @@ ____what is state?just like js we used to write variable using var let const sam
 rerender component
 we use usestate() hooks
 hooks function (pair)
+
 class lifeCycle (pair)
 7. any thing pass parent to child called (props)
 8. any things pass child to parent called (calll back function)
@@ -38,3 +39,4 @@ when we want to mount any component , update component, unmoiunt component, to f
 14. Api use in Js for fetch name
 15. React API use in axios
 
+http method :post,put,patch,get

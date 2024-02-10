@@ -6,4 +6,11 @@
   background-color: rgb(224, 213, 213);
   border-radius: 30px;
   padding: 0.5rem;
+}.loginImage{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.loginPara{
+  margin: .5rem 0;
+  font-size: 700;
 }

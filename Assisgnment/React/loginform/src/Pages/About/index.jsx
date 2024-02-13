@@ -19,9 +19,8 @@ function About() {
 }
   return (
     <React.Fragment>
-      <Header currentPageShow="About Page"  />
+      <Header/>
 <AboutMe/>
-      {/* <h1>About page</h1> */}
       <Footer />
     </React.Fragment>
   );

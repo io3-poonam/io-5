@@ -16,7 +16,7 @@ const ProductCard = (props) => {
   return (
     <>
       <div className="product-card" href="#dolce-gabbana-cropped">
-        <img className="product-card__image" src={thumbnail} />
+        <img className="product-card__image" src={thumbnail} alt="thumbnail"/>
         <p className="product-card__brand">{title}</p>
         <p className="product-card__brand">{category}</p>
 
@@ -37,14 +37,14 @@ const ProductCard = (props) => {
     {/* already add in cart */}
 
           {!addInCart?(
-          <Button onClick={(e) => HandleCartAddBtn(e, props)}>
+          <Button variant="danger" onClick={(e) => HandleCartAddBtn(e, props)}>
             Add To Cart
           </Button>
           ):(
-          <p>Already in cart</p>
+          <Button variant="dark">Already in cart</Button>
 
           )}
-          <Button>Buy Now </Button>
+          <Button variant="success">Buy Now </Button>
         </div>
       </div>
     </>

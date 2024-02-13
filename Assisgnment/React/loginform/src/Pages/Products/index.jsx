@@ -8,7 +8,6 @@ import Loader from "../Loader/Loader";
 function Products() {
   const [allProduct, setAllProduct] = useState([]);
   const [showLoader, setLoader] = useState(false);
-  // const [count, setCount] = useState(0);
   const [cartProductAdd, setCartProductAdd] = useState([]);
   useEffect(() => {
     productApiFetch();
@@ -27,10 +26,8 @@ function Products() {
       setLoader(false);
     }
   };
-  // setCount=count + 1
   const handleAddCartClick = (selectProduct) => {
     console.log("parent", selectProduct);
-    //  setCount(count + 1)
     setCartProductAdd([...cartProductAdd, selectProduct]);
   };
   console.log("cartProductAdd", cartProductAdd);
@@ -38,8 +35,7 @@ function Products() {
     <React.Fragment>
       {/* CartCounting= { cartProductAdd.length}  cart product add in without count state*/}
       <Header
-        // currentPage={currentPageShow}
-        currentPageShow="productPage"
+        isCartEnabled={true}
         CartCounting={cartProductAdd.length}
         onShowCartAdd={cartProductAdd}
       />

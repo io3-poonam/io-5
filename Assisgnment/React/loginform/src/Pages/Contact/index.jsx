@@ -6,7 +6,7 @@ import ContactForm from "../../components2/ContactForm";
 function Contact() {
   return (
     <React.Fragment>
-      <Header currentPageShow="Contact Page" />
+      <Header  />
 
       <ContactForm />
       <Footer />

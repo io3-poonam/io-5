@@ -9,7 +9,7 @@ import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 function Header(props) {
-  const { currentPageShow = "nothing", CartCounting=[],onShowCartAdd= []} = props || {};
+  const {currentPageShow, isCartEnabled = false, CartCounting=[],onShowCartAdd= []} = props || {};
   const [seconds, setSeconds] = useState(new Date().getSeconds());
   console.log("currentPage", props);
 const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
@@ -56,7 +56,7 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
     <React.Fragment>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
-          <Navbar.Brand href="/">Dilpkart</Navbar.Brand>
+          <Navbar.Brand href="/">Flipkart</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -78,9 +78,10 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
               
             </Nav>
             <Nav>
-              <Nav.Link>{currentPageShow}</Nav.Link>
-              {currentPageShow=="productPage" &&(
+              {/* cart show only product */}
+              {isCartEnabled===true &&(
               <Button variant="dark" style={{height:"2.8rem", margin:"0 1rem "}}><BsCartFill onClick={(e) => handleAddShowCart(e)}/>
+              {/* cartCounting less than 0 than print cartCounting */}
               {CartCounting > 0 && CartCounting}
               </Button> )}
               {user?.image &&(
@@ -94,7 +95,7 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
                 )}
               <Nav.Link>
                 {/* date remove when login user */}
-                {currentPageShow=="Home Page"&&(
+                {currentPageShow==="Home Page"&&(
                 <h6 className="dateClass">
                   {date} {monthStr.at(month)},{year} {hour}:{minis}:
                   {seconds}

@@ -43,11 +43,10 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
     // setSeconds(new Date().getSeconds());
     setUser(JSON.parse(localStorage.getItem("user")))
   }, 1000);
-  //  const navigate=useNavigate();
-  // const handleAddShowCart = () => {
-  //   console.log("click",onShowCartAdd);
-  //   navigate("/cart")
-  // };
+  const handleAddShowCart = () => {
+    console.log("click",onShowCartAdd);
+    navigate("/cart")
+  };
   // clear local storage
   const HandleLogout=()=>{
     localStorage.clear("user")
@@ -81,9 +80,8 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
             <Nav>
               <Nav.Link>{currentPageShow}</Nav.Link>
               {currentPageShow=="productPage" &&(
-              <Button variant="dark" style={{height:"2.8rem", margin:"0 1rem "}}><BsCartFill/>
-              {/* //  onClick={(e) => handleAddShowCart(e)} */}
-                {/* Button{CartCounting > 0 && CartCounting} */}
+              <Button variant="dark" style={{height:"2.8rem", margin:"0 1rem "}}><BsCartFill onClick={(e) => handleAddShowCart(e)}/>
+              {CartCounting > 0 && CartCounting}
               </Button> )}
               {user?.image &&(
               <img className="loginImage" src={user?.image} alt={user?.userName}/>)}
@@ -96,7 +94,7 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
                 )}
               <Nav.Link>
                 {/* date remove when login user */}
-                {currentPageShow=="home-page"&&(
+                {currentPageShow=="Home Page"&&(
                 <h6 className="dateClass">
                   {date} {monthStr.at(month)},{year} {hour}:{minis}:
                   {seconds}

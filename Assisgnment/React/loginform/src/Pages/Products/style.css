@@ -5,3 +5,7 @@
   align-items: center;
   flex-wrap: wrap;
 }
+title{
+  font-weight: 600;
+  color: red;
+}

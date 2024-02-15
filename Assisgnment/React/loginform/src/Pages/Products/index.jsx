@@ -29,6 +29,7 @@ function Products() {
   const handleAddCartClick = (selectProduct) => {
     console.log("parent", selectProduct);
     setCartProductAdd([...cartProductAdd, selectProduct]);
+    localStorage.setItem("cardDataItems",JSON.stringify([...cartProductAdd, selectProduct]))
   };
   console.log("cartProductAdd", cartProductAdd);
   return (

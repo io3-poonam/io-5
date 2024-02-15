@@ -24,8 +24,11 @@ we use usestate() hooks
 hooks function (pair)
 
 class lifeCycle (pair)
-7. any thing pass parent to child called (props)
+7. when any pass any properties parent to child  any thing pass parent to child called (props) called is props drilling not use more than three level props
 8. any things pass child to parent called (calll back function)
+create a callback function name in child like onCartClick
+call the function to get the value from child like {handleCartClic}
+declare function to get value from child const handleCartClick=()=>{}
 9. useEffect
 to provide some side effect
 it is equivalent to 4 lifecycle of class component
@@ -40,3 +43,6 @@ when we want to mount any component , update component, unmoiunt component, to f
 15. React API use in axios
 
 http method :post,put,patch,get
+
+child to  
+

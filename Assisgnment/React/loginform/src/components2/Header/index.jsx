@@ -45,8 +45,10 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
   }, 1000);
   const handleAddShowCart = () => {
     console.log("click",onShowCartAdd);
-    navigate("/cart")
+    navigate("/cart");
+
   };
+  
   // clear local storage
   const HandleLogout=()=>{
     localStorage.clear("user")

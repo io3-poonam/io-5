@@ -9,7 +9,12 @@ const ProductCard = (props) => {
     props || {};
   const HandleCartAddBtn = (e, props) => {
     console.log("child ",props);
-    onCartClick(props);
+    // current and previous data show get
+
+   const localDataGet=localStorage.getItem("cardDataItems");
+
+   const localPreviousData=JSON.parse(localDataGet)
+    onCartClick(props,localPreviousData);
     // allready add in cart
     setAddInCart(true)
   };

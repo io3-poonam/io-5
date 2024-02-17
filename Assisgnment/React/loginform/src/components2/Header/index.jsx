@@ -14,6 +14,11 @@ function Header(props) {
   console.log("currentPage", props);
 const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
   console.log("userData",user);
+    // current and previous data show get
+  // local storage data get previous data counting
+  const CartCountingLocal=localStorage.getItem("cardDataItems")
+  const CartCountData=JSON.parse(CartCountingLocal)
+  console.log("local",CartCountData)
   const navigate=useNavigate();
   // times state
   const monthStr = [
@@ -84,7 +89,8 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
               {isCartEnabled===true &&(
               <Button variant="dark" style={{height:"2.8rem", margin:"0 1rem "}}><BsCartFill onClick={(e) => handleAddShowCart(e)}/>
               {/* cartCounting less than 0 than print cartCounting */}
-              {CartCounting > 0 && CartCounting}
+              {CartCountData?.length >0 ?( CartCountData?.length):<>
+              {CartCounting > 0 && CartCounting}</>}
               </Button> )}
               {user?.image &&(
               <img className="loginImage" src={user?.image} alt={user?.userName}/>)}

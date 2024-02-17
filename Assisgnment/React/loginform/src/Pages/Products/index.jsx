@@ -26,10 +26,17 @@ function Products() {
       setLoader(false);
     }
   };
-  const handleAddCartClick = (selectProduct) => {
+  const handleAddCartClick = (selectProduct,previousData) => {
     console.log("parent", selectProduct);
     setCartProductAdd([...cartProductAdd, selectProduct]);
-    localStorage.setItem("cardDataItems",JSON.stringify([...cartProductAdd, selectProduct]))
+    // current and previous data show
+    if(previousData){
+      localStorage.setItem("cardDataItems",JSON.stringify([...previousData, selectProduct]));
+    }
+    else{
+      localStorage.setItem("cardDataItems",JSON.stringify([...cartProductAdd, selectProduct]));
+      
+    }
   };
   console.log("cartProductAdd", cartProductAdd);
   return (

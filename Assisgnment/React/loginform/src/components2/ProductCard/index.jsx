@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import "./style.css";
 import { Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const ProductCard = (props) => {
     // allready add in cart
   const [addInCart,setAddInCart]=useState(false)
   const { price, description, title, brand, thumbnail, category, onCartClick } =
     props || {};
+    const navigate=useNavigate()
   const HandleCartAddBtn = (e, props) => {
     console.log("child ",props);
     // current and previous data show get
@@ -18,9 +20,13 @@ const ProductCard = (props) => {
     // allready add in cart
     setAddInCart(true)
   };
+  const gotoProductPage=()=>{
+    console.log("gotoProductPage")
+    navigate("/product",{state:JSON.stringify(props)})
+  }
   return (
     <>
-      <div className="product-card" href="#dolce-gabbana-cropped">
+      <div className="product-card" href="#dolce-gabbana-cropped" onClick={gotoProductPage}>
         <img className="product-card__image" src={thumbnail} alt="thumbnail"/>
         <p className="product-card__brand">{title}</p>
         <p className="product-card__brand">{category}</p>

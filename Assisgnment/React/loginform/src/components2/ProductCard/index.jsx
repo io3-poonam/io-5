@@ -22,7 +22,7 @@ const ProductCard = (props) => {
   };
   const gotoProductPage=()=>{
     console.log("gotoProductPage")
-    navigate("/product",{state:JSON.stringify(props)})
+    navigate("/product" , {state:JSON.stringify(props)})
   }
   return (
     <>

@@ -1,0 +1,100 @@
+.selected_product_container{
+    display: flex;
+    width: 100%;
+    background-color: gray;
+    border: 2px solid red;
+}
+.selected_product_container .image_container{
+    width: 50%;
+    height: 25rem;
+    border-radius: 5px;
+    margin: 1%;
+    padding: 1%;
+    background-color: rgb(59, 171, 102);
+    border: 2px solid hsla(234, 86%, 46%, 0.381);
+}.selected_product_container{
+    width: 50%;   height: 25rem;
+    background-color: rgb(186, 42, 167);
+    border: 2px solid red;  border-radius: 5px;
+    margin: 1%;
+    padding: 1%;
+}
+.image_section{
+    display: flex;
+        flex-direction: row;
+        width: 100%;
+}
+.Vertical_image{
+  
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.small__image{
+    width: 100px;
+    height: 100px;    padding: 3%;
+}
+
+.highLighted__image{
+    width: 75%;
+}
+.highLighted__image img{
+    height: 300px; width: 80%;
+  
+}
+  /* .btn_product{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+  }
+  
+  .product-card__description,
+  .product-card__price,
+  .product-card__brand {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+  }
+  
+  .product-card__brand {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .product-card__description {
+    font-weight: normal;
+  }
+  
+  .product-card__price {
+    font-weight: bold;
+  }
+  
+  .product-card__btn-wishlist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: white;
+    padding: 12px 10px 10px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 64, 128, 0.1);
+  }
+  
+  .product-card__btn-wishlist svg {
+    fill: lightgrey;
+  }
+  .product-card__description{
+    font-weight: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 20rem;
+    overflow: hidden;
+    height: 3rem;
+  }
+   */

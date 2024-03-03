@@ -2,8 +2,6 @@
   display: flex;
   width: 80%;
   height: 28rem;
-  /* background-color: rgb(186, 42, 167); */
-  border: 2px solid red;
   border-radius: 5px;
   margin: auto;
   padding: 1%;
@@ -14,7 +12,6 @@
     border-radius: 5px;
     margin: 1%;
     padding: 1%;
-    /* background-color: rgb(59, 171, 102); */
     border: 2px solid hsla(234, 86%, 46%, 0.381);
 }
 .image_section{
@@ -32,7 +29,7 @@ height:350px;
 }
 
 .small__image{
-  width: 100px;
+  width: 140px;
   min-height: 85px;
   max-height: 85px;
 
@@ -45,8 +42,8 @@ height:350px;
 }
 .highLighted__image img{
  max-height: 300px; min-height: 300px;
-  width: 80%;
-  margin: 1% 12%;
+  width: 90%;
+  margin: 1% ;
   
 }
 .detail_section_product{

@@ -1,16 +1,21 @@
-/* .links {
+.links {
   text-decoration: none;
   color: #8a578b;
+}
+.navbar-nav{
+  align-items: center;
 }
 .dateClass{
   background-color: rgb(224, 213, 213);
   border-radius: 30px;
   padding: 0.5rem;
+  margin-bottom: 0 !important;
 }.loginImage{
   width: 2.5rem;
   height: 2.5rem;
 }
 .loginPara{
   margin: .5rem 0;
-  font-size: 700;
-} */
+  font-weight: 500;
+padding: 10px;
+} 

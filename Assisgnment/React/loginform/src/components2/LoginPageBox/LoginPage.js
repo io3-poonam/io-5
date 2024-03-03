@@ -15,11 +15,11 @@ function LoginPage() {
   const navigate=useNavigate()
   const handleInputE = (e) => {
     setFormData({ ...formData, email: e.target.value });
-    console.log(e.target.value);
+    // console.log(e.target.value);
   };
   const handleInputP = (event) => {
     setFormData({ ...formData, password: event.target.value });
-    console.log(event.target.value);
+    // console.log(event.target.value);
   };
   // handle login page and redirect home page use navigate
 const handleBtnClick=async(e)=>{
@@ -40,7 +40,7 @@ const Response=await axios.post(api,{
 });
 // destructure
 const {data={}}=Response||{}
-console.log(Response)
+// console.log(Response)
 if(Response?.status==200){
     // store in local storage
     localStorage.setItem("user",JSON.stringify(data))
@@ -51,7 +51,7 @@ setShowLoader(false);
 catch(error){
 setShowLoader(false);
 
-console.error("error",error)
+// console.error("error",error)
 }
 }
   return (

@@ -1,8 +1,12 @@
 .selected_product_container{
-    display: flex;
-    width: 100%;
-    background-color: gray;
-    border: 2px solid red;
+  display: flex;
+  width: 80%;
+  height: 28rem;
+  /* background-color: rgb(186, 42, 167); */
+  border: 2px solid red;
+  border-radius: 5px;
+  margin: auto;
+  padding: 1%;
 }
 .selected_product_container .image_container{
     width: 50%;
@@ -10,48 +14,55 @@
     border-radius: 5px;
     margin: 1%;
     padding: 1%;
-    background-color: rgb(59, 171, 102);
+    /* background-color: rgb(59, 171, 102); */
     border: 2px solid hsla(234, 86%, 46%, 0.381);
-}.selected_product_container{
-    width: 50%;   height: 25rem;
-    background-color: rgb(186, 42, 167);
-    border: 2px solid red;  border-radius: 5px;
-    margin: 1%;
-    padding: 1%;
 }
 .image_section{
     display: flex;
         flex-direction: row;
         width: 100%;
 }
-.Vertical_image{
-  
-        display: flex;
-        flex-direction: column;
-        width: 25%;
-        height: 350px;
-    overflow-y: auto;
-    overflow-x: hidden;
+.Vertical_image {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+height:350px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .small__image{
-    width: 100px;
-    height: 100px;    padding: 3%;
+  width: 100px;
+  min-height: 85px;
+  max-height: 85px;
+
+  padding: 1% 40% 1% 1%;
+  margin: 1%;
 }
 
 .highLighted__image{
-    width: 75%;
+    width: 80%;
 }
 .highLighted__image img{
-    height: 300px; width: 80%;
+ max-height: 300px; min-height: 300px;
+  width: 80%;
+  margin: 1% 12%;
   
 }
-  /* .btn_product{
-    display: flex;
-    justify-content: space-evenly;
-    width: 90%;
+.detail_section_product{
+  width: 50%;
+    height: 25rem;
+    border-radius: 5px;
+    margin: 1%;
+    padding: 1%;
+    /* background-color: rgb(59, 171, 102); */
+    border: 2px solid hsla(234, 86%, 46%, 0.381);
+}
+.highLighted__image  .btn_SelectedProduct{
+  display: flex;
+  justify-content: space-evenly;
   }
-  
+  /*
   .product-card__description,
   .product-card__price,
   .product-card__brand {

@@ -11,14 +11,14 @@ import { useNavigate } from "react-router-dom";
 function Header(props) {
   const {currentPageShow, isCartEnabled = false, CartCounting=[],onShowCartAdd= []} = props || {};
   const [seconds, setSeconds] = useState(new Date().getSeconds());
-  console.log("currentPage", props);
+  // console.log("currentPage", props);
 const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
-  console.log("userData",user);
+  // console.log("userData",user);
     // current and previous data show get
   // local storage data get previous data counting
   const CartCountingLocal=localStorage.getItem("cardDataItems")
   const CartCountData=JSON.parse(CartCountingLocal)
-  console.log("local",CartCountData)
+  // console.log("local",CartCountData)
   const navigate=useNavigate();
   // times state
   const monthStr = [
@@ -49,7 +49,7 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
     setUser(JSON.parse(localStorage.getItem("user")))
   }, 1000);
   const handleAddShowCart = () => {
-    console.log("click",onShowCartAdd);
+    // console.log("click",onShowCartAdd);
     navigate("/cart");
 
   };

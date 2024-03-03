@@ -10,7 +10,7 @@ const Cart = (props) => {
   // const{cartProductAdd}=props
   const [total,setTotal]=useState()
   const location = useLocation();
-  console.log("props", props, "location", location);
+  // console.log("props", props, "location", location);
 
   // const localStorageData= (JSON.parse(localStorage.getItem("cardDataItems")));
   const localStorageData = localStorage.getItem("cardDataItems");

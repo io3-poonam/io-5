@@ -17,9 +17,9 @@ function Products() {
       setLoader(true);
       const api = `https://dummyjson.com/products`;
       const dataApi = await axios.get(api);
-      console.log("api", dataApi);
+      // console.log("api", dataApi);
       const { data: { products = [] } = {} } = dataApi || {};
-      console.log("pro", products);
+      // console.log("pro", products);
       setAllProduct(products);
       setLoader(false);
     } catch (error) {
@@ -27,7 +27,7 @@ function Products() {
     }
   };
   const handleAddCartClick = (selectProduct,previousData) => {
-    console.log("parent", selectProduct);
+    // console.log("parent", selectProduct);
     setCartProductAdd([...cartProductAdd, selectProduct]);
     // current and previous data show
     if(previousData){
@@ -38,7 +38,7 @@ function Products() {
       
     }
   };
-  console.log("cartProductAdd", cartProductAdd);
+  // console.log("cartProductAdd", cartProductAdd);
   return (
     <React.Fragment>
       {/* CartCounting= { cartProductAdd.length}  cart product add in without count state*/}

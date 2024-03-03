@@ -10,7 +10,7 @@ function About() {
 
       const api="https://restcountries.com/#endpoints-all"
       const Res=await axios.get(api)
-      console.log(api,Res)
+      console(api,Res)
     }
   
   catch(err){

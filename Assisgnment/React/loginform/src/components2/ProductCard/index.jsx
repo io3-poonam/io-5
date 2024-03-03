@@ -10,7 +10,7 @@ const ProductCard = (props) => {
     props || {};
     const navigate=useNavigate()
   const HandleCartAddBtn = (e, props) => {
-    console.log("child ",props);
+    // console.log("child ",props);
     // current and previous data show get
 
    const localDataGet=localStorage.getItem("cardDataItems");
@@ -20,13 +20,15 @@ const ProductCard = (props) => {
     // allready add in cart
     setAddInCart(true)
   };
+  // got to product page
   const gotoProductPage=()=>{
-    console.log("gotoProductPage")
+    // console.log("gotoProductPage")
     navigate("/product" , {state:JSON.stringify(props)})
   }
   return (
     <>
-      <div className="product-card" href="#dolce-gabbana-cropped" onClick={gotoProductPage}>
+      <div className="product-card" href="#dolce-gabbana-cropped" >
+        <div onClick={gotoProductPage}>
         <img className="product-card__image" src={thumbnail} alt="thumbnail"/>
         <p className="product-card__brand">{title}</p>
         <p className="product-card__brand">{category}</p>
@@ -43,7 +45,8 @@ const ProductCard = (props) => {
             />
           </svg>
         </button>
-        <div className="btn_product">
+        </div>
+      <div className="btn_product">
 
     {/* already add in cart */}
 
@@ -56,8 +59,8 @@ const ProductCard = (props) => {
 
           )}
           <Button variant="success">Buy Now </Button>
-        </div>
       </div>
+        </div>
     </>
   );
 };

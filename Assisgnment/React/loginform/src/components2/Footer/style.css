@@ -11,7 +11,6 @@
   width: 60%;
   margin: 0;
   color: #878787;
-  border-right: 1px solid #878787;
 }
 .ulFooterSide{
   padding-left: 0 !important;
@@ -54,6 +53,10 @@
 }
 .listItems {
   width: 100%;
+}
+.footerAddress{
+  border-left: 1px solid #878787;
+  padding: 1% 1%;height: 98%;
 }
 .para-footer {
   width: 25%;

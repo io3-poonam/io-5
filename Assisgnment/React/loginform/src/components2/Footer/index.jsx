@@ -58,7 +58,7 @@ function Footer() {
             </ul></li>
         </ul>
         <div className="footerRightSideAddress">
-          <div>
+          <div className="footerAddress">
           <h6 className="heading">Mail us:</h6>
           <p className="FooterPara">Flipkart internet private limited, Building Aysssa, begonia & Clove Embassy Tech village Outer Ring Road, Devarabessanhalli Village, Bengaluru,560103, Karnataka, India</p>
           <h6 className="heading">Social:</h6>

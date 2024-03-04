@@ -4,6 +4,7 @@ import Footer from "../../components2/Footer";
 import ImageSliders from "../../components2/ImageSliders";
 import OfferPage from "../../components2/offerPage/Offer";
 import "./style.css"
+import AllProduct from "../../components2/AllProduct/AllProduct";
 function HomePage() {
   return (
     <div>
@@ -13,6 +14,7 @@ function HomePage() {
       <div className="centerHomePage">
       <ImageSliders />
       <OfferPage/>
+      <AllProduct/>
       </div>
       <Footer />
       </div>

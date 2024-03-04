@@ -1,0 +1,12 @@
+#cardProductDetails{
+    display: flex !important;
+    flex-direction: row;
+    width: 100%;
+}
+.card{
+    margin: 1%;
+    width: 100%;
+}
+.CardImage      {
+    width: 20rem;
+}

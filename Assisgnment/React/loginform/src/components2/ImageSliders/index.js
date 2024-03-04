@@ -1,40 +1,36 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-// import ExampleCarouselImage from "components/ExampleCarouselImage";
-import img1 from "../../Assets/images/mount.jpg";
-import img2 from "../../Assets/images/background.jpg";
-import img3 from "../../Assets/images/river.jpeg";
+import CarouselImage1 from "../../Assets/images/carousel1.webp"
+import CarouselImage2 from "../../Assets/images/carousel2.webp";
+import CarouselImage3 from "../../Assets/images/carousel3.webp";
+import CarouselImage4 from "../../Assets/images/carousel4.webp";
+import CarouselImage5 from "../../Assets/images/carousel5.webp";
 import "./style.css";
 
 function ImageSliders() {
   return (
     <>
+    <div className="carousel">
       <Carousel>
         <Carousel.Item>
-          <img className="slider-image" src={img1} text="First slide" />
-          <Carousel.Caption>
+          <img className="slider-image" src={CarouselImage1} text="First slide" />
+          {/* <Carousel.Caption>
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
+          </Carousel.Caption> */}
+        </Carousel.Item> <Carousel.Item>
+          <img className="slider-image" src={CarouselImage2} text="CarouselImage2" />
+        </Carousel.Item> 
+        <Carousel.Item>
+          <img className="slider-image" src={CarouselImage3} text="CarouselImage3" /> 
         </Carousel.Item>
         <Carousel.Item>
-          <img className="slider-image" src={img2} text="Second slide" />
-
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
+          <img className="slider-image" src={CarouselImage4} text="CarouselImage4" />
+        </Carousel.Item>   
+         <Carousel.Item>
+          <img className="slider-image" src={CarouselImage5} text="CarouselImage5" />
         </Carousel.Item>
-        <Carousel.Item>
-          <img className="slider-image" src={img3} text="Third slide" />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+      </Carousel></div>
     </>
   );
 }

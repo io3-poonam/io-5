@@ -35,3 +35,6 @@ code {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+#root{
+  background-color: #F1F2F4;
+}

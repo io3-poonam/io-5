@@ -22,6 +22,7 @@ ____what is state?just like js we used to write variable using var let const sam
 rerender component
 we use usestate() hooks
 hooks function (pair)
+[data,value,SetData,setValue]=useState()means data,value ko hold karna or store krna set means update karna
 
 class lifeCycle (pair)
 7. when any pass any properties parent to child  any thing pass parent to child called (props) called is props drilling not use more than three level props
@@ -33,7 +34,7 @@ declare function to get value from child const handleCartClick=()=>{}
 to provide some side effect
 it is equivalent to 4 lifecycle of class component
  when to use
-when we want to mount any component , update component, unmoiunt component, to fetch API , rerender Component 
+when we want to mount any component , update component, unmount component, to fetch API , rerender Component 
 10. useEffect(()=>{//logic },[dependencies])
 11.empty square braces runs useEffect only once
 12. empty square braces runs useEffect[props/state] return useEffect (rerender component)
@@ -46,3 +47,4 @@ http method :post,put,patch,get
 
 child to  
 
+16. store data in  navigate thought state => word in 64 bites

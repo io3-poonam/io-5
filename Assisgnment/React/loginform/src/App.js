@@ -6,7 +6,7 @@ import Contact from "./Pages/Contact";
 import Products from "./Pages/Products";
 import Login from "./Pages/Login";
 import Cart from "./Pages/Cart/Cart.jsx";
-import SelectedProduct from "./Pages/SelectedProduct/SelectedProduct.jsx";
+import SelectedProduct from "./Pages/SelectedProduct/SingleSelectedProduct.jsx";
 function App() {
   return (
     <React.Fragment>

@@ -1,12 +1,35 @@
 #cardProductDetails{
-    display: flex !important;
-    flex-direction: row;
+    /* display: flex ;
+    flex-direction: row; */
+    margin: auto;
     width: 100%;
+    overflow: scroll;
 }
-.card{
-    margin: 1%;
-    width: 100%;
+.cardDetailsChild{
+    width: fit-content;display: flex ;
+    flex-direction: row;
+    overflow: auto;
+}
+.cardDetails{
+    margin: 5px;
+    width: 10rem;
+    min-height: 14rem;
+    max-height: 14rem;
+    border-radius: 5px;
+    flex-grow: 1;
 }
 .CardImage      {
-    width: 20rem;
+    border-radius: 5px ;
+    width: 100%;
+    min-height: 9rem;
+    max-height: 9rem;
+margin: 0 auto;    padding: 1%;
+}
+.cardDetails .headingStrong{
+    width: 10rem;
+    white-space: nowrap;
+    overflow: hidden;
+    /* border: 1px solid; */
+    text-overflow: ellipsis;
+
 }

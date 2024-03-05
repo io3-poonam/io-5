@@ -14,10 +14,10 @@ const Cart = (props) => {
 
   // const localStorageData= (JSON.parse(localStorage.getItem("cardDataItems")));
   const localStorageData = localStorage.getItem("cardDataItems");
-  console.log("localStorageData", JSON.parse(localStorageData));
+  // console.log("localStorageData", JSON.parse(localStorageData));
 // not under stand
 const selectedLocalCartData=localStorageData &&JSON?.parse(localStorageData?localStorageData:[])
-console.log("selectedLocalCartData", selectedLocalCartData,location);
+// console.log("selectedLocalCartData", selectedLocalCartData,location);
 // amount
   useEffect(()=>{let totalAmount=0;
     selectedLocalCartData.forEach((product)=>{
@@ -36,9 +36,6 @@ console.log("selectedLocalCartData", selectedLocalCartData,location);
       
           <div
             className="product-cart-details"
-           
-          
-
           >
               <div  className="product-card-left-side">
             {JSON.parse(localStorageData).map((itemsSelected, index) => {
@@ -52,7 +49,7 @@ console.log("selectedLocalCartData", selectedLocalCartData,location);
 
         <p className="product-cart__brand">{itemsSelected?.brand}</p>
 
-        <p className="product-cart__description" title={itemsSelected?.description.title} >{itemsSelected?.description} </p>
+        <p className="product-cart__description" title={itemsSelected?.description} >{itemsSelected?.description} </p>
         <p className="product-cart__price">$ {itemsSelected?.price}</p>
         <button className="product-cart__btn-wishlist">
           <svg viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg">
@@ -80,8 +77,8 @@ console.log("selectedLocalCartData", selectedLocalCartData,location);
                 <h5 className="AmountDetailsHeading">PRICE DETAILS</h5>
                 <hr/>
                 <div className="card_price_details">
-
-                <Card.Text  className="paraPriceDetails">Price ({selectedLocalCartData?.product} items)</Card.Text>
+{/* selectedLocalCartData iterms details */}
+                <Card.Text  className="paraPriceDetails">Price ({selectedLocalCartData.length} items)</Card.Text>
              
                 <Card.Text className="amountDetails" >₹{total}</Card.Text>   </div>
                 <div className="card_price_details">

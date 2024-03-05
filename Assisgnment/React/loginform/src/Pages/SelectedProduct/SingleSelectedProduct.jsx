@@ -107,7 +107,7 @@ const SelectedProduct = () => {
           </div>
         </div>
         <div className="detail_section_product">
-          <h4 className="product-card__brand">{location?.brand}</h4>
+          <h4 className="product-card__brand">{data?.brand}</h4>
           <p className="product-card__description"></p>
           <p className="product-card__price"></p>
           <Button> </Button>Rating

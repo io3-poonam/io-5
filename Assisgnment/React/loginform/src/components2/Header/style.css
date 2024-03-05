@@ -2,7 +2,12 @@
   text-decoration: none;
   color: #8a578b;
 }
-
+.position-fixed{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+}
 .navbar-nav{
   align-items: center;
 }

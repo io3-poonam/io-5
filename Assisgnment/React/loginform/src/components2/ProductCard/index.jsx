@@ -35,7 +35,7 @@ const ProductCard = (props) => {
 
         <p className="product-card__brand">{brand}</p>
 
-        <p className="product-card__description" title={description.title} >{description} </p>
+        <p className="product-card__description" title={description} >{description} </p>
         <p className="product-card__price">$ {price}</p>
         <button className="product-card__btn-wishlist">
           <svg viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg">

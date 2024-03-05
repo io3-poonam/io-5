@@ -61,7 +61,7 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
   }
   return (
     <React.Fragment>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg" className="bg-body-tertiary position-fixed">
         <Container fluid>
           <Navbar.Brand href="/">Flipkart</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

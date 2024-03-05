@@ -1,8 +1,9 @@
+
 .footerSideBar {
   background-color: #212121;
   width: 100%;
   color: #ffffff;  display: flex;
-  flex-direction: row;
+  flex-direction: row;  
 }
 .ulTagFooterSide {
   display: flex;
@@ -42,6 +43,7 @@
   background-color: #212121;
   color: #ffffff;
   width: 100%;
+
 }
 .ulTag {
   display: flex;

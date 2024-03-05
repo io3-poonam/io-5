@@ -1,5 +1,5 @@
 .product-cart-details{    display: flex;width: 90%;
-  margin: 1%auto;
+  margin: 5% auto;
   flex-direction: row;}
 .product-card-left-side{    width: 70%}
 .product-card-right-side{    width: 30%}
@@ -9,7 +9,7 @@
   padding: 1rem 0rem 0 1rem;
 }
   .product-cart {
-    /* margin: auto;  */
+
     position: relative;
     display: flex;
     /* flex-direction: column; */

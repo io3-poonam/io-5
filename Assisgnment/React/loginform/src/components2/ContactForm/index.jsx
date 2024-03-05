@@ -1,9 +1,11 @@
+import React from "react";
 import "./style.css";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Form from 'react-bootstrap/Form';
 import { useState } from "react";
+import { FaHandPointDown } from "react-icons/fa";
 
 function ContactForm() {
   const [show,setShow]=useState(false);
@@ -51,16 +53,17 @@ const city=(event)=>{
   return (
     <>
       <div className="contact-container">
-        <h2 className="h2">
+        <h2 className="contactHeading">
           So, What are you waiting for? Let's build your dream project!
         </h2>
-        <p className="para">
+        <p className="ContactPara1">
           Get interesting housing info straight to your inbox, and build the
           building you want. Contact us
         </p>
-        <p className="para">
+        <div className="contactImageAndPara">
+        <FaHandPointDown  className="imageContact"/><p className="ContactPara2">
           Fill up the Contact details
-        </p>
+        </p></div>
         <div className="button-container">
           <Button className="button" onClick={contactUs}>Contact Us</Button>
         </div>

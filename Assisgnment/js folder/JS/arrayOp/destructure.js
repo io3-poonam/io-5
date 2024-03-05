@@ -132,7 +132,7 @@ const[,,mew2,,,Charizard]=mew||[];
 const[,,,Charizard1]=Charizard||[]
 // const[,,mew2]=mew||[];
 
-console.log("Pikachu Pikachu"," mewTwo", mewTwo)
+console.log("Pikachu", Pikachu," mewTwo", mewTwo)
 console.log("Bulbasour",Bulbasour1)
 console.log("mew",mew2)
 console.log("Charizard",Charizard1)

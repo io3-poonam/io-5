@@ -51,6 +51,7 @@ const SelectedProduct = () => {
    */
   return (
     <>
+    {/* cart show  */}
       <Header isCartEnabled={true} />
       {isLoader && <Loader />}
       <div className="selected_product_container">

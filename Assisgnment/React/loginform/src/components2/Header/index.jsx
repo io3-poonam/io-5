@@ -1,39 +1,46 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./style.css";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import "./style.css";
-import { BsCartFill } from "react-icons/bs";
 import { Button } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
-
+import Form from "react-bootstrap/Form";
+import InputGroup from "react-bootstrap/InputGroup";
+import { BsCartFill } from "react-icons/bs";
+import { IoSearch } from "react-icons/io5";
 function Header(props) {
-  const {currentPageShow, isCartEnabled = false, CartCounting=[],onShowCartAdd= []} = props || {};
+  const {
+    currentPageShow,
+    isCartEnabled = false,
+    CartCounting = [],
+    onShowCartAdd = [],
+  } = props || {};
   const [seconds, setSeconds] = useState(new Date().getSeconds());
   // console.log("currentPage", props);
-const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
   // console.log("userData",user);
-    // current and previous data show get
+  // current and previous data show get
   // local storage data get previous data counting
-  const CartCountingLocal=localStorage.getItem("cardDataItems")
-  const CartCountData=JSON.parse(CartCountingLocal)
+  const CartCountingLocal = localStorage.getItem("cardDataItems");
+  const CartCountData = JSON.parse(CartCountingLocal);
   // console.log("local",CartCountData)
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   // times state
   const monthStr = [
-    "january",
-    "February",
-    "March",
-    "April",
+    "jan",
+    "Feb",
+    "Mar",
+    "Apr",
     "May",
-    "June",
+    "Jun",
     "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    "Aug",
+    "Sept",
+    "Oct",
+    "Nov",
+    "Dec",
   ];
   // setLoginBtnDisable(false);
   const date = new Date().getDate();
@@ -46,19 +53,18 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
   // seconds
   setInterval(() => {
     // setSeconds(new Date().getSeconds());
-    setUser(JSON.parse(localStorage.getItem("user")))
+    setUser(JSON.parse(localStorage.getItem("user")));
   }, 1000);
   const handleAddShowCart = () => {
     // console.log("click",onShowCartAdd);
     navigate("/cart");
-
   };
-  
+
   // clear local storage
-  const HandleLogout=()=>{
-    localStorage.clear("user")
-    navigate("/login")
-  }
+  const HandleLogout = () => {
+    localStorage.clear("user");
+    navigate("/login");
+  };
   return (
     <React.Fragment>
       <Navbar expand="lg" className="bg-body-tertiary position-fixed">
@@ -82,32 +88,64 @@ const[user,setUser]=useState(JSON.parse(localStorage.getItem("user")))
                   Headphones
                 </NavDropdown.Item>
               </NavDropdown>
-              
             </Nav>
+            <InputGroup className="">
+                <InputGroup.Text id="basic-addon1"><IoSearch/></InputGroup.Text>
+                <Form.Control
+                  placeholder="Search for Products, Brands and More"
+                  aria-label="Search for Products, Brands and More"
+                  aria-describedby="basic-addon1"
+                />
+              </InputGroup>
             <Nav>
+             
               {/* cart show only product */}
-              {isCartEnabled===true &&(
-              <Button variant="dark" style={{height:"2.8rem", margin:"0 1rem "}}><BsCartFill onClick={(e) => handleAddShowCart(e)}/>
-              {/* cartCounting less than 0 than print cartCounting */}
-              {CartCountData?.length >0 ?( CartCountData?.length):<>
-              {CartCounting > 0 && CartCounting}</>}
-              </Button> )}
-              {user?.image &&(
-              <img className="loginImage" src={user?.image} alt={user?.userName}/>)}
-              <p className="loginPara">{user?.firstName} {user?.lastName}</p>
-               {!user?.email && (
-               <Button className="dangerLogin" style={{height:"2.8rem"}} variant="danger" href="/Login">Login</Button>
-                )} 
-                 {user?.email && (
-               <Button href="/Login" variant="success" onClick={HandleLogout}>Logout</Button>
-                )}
+              {isCartEnabled === true && (
+                <Button
+                  variant="dark"
+                  style={{ height: "2.8rem",width:"5rem", margin: "0 1rem " }}
+                >
+                 <BsCartFill onClick={(e) => handleAddShowCart(e)} />
+                  {/* cartCounting less than 0 than print cartCounting */}
+                  {CartCountData?.length > 0 ? (
+                    CartCountData?.length
+                  ) : (
+                    <>{CartCounting > 0 && CartCounting}</>
+                  )}
+                </Button>
+              )}
+              {user?.image && (
+                <img
+                  className="loginImage"
+                  src={user?.image}
+                  alt={user?.userName}
+                />
+              )}
+              <p className="loginPara">
+                {user?.firstName} {user?.lastName}
+              </p>
+              {!user?.email && (
+                <Button
+                  className="dangerLogin"
+                  style={{ height: "2.8rem" }}
+                  variant="danger"
+                  href="/Login"
+                >
+                  Login
+                </Button>
+              )}
+              {user?.email && (
+                <Button href="/Login" variant="success" onClick={HandleLogout}>
+                  Logout
+                </Button>
+              )}
               <Nav.Link>
                 {/* date remove when login user */}
-                {currentPageShow==="Home Page"&&(
-                <h6 className="dateClass">
-                  {date} {monthStr.at(month)},{year} {hour}:{minis}:
-                  {seconds}
-                </h6>)}
+                {currentPageShow === "Home Page" && (
+                  <h6 className="dateClass">
+                    {date} {monthStr.at(month)},{year} {hour}:{minis}:{seconds}
+                  </h6>
+                )}
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

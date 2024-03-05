@@ -37,7 +37,9 @@ const offerImages3=[OfferImage10,OfferImage11,OfferImage12]
   return (
     <div>
     <div className="HomePage">
-      <Header currentPageShow="Home Page"  />
+    {/* cart show  */ }
+
+      <Header currentPageShow="Home Page"  isCartEnabled={true}  />
       </div>
       <div className="centerHomePage">
       <ImageSliders />

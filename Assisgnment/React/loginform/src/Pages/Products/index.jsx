@@ -43,6 +43,7 @@ function Products() {
     <React.Fragment>
       {/* CartCounting= { cartProductAdd.length}  cart product add in without count state*/}
       <Header
+    /* cart show  */
         isCartEnabled={true}
         CartCounting={cartProductAdd.length}
         onShowCartAdd={cartProductAdd}

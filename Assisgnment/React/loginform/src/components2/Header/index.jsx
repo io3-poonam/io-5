@@ -20,12 +20,12 @@ function Header(props) {
   const [seconds, setSeconds] = useState(new Date().getSeconds());
   // console.log("currentPage", props);
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
-  // console.log("userData",user);
+  //search State
+  const [search, setSearch] = useState("");
   // current and previous data show get
   // local storage data get previous data counting
   const CartCountingLocal = localStorage.getItem("cardDataItems");
   const CartCountData = JSON.parse(CartCountingLocal);
-  // console.log("local",CartCountData)
   const navigate = useNavigate();
   // times state
   const monthStr = [
@@ -42,7 +42,6 @@ function Header(props) {
     "Nov",
     "Dec",
   ];
-  // setLoginBtnDisable(false);
   const date = new Date().getDate();
   const month = new Date().getMonth();
   const year = new Date().getFullYear();
@@ -56,7 +55,6 @@ function Header(props) {
     setUser(JSON.parse(localStorage.getItem("user")));
   }, 1000);
   const handleAddShowCart = () => {
-    // console.log("click",onShowCartAdd);
     navigate("/cart");
   };
 
@@ -64,6 +62,24 @@ function Header(props) {
   const HandleLogout = () => {
     localStorage.clear("user");
     navigate("/login");
+  };
+  /**
+   * description:- when getting value from input search
+   * @param {Object}event
+   */
+
+  const HandleInputDSearch = (e) => {
+    console.log(e.target.value);
+    setSearch(e.target.value);
+  };
+    /**
+   * description:- when user search product
+   * @param {Object}"event
+   */
+  const HandleSearchBtn = (event) => {
+    // if(!search)return
+    navigate("/products",{state:({type:"search",value:search})})
+    console.log("HandleSearchBtn",search);
   };
   return (
     <React.Fragment>
@@ -90,22 +106,27 @@ function Header(props) {
               </NavDropdown>
             </Nav>
             <InputGroup className="">
-                <InputGroup.Text id="basic-addon1"><IoSearch/></InputGroup.Text>
-                <Form.Control
-                  placeholder="Search for Products, Brands and More"
-                  aria-label="Search for Products, Brands and More"
-                  aria-describedby="basic-addon1"
-                />
-              </InputGroup>
+              <InputGroup.Text id="basic-addon1">
+                <IoSearch />
+              </InputGroup.Text>
+              <Form.Control
+                placeholder="Search for Products, Brands and More"
+                aria-label="Search for Products, Brands and More"
+                aria-describedby="basic-addon1"
+                value={search}
+                onChange={(event) => HandleInputDSearch(event)}
+              />
+              <Button disabled={!search} variant="dark"  onClick={(e) => HandleSearchBtn(e)}>Search</Button>
+            </InputGroup>
+
             <Nav>
-             
               {/* cart show only product */}
               {isCartEnabled === true && (
                 <Button
                   variant="dark"
-                  style={{ height: "2.8rem",width:"5rem", margin: "0 1rem " }}
+                  style={{ height: "2.8rem", width: "5rem", margin: "0 1rem " }}
                 >
-                 <BsCartFill onClick={(e) => handleAddShowCart(e)} />
+                  <BsCartFill onClick={(e) => handleAddShowCart(e)} />
                   {/* cartCounting less than 0 than print cartCounting */}
                   {CartCountData?.length > 0 ? (
                     CartCountData?.length

@@ -5,21 +5,29 @@ import ProductCard from "../../components2/ProductCard";
 import "./style.css";
 import axios from "axios";
 import Loader from "../Loader/Loader";
+import { useLocation } from "react-router-dom";
 function Products() {
   const [allProduct, setAllProduct] = useState([]);
   const [showLoader, setLoader] = useState(false);
   const [cartProductAdd, setCartProductAdd] = useState([]);
+  const location=useLocation()
+  console.log(location?.state)
+  const{type="",value=""}=location?.state||{}
   useEffect(() => {
     productApiFetch();
-  }, []);
+  }, [type,value]);
   const productApiFetch = async () => {
     try {
       setLoader(true);
-      const api = `https://dummyjson.com/products`;
+      let api="";
+      if(type=="search"){
+        api = `https://dummyjson.com/products/search?q=${value}`;
+      }else{
+        api = `https://dummyjson.com/products`;
+
+      }
       const dataApi = await axios.get(api);
-      // console.log("api", dataApi);
       const { data: { products = [] } = {} } = dataApi || {};
-      // console.log("pro", products);
       setAllProduct(products);
       setLoader(false);
     } catch (error) {
@@ -55,12 +63,12 @@ function Products() {
         {!showLoader &&
           allProduct.map((items, index) => {
             return (
-              <ProductCard
+              <ProductCard key={index}
                 price={items?.price}
                 description={items?.description}
                 title={items?.title}
                 brand={items?.brand}
-                thumbnail={items?.thumbnail}
+                thumbnail={items?.thumbnail?(items?.thumbnail):Image}
                 category={items?.category}
                 {...items}
                 onCartClick={handleAddCartClick}

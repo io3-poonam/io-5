@@ -10,6 +10,8 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import { BsCartFill } from "react-icons/bs";
 import { IoSearch } from "react-icons/io5";
+import LogoFlip from "../../Assets/icons/flipkart.svg";
+
 function Header(props) {
   const {
     currentPageShow,
@@ -85,7 +87,9 @@ function Header(props) {
     <React.Fragment>
       <Navbar expand="lg" className="bg-body-tertiary position-fixed">
         <Container fluid>
-          <Navbar.Brand href="/">Flipkart</Navbar.Brand>
+          <Navbar.Brand href="/" style={{    width: "10%"}}>
+          <img src={LogoFlip} alt="LogoFlip"/>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -105,6 +109,8 @@ function Header(props) {
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
+          
+
             <InputGroup className="">
               <InputGroup.Text id="basic-addon1">
                 <IoSearch />

@@ -68,7 +68,8 @@ const city=(event)=>{
           <Button className="button" onClick={contactUs}>Contact Us</Button>
         </div>
       </div>
-      {show?(
+      {show?
+      (
       <div className="container">
       <div className="my-5">
         <h1 className="text-center">Contact Services</h1>

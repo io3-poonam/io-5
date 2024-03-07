@@ -57,9 +57,18 @@ height:350px;
 }
 .highLighted__image  .btn_SelectedProduct{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly;    width: 93%;
+  margin:4% auto;
   }
-
+  .btn_SelectedProduct .BtnButton{
+width: 50%;
+margin: 1%;
+color: #ffff;
+font-weight: 500;
+  }
+  .btnIcon{
+    margin-bottom: 2%;
+  }
   .product-card__desc,
   .product-card__brand {
     margin: 0.2rem 0;
@@ -95,6 +104,11 @@ padding: 0 5px;
     justify-content: space-between;
     width: 100%;
    }
+   del{
+    padding: 0 10px;
+  color: gray;
+   }
+   
    .iconBtnCash{
     border-radius: 18px !important;
     width: 20px  !important;
@@ -102,3 +116,7 @@ padding: 0 5px;
     /* text-align: unset; */
     padding: 0  !important;
    }
+   .SingleProductInput{
+    width:100%;
+    padding: 2%;
+border-color:0.5px gray;  }

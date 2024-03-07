@@ -1,18 +1,17 @@
 .selected_product_container{
   display: flex;
-  width: 80%;
+  width: 90%;
   height: 28rem;
   border-radius: 5px;
   margin: 3% auto;
   padding: 1%;
 }
 .selected_product_container .image_container{
-    width: 50%;
+    width: 45%;
     height: 25rem;
     border-radius: 5px;
     margin: 1%;
     padding: 1%;
-    border: 2px solid hsla(234, 86%, 46%, 0.381);
 }
 .image_section{
     display: flex;
@@ -36,7 +35,9 @@ height:350px;
   padding: 1% 40% 1% 1%;
   margin: 1%;
 }
-
+.small__image:hover{
+  border:2px solid #2874F0;
+}
 .highLighted__image{
     width: 80%;
 }
@@ -47,62 +48,57 @@ height:350px;
   
 }
 .detail_section_product{
-  width: 50%;
-    height: 25rem;
-    border-radius: 5px;
-    margin: 1%;
-    padding: 1%;
-    /* background-color: rgb(59, 171, 102); */
-    border: 2px solid hsla(234, 86%, 46%, 0.381);
+  width: 55%;
+  border-radius: 5px;
+  margin: 1%;
+  padding: 1%;
+  background-color: #ffff;
+  overflow: auto;
 }
 .highLighted__image  .btn_SelectedProduct{
   display: flex;
   justify-content: space-evenly;
   }
-  /*
-  .product-card__description,
-  .product-card__price,
+
+  .product-card__desc,
   .product-card__brand {
     margin: 0.2rem 0;
     font-size: 1rem;
   }
-  
-  .product-card__brand {
-    font-weight: bold;
-    text-transform: uppercase;
+  .spePrice,.spanDis,.tag{
+    color: green;
   }
-  
-  .product-card__description {
+  .spanDis{
+    font-size:1rem ;
+  }
+  .product-card__desc {
     font-weight: normal;
   }
-  
-  .product-card__price {
-    font-weight: bold;
+  .rating{
+    border-radius: 12px!important;
+    padding: 1px 2px !important;
+    font-size: 14px !important;
+    margin: 0 3px !important;
   }
-  
-  .product-card__btn-wishlist {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    border: none;
-    background-color: white;
-    padding: 12px 10px 10px;
-    box-shadow: 2px 2px 5px 0px rgba(0, 64, 128, 0.1);
-  }
-  
-  .product-card__btn-wishlist svg {
-    fill: lightgrey;
-  }
-  .product-card__description{
-    font-weight: normal;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    width: 20rem;
-    overflow: hidden;
-    height: 3rem;
-  }
-   */
+.starIcon{
+  margin-bottom: 10%;
+}
+.ratingSpan{
+  color: gray;
+}
+   .cardText strong{
+padding: 0 5px;
+   }
+   .delivery-Details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+   }
+   .iconBtnCash{
+    border-radius: 18px !important;
+    width: 20px  !important;
+    height: 22px  !important;
+    /* text-align: unset; */
+    padding: 0  !important;
+   }

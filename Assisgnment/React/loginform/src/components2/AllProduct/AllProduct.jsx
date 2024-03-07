@@ -3,11 +3,12 @@ import React, { useEffect, useState } from "react";
 import DummyImage from "../../Assets/images/dummy.png";
 import Loader from "../../Pages/Loader/Loader";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 const AllProduct = (props) => {
   const { api = {} } = props || {};
   const [productData, setProductData] = useState([]);
   const [isLoading, setLoading] = useState(false);
-
+const navigate=useNavigate();
   useEffect(() => {
     try {
       setLoading(true);
@@ -25,16 +26,18 @@ const AllProduct = (props) => {
       console.log("All product error in product Api", err);
     }
   }, []);
-
+const HandleProductClick=(event,productItems)=>{
+  navigate("/product",{state:{type:"id",value: productItems?.id}})
+}
   return (
     <>
       {isLoading && <Loader />}
       <h4>Top Deals</h4>
       <div id="cardProductDetails">
-        <div className="cardDetailsChild">
+        <div className="cardDetailsChild" >
           {productData.map((productItems, index) => {
             return (
-              <div key={index} className="cardDetails">
+              <div key={index} className="cardDetails" onClick={(e)=>HandleProductClick(e,productItems)}>
                 <img
                   className="CardImage"
                   variant="top"

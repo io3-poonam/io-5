@@ -15,7 +15,7 @@ function Header(props) {
     currentPageShow,
     isCartEnabled = false,
     CartCounting = [],
-    onShowCartAdd = [],
+    // onShowCartAdd = [],
   } = props || {};
   const [seconds, setSeconds] = useState(new Date().getSeconds());
   // console.log("currentPage", props);

@@ -5,7 +5,6 @@ import ImageSliders from "../../components2/ImageSliders";
 import OfferImage from "../../Assets/images/offerImage.webp";
 import OfferImage1 from "../../Assets/images/offerImage1.webp";
 import OfferImage2 from "../../Assets/images/offerImage2.webp";
-import OfferImage3 from "../../Assets/images/offerImage3.webp";
 import OfferImage4 from "../../Assets/images/offerImage4.webp";
 import OfferImage5 from "../../Assets/images/offerImage5.webp";
 import OfferImage6 from "../../Assets/images/offerImage6.webp";

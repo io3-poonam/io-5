@@ -41,7 +41,7 @@ const Response=await axios.post(api,{
 // destructure
 const {data={}}=Response||{}
 // console.log(Response)
-if(Response?.status==200){
+if(Response?.status===200){
     // store in local storage
     localStorage.setItem("user",JSON.stringify(data))
     navigate("/home-page")

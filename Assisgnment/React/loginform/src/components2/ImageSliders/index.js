@@ -13,22 +13,22 @@ function ImageSliders() {
     <div className="carousel">
       <Carousel>
         <Carousel.Item>
-          <img className="slider-image" src={CarouselImage1} text="First slide" />
+          <img className="slider-image" src={CarouselImage1} alt="First slide" />
           {/* <Carousel.Caption>
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption> */}
         </Carousel.Item> <Carousel.Item>
-          <img className="slider-image" src={CarouselImage2} text="CarouselImage2" />
+          <img className="slider-image" src={CarouselImage2} alt="CarouselImage2" />
         </Carousel.Item> 
         <Carousel.Item>
-          <img className="slider-image" src={CarouselImage3} text="CarouselImage3" /> 
+          <img className="slider-image" src={CarouselImage3} alt="CarouselImage3" /> 
         </Carousel.Item>
         <Carousel.Item>
-          <img className="slider-image" src={CarouselImage4} text="CarouselImage4" />
+          <img className="slider-image" src={CarouselImage4} alt="CarouselImage4" />
         </Carousel.Item>   
          <Carousel.Item>
-          <img className="slider-image" src={CarouselImage5} text="CarouselImage5" />
+          <img className="slider-image" src={CarouselImage5} alt="CarouselImage5" />
         </Carousel.Item>
       </Carousel></div>
     </>

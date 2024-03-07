@@ -20,7 +20,7 @@ function Products() {
     try {
       setLoader(true);
       let api="";
-      if(type=="search"){
+      if(type==="search"){
         api = `https://dummyjson.com/products/search?q=${value}`;
       }else{
         api = `https://dummyjson.com/products`;

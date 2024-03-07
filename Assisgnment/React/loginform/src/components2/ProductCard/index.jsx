@@ -8,6 +8,7 @@ const ProductCard = (props) => {
   const [addInCart,setAddInCart]=useState(false)
   const { price, description, title, brand, thumbnail, category, onCartClick } =
     props || {};
+
     const navigate=useNavigate()
   const HandleCartAddBtn = (e, props) => {
     // console.log("child ",props);
@@ -23,7 +24,8 @@ const ProductCard = (props) => {
   // got to product page
   const gotoProductPage=()=>{
     // console.log("gotoProductPage")
-    navigate("/product" , {state:JSON.stringify(props)})
+    // navigate("/product" , {state:JSON.stringify(props)})
+    navigate("/product" ,{state:{type:"id",value: props?.id}})
   }
   return (
     <>

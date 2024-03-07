@@ -1,15 +1,14 @@
 import React, { useEffect,useState } from "react";
 import Header from "../../components2/Header";
 import Footer from "../../components2/Footer";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import { FaTag } from "react-icons/fa";
 import "./style.css";
 const Cart = (props) => {
   // const{cartProductAdd}=props
   const [total,setTotal]=useState()
-  const location = useLocation();
+  // const location = useLocation();
   // console.log("props", props, "location", location);
 
   // const localStorageData= (JSON.parse(localStorage.getItem("cardDataItems")));

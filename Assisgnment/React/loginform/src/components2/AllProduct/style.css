@@ -34,5 +34,7 @@ margin: 0 auto;    padding: 1%;
     overflow: hidden;
     /* border: 1px solid; */
     text-overflow: ellipsis;
-
+}
+.topDeals{
+    padding: 1% 0% 0 1%;
 }

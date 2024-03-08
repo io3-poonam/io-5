@@ -21,7 +21,18 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 2px 2px 5px 0px rgba(0, 64, 128, 0.1);}
+
   
+    .product-cart_button {
+        position: sticky;
+        bottom: 5%;
+        left: 7%;
+        width: 90%;
+        background: #FFFFFF;
+        min-height: 4rem;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 2px 2px 5px 0px rgba(0, 64, 128, 0.1);}
    .product-cart__image {
     max-width: 100%;
     height: auto;

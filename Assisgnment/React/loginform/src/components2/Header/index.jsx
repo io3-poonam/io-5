@@ -8,10 +8,10 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import { Button } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
-import { BsCartFill } from "react-icons/bs";
+import { PiShoppingCartLight } from "react-icons/pi";
 import { IoSearch } from "react-icons/io5";
-import LogoFlip from "../../Assets/icons/flipkart.svg";
-
+import LogoFlip from "../../Assets/images/flipkart.png";
+import plus from "../../Assets/images/plus_aef861.png"
 function Header(props) {
   const {
     currentPageShow,
@@ -83,35 +83,57 @@ function Header(props) {
     navigate("/products",{state:({type:"search",value:search})})
     console.log("HandleSearchBtn",search);
   };
+  //DropdownItems
+  const HandleDropProduct=(e,DropdownItems)=>{
+    navigate("/products" , {state:{type:"search",value:DropdownItems}});
+
+  }
+  // product empty in case execute DropdownItems
+  const HandleProductEmpty=(e)=>{
+    navigate("/products" , {state:{type:"",value:""}});
+
+  }
   return (
     <React.Fragment>
-      <Navbar expand="lg" className="bg-body-tertiary position-fixed">
-        <Container fluid>
-          <Navbar.Brand href="/" style={{    width: "10%"}}>
-          <img src={LogoFlip} alt="LogoFlip"/>
-          </Navbar.Brand>
+      <Navbar expand="lg" className=" position-fixed">
+        <Container  className="bg_body_tertiary" >
+        <Nav className="me-auto-left">
+          <Nav.Link  href="/" className="me-auto-nav">
+          <img style={{    width: "85px"}} src={LogoFlip} alt="LogoFlip"/> </Nav.Link>
+          
+          <Nav.Link className="me-auto-nav" href="/"><i className="colorE">Explore <strong className="colorP"> Plus </strong></i><img src={plus} className="plus" alt="plus"/></Nav.Link></Nav>
+         
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="/home-page">Home</Nav.Link>
-              <Nav.Link href="/about-us">About</Nav.Link>
-              <Nav.Link href="/contact-us">Contact</Nav.Link>
-              <Nav.Link href="/products">Product</Nav.Link>
+          <Navbar.Collapse id="basic-navbar-nav " className="justify-content-between">
+            <Nav className="me-auto_items">
+              <Nav.Link  className="nav_items" href="/home-page">Home</Nav.Link>
+              <Nav.Link className="nav_items" href="/about-us">About</Nav.Link>
+              <Nav.Link className="nav_items" href="/contact-us">Contact</Nav.Link>
+              <Nav.Link className="nav_items" href="/products" onClick={(e)=>HandleProductEmpty(e)}>Product</Nav.Link>
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Mobile</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Laptops</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Electronics
+                <NavDropdown.Item onClick={(e)=>HandleDropProduct(e,"phone")}>Phone</NavDropdown.Item>
+                <NavDropdown.Item onClick={(e)=>HandleDropProduct(e,"laptop")}>Laptops</NavDropdown.Item>
+                <NavDropdown.Item onClick={(e)=>HandleDropProduct(e,"macbook")}>
+                  MacBook
+                </NavDropdown.Item>
+                <NavDropdown.Item onClick={(e)=>HandleDropProduct(e,"book")}>
+                  Book
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Headphones
+                <NavDropdown.Item onClick={(e)=>HandleDropProduct(e,"skin")}>
+                  Skin Care
+                </NavDropdown.Item>
+                <NavDropdown.Item onClick={(e)=>HandleDropProduct(e,"Oil")}>
+                 Oil
+                </NavDropdown.Item>
+                <NavDropdown.Item onClick={(e)=>HandleDropProduct(e,"cream")}>
+              Cream
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
           
 
-            <InputGroup className="">
+            <InputGroup className="input-box">
               <InputGroup.Text id="basic-addon1">
                 <IoSearch />
               </InputGroup.Text>
@@ -128,18 +150,18 @@ function Header(props) {
             <Nav>
               {/* cart show only product */}
               {isCartEnabled === true && (
-                <Button
-                  variant="dark"
-                  style={{ height: "2.8rem", width: "5rem", margin: "0 1rem " }}
+                <div className="cart_count"
+               
                 >
-                  <BsCartFill onClick={(e) => handleAddShowCart(e)} />
+                  <PiShoppingCartLight  className="cart"
+                  onClick={(e) => handleAddShowCart(e)} />
                   {/* cartCounting less than 0 than print cartCounting */}
-                  {CartCountData?.length > 0 ? (
+                <p >  {CartCountData?.length > 0 ? (
                     CartCountData?.length
                   ) : (
                     <>{CartCounting > 0 && CartCounting}</>
-                  )}
-                </Button>
+                  )} </p>
+                </div>
               )}
               {user?.image && (
                 <img
@@ -149,7 +171,7 @@ function Header(props) {
                 />
               )}
               <p className="loginPara">
-                {user?.firstName} {user?.lastName}
+                {user?.firstName}
               </p>
               {!user?.email && (
                 <Button
@@ -166,14 +188,14 @@ function Header(props) {
                   Logout
                 </Button>
               )}
-              <Nav.Link>
                 {/* date remove when login user */}
+              {/* <Nav.Link>
                 {currentPageShow === "Home Page" && (
                   <h6 className="dateClass">
                     {date} {monthStr.at(month)},{year} {hour}:{minis}:{seconds}
                   </h6>
                 )}
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

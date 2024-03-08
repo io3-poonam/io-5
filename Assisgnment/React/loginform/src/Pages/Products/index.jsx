@@ -46,7 +46,7 @@ function Products() {
       
     }
   };
-  // console.log("cartProductAdd", cartProductAdd);
+
   return (
     <React.Fragment>
       {/* CartCounting= { cartProductAdd.length}  cart product add in without count state*/}

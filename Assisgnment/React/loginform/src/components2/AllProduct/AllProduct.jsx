@@ -32,7 +32,7 @@ const HandleProductClick=(event,productItems)=>{
   return (
     <>
       {isLoading && <Loader />}
-      <h4>Top Deals</h4>
+      <h4 className="topDeals">Top Deals</h4>
       <div id="cardProductDetails">
         <div className="cardDetailsChild" >
           {productData.map((productItems, index) => {

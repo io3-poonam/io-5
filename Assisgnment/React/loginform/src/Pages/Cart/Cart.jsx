@@ -1,6 +1,6 @@
 import React, { useEffect,useState } from "react";
 import Header from "../../components2/Header";
-import Footer from "../../components2/Footer";
+import Footer1 from "../../components2/footer1/Footer1";
 // import { useLocation } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
@@ -70,7 +70,11 @@ const selectedLocalCartData=localStorageData &&JSON?.parse(localStorageData?loca
         </div>
         );
       })}
+      <div className="product-cart_button">
+          <Button>Place Order</Button>
         </div>
+        </div>
+        
        <div className="product-card-right-side">
               <Card>
                 <h5 className="AmountDetailsHeading">PRICE DETAILS</h5>
@@ -97,7 +101,7 @@ const selectedLocalCartData=localStorageData &&JSON?.parse(localStorageData?loca
             </div>
           </div>
 
-      <Footer />
+      <Footer1 />
     </>
   );
 };

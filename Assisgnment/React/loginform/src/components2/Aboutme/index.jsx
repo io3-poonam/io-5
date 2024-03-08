@@ -5,7 +5,7 @@ import "./style.css";
     <> 
     <header class='masthead'>
   <p class='masthead-intro'>Hi I'm</p>
-  <h1 class='masthead-heading'>Dilpkart!</h1>
+  <h1 class='masthead-heading'>Flipkart!</h1>
 </header>
 <section class="introduction-section">
     <h1>Introduction</h1>

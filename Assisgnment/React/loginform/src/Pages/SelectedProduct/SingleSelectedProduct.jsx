@@ -13,9 +13,8 @@ import Image from "../../Assets/images/dummy.png";
 import star from "../../Assets/icons/star.svg";
 import starOffer from "../../Assets/icons/fa_62673a.png";
 import Delivery from"../../Assets/icons/delivery.svg";
-import OfferImage4 from "../../Assets/images/offerImage4.webp";
-
 import ReactImageMagnify from "react-image-magnify";
+import AllProduct from "../../components2/AllProduct/AllProduct";
 const SelectedProduct = () => {
   const location = useLocation();
   // const data = JSON.parse(location?.state);
@@ -272,6 +271,7 @@ street no 02, simran nagar, ropar, near Gillco valley sahibzada ajit singh acade
           View Details
         </div>
       </div>
+      {/* <AllProduct/> */}
       <Footer />
     </>
   );

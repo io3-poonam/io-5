@@ -1,4 +1,4 @@
-
+/* 
 .footerSideBar {
   background-color: #212121;
   width: 100%;
@@ -35,27 +35,9 @@
 .FooterPara{
   padding: 1%;
 }
-.Footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-top: 10px;
-  background-color: #212121;
-  color: #ffffff;
-  width: 100%;
 
-}
-.ulTag {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  list-style: none;
-  width: 45%;
-  margin: 0;
-}
-.listItems {
-  width: 100%;
-}
+
+
 .footerAddress{
   border-left: 1px solid #878787;
   padding: 1% 1%;height: 98%;
@@ -64,9 +46,38 @@
   width: 25%;
   padding: 1%;
 }
-.imageFooterBar,.imageSocialIcon{
+
+}*/
+.list-none{
+ text-decoration: none;
+ font-size: 12px;
+ padding: 0;
+ cursor: pointer;
+} 
+.list-unstyled {
+  padding: 10px 0;
+}
+.text-uppercase,.heading{
+  color: #d0caca;
+}.span{
+  color: #266BE9;
+}
+.imageSocialIcon{
   padding: 1%;
 }
-.span{
-  color: #266BE9;
+/* 
+footer site */
+.Footer {
+  align-items: center;
+  width: 100%;
+}
+.ulListDiv .ulTag {
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  margin-bottom: 0;
+}
+.ulListDiv .ulTag .listItems {
+  width: 100%;
+  padding-left: 1%;
 }

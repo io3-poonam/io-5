@@ -3,7 +3,7 @@
   color: #8a578b;
 } */
 .position-fixed{
-  position: fixed;
+  position: sticky;
   z-index: 999;
   top: 0;
   background-color: #2874F0 !important;

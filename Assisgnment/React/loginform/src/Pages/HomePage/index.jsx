@@ -48,9 +48,9 @@ const offerImages3=[OfferImage10,OfferImage11,OfferImage12]
       <OfferPage offerImages={offerImages1}/>
       <AllProduct api={apiBook}/>
       <OfferPage offerImages={offerImages2}/>
-      <AllProduct api={apiPhone}/>
-      <OfferPage offerImages={offerImages3}/>
       <AllProduct api={apiLaptop}/>
+      <OfferPage offerImages={offerImages3}/>
+   
       <AllProduct api={apiSkin}/>
       <AllProduct api={apiDress}/>
       <AllProduct api={apiOil}/>

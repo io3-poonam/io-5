@@ -1,6 +1,6 @@
 #cardProductDetails{
-    /* display: flex ;
-    flex-direction: row; */
+    display: flex ;
+    flex-direction: row;
     margin: auto;
     width: 100%;
     overflow: scroll;

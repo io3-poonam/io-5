@@ -8,7 +8,7 @@ const AllProduct = (props) => {
   const { api = {} } = props || {};
   const [productData, setProductData] = useState([]);
   const [isLoading, setLoading] = useState(false);
-const navigate=useNavigate();
+  const navigate = useNavigate();
   useEffect(() => {
     try {
       setLoading(true);
@@ -17,7 +17,7 @@ const navigate=useNavigate();
         const { data: { products = [] } = {} } = response || {};
         setProductData(products);
         // if (products.length > 0) {
-          setLoading(false);
+        setLoading(false);
         // }
         setLoading(false);
       });
@@ -26,18 +26,25 @@ const navigate=useNavigate();
       console.log("All product error in product Api", err);
     }
   }, []);
-const HandleProductClick=(event,productItems)=>{
-  navigate("/product",{state:{type:"id",value: productItems?.id}})
-}
+  const HandleProductClick = (event, productItems) => {
+    navigate("/product", { state: { type: "id", value: productItems?.id } });
+  };
   return (
     <>
       {isLoading && <Loader />}
       <h4 className="topDeals">Top Deals</h4>
-      <div id="cardProductDetails">
-        <div className="cardDetailsChild" >
+      <div
+        id="cardProductDetails"
+        style={{ justifyContent: productData.length > 5 ? "start" : "center" }}
+      >
+        <div className="cardDetailsChild">
           {productData.map((productItems, index) => {
             return (
-              <div key={index} className="cardDetails" onClick={(e)=>HandleProductClick(e,productItems)}>
+              <div
+                key={index}
+                className="cardDetails"
+                onClick={(e) => HandleProductClick(e, productItems)}
+              >
                 <img
                   className="CardImage"
                   variant="top"

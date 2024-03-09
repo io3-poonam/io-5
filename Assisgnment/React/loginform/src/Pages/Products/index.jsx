@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import Header from "../../components2/Header";
 import Footer from "../../components2/Footer";
 import ProductCard from "../../components2/ProductCard";
+import PageNotFound from "../Error/Page404";
 import "./style.css";
 import axios from "axios";
 import Loader from "../Loader/Loader";
-import { useLocation } from "react-router-dom";
 function Products() {
   const [allProduct, setAllProduct] = useState([]);
   const [showLoader, setLoader] = useState(false);
@@ -24,7 +25,6 @@ function Products() {
         api = `https://dummyjson.com/products/search?q=${value}`;
       }else{
         api = `https://dummyjson.com/products`;
-
       }
       const dataApi = await axios.get(api);
       const { data: { products = [] } = {} } = dataApi || {};
@@ -42,8 +42,7 @@ function Products() {
       localStorage.setItem("cardDataItems",JSON.stringify([...previousData, selectProduct]));
     }
     else{
-      localStorage.setItem("cardDataItems",JSON.stringify([...cartProductAdd, selectProduct]));
-      
+      localStorage.setItem("cardDataItems",JSON.stringify([...cartProductAdd, selectProduct])); 
     }
   };
 
@@ -76,6 +75,8 @@ function Products() {
             );
           })}
       </div>
+      {allProduct.length==0 && 
+    <PageNotFound/>  }
       <Footer />
     </React.Fragment>
   );

@@ -40,7 +40,7 @@ const selectedLocalCartData=localStorageData &&JSON?.parse(localStorageData?loca
             {JSON.parse(localStorageData).map((itemsSelected, index) => {
         return (
         
-          <div className="product-cart" href="#dolce-gabbana-cropped">
+          <div className="product-cart" >
             <div>
         <img className="product-cart__image" src={itemsSelected?.thumbnail} alt="thumbnail"/></div> <div>
         <p className="product-cart__brand">{itemsSelected?.title}</p>

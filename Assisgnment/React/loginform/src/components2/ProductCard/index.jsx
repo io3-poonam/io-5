@@ -29,7 +29,7 @@ const ProductCard = (props) => {
   }
   return (
     <>
-      <div className="product-card" href="#dolce-gabbana-cropped" >
+      <div className="product-card"  >
         <div onClick={gotoProductPage}>
         <img className="product-card__image" src={thumbnail} alt="thumbnail"/>
         <p className="product-card__brand">{title}</p>
